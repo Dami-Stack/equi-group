@@ -1,7 +1,7 @@
 import React from "react";
 import { contact, heroImg, lifestyle } from "../assets/images";
 import { Icon } from "@iconify/react";
-import { arrowRight } from "../assets/icons";
+import { arrowRight, arrowRightWhite } from "../assets/icons";
 
 const Contact = () => {
   // Inline style to set the background image
@@ -17,14 +17,14 @@ const Contact = () => {
 
   return (
     <section
-      className="w-full bg-[#00bee0] contact__gradient text-white h-[calc(100vh-90px)] max-h-[620px] flex justify-center z-10 overflow-hidden"
+      className="w-full bg-[#00bee0] hero__gradient text-white h-[calc(100vh-90px)] max-h-[620px] flex justify-center z-10 overflow-hidden"
 
       //   style={headerStyle}
     >
       {/* Main container */}
       <section
         id="hero"
-        className="w-full flex items-center h-full app__container px-[48px] py-10"
+        className="w-full text-secondary flex items-center h-full app__container px-[48px] py-10"
       >
         {/* Hero left */}
         <div className="relative flex flex-col gap-10 w-full  justify-center">
@@ -42,14 +42,14 @@ const Contact = () => {
 
           {/* Bottom - CTA */}
           {/* RHS */}
-          <div className="group w-fit bg-white py-3 px-6 rounded-md flex items-center relative cursor-pointer">
+          <div className="group w-fit bg-secondary py-3 px-6 rounded-md flex items-center relative cursor-pointer">
             {/* <div className="group w-fit  flex items-center relative cursor-pointer"> */}
-            <div className="text-secondary text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
+            <div className="text-white text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
               Get in touch
             </div>
             <div className="w-fit overflow-hidden flex items-center">
               <img
-                src={arrowRight}
+                src={arrowRightWhite}
                 alt="Arrow right"
                 className="hover-slide-in-top transition-all ease-linear"
               />

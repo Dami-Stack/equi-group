@@ -1,7 +1,7 @@
 import React from "react";
 import { heroImg, lifestyle } from "../assets/images";
 import { Icon } from "@iconify/react";
-import { arrowRight } from "../assets/icons";
+import { arrowRight, arrowRightWhite } from "../assets/icons";
 
 const Lifestyle = () => {
   // Inline style to set the background image
@@ -17,7 +17,7 @@ const Lifestyle = () => {
 
   return (
     <section
-      className="w-full bg-[#00bee0] dna__gradient text-white h-[calc(100vh-90px)] max-h-[620px] flex justify-center z-10"
+      className="w-full bg-[#00bee0] hero__gradient text-secondary h-[calc(100vh-90px)] max-h-[620px] flex justify-center z-10"
 
       //   style={headerStyle}
     >
@@ -44,14 +44,14 @@ const Lifestyle = () => {
 
           {/* Bottom - CTA */}
           {/* RHS */}
-          <div className="group w-fit bg-white py-3 px-6 rounded-md flex items-center relative cursor-pointer">
+          <div className="group w-fit bg-black py-3 px-6 rounded-md flex items-center relative cursor-pointer">
             {/* <div className="group w-fit  flex items-center relative cursor-pointer"> */}
-            <div className="text-secondary text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
+            <div className="text-white text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
               Learn more about us
             </div>
             <div className="w-fit overflow-hidden flex items-center">
               <img
-                src={arrowRight}
+                src={arrowRightWhite}
                 alt="Arrow right"
                 className="hover-slide-in-top transition-all ease-linear"
               />

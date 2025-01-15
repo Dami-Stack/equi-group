@@ -37,11 +37,11 @@ const Navbar = ({ nav }) => {
   return (
     <>
       <div
-        className={`sticky top-0 z-[100] h-[90px] ${
+        className={`sticky hero__gradient  top-0 z-[100] h-[90px] ${
           nav === "transparent" ? "bg-transparent" : "bg-white"
         }  w-full flex items-center justify-center border-b border-secondary`}
       >
-        <div className="h-full app__container w-full bg-white px-[48px] flex items-center justify-between ">
+        <div className="h-full app__container w-full bg-transparent px-[48px] flex items-center justify-between ">
           {/* LHS (LOGO) */}
           <div className="flex  items-center gap-10">
             {/* LHS (LOGO) */}
@@ -89,18 +89,18 @@ const Navbar = ({ nav }) => {
               className={`${
                 isActive
                   ? "b-20-24-600"
-                  : "text-secondary text-[16px] font-semibold"
-              } hover:text-primary-110 gap-2 w-fit cursor-pointer flex items-center relative text-left transition-all duration-200 ease-linear group`}
+                  : "text-white text-[16px] font-semibold"
+              } hover:text-secondary gap-2 w-fit cursor-pointer flex items-center relative text-left transition-all duration-200 ease-linear group`}
             >
               <div className=""> Contact</div>
 
               <div
-                className={`h-[2px] bg-primary-110 text-primary-110 w-[0px] group-hover:w-full rounded-[100px] absolute left-0 -bottom-[10px] transition-all duration-300 ease-linear`}
+                className={`h-[2px] bg-secondary text-secondary w-[0px] group-hover:w-full rounded-[100px] absolute left-0 -bottom-[10px] transition-all duration-300 ease-linear`}
               ></div>
             </div>
             <Icon
               icon={"lets-icons:world-2-light"}
-              className="cursor-pointer hover:text-primary-110 transition-all ease-in-out duration-300 w-7 h-7"
+              className="cursor-pointer text-white hover:text-secondary transition-all ease-in-out duration-300 w-7 h-7"
             />
           </div>
 
@@ -131,11 +131,11 @@ const NavbarLinkItem = ({ title, url, isActive }) => {
     <div
       className={`${
         isActive ? "b-20-24-600" : "text-secondary text-[16px] font-semibold"
-      } hover:text-primary-110 w-fit cursor-pointer flex items-center relative text-left transition-all duration-200 ease-linear group`}
+      } hover:text-white w-fit cursor-pointer flex items-center relative text-left transition-all duration-200 ease-linear group`}
     >
       <div className={`b-16-21-700`}>{title}</div>
       <div
-        className={`!h-[2px] bg-primary-110 text-primary-110 w-[0px] group-hover:w-full rounded-[100px] absolute left-0 -bottom-[10px] z-10 transition-all duration-300 ease-linear`}
+        className={`!h-[2px] bg-white text-white w-[0px] group-hover:w-full rounded-[100px] absolute left-0 -bottom-[10px] z-10 transition-all duration-300 ease-linear`}
       ></div>
     </div>
   );

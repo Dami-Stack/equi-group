@@ -17,14 +17,14 @@ const InfoBlock = () => {
 
   return (
     <section
-      className="w-full dna__gradient overflow-hidden bg-tertiary text-white h-[calc(100vh-90px)] max-h-[500px] flex justify-center z-10"
+      className="w-full hero__gradient overflow-hidden  text-secondary h-[calc(100vh-90px)] max-h-[500px] flex justify-center z-10"
 
       //   style={headerStyle}
     >
       {/* Main container */}
       <section
         id="hero"
-        className="w-full flex items-center h-full app__container px-[48px] py-10"
+        className="w-full flex  items-center h-full app__container px-[48px] py-10"
       >
         {/* Hero left */}
         <div className="relative flex flex-col gap-10 w-full  justify-center">

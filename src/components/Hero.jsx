@@ -1,7 +1,7 @@
 import React from "react";
 import { heroImg, heroImg2, heroImg3 } from "../assets/images";
 import { Icon } from "@iconify/react";
-import { arrowRight } from "../assets/icons";
+import { arrowRight, arrowRightWhite } from "../assets/icons";
 
 const Hero = () => {
   // Inline style to set the background image
@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full bg-white text-secondary h-[calc(100vh-90px)] max-h-[620px] flex justify-center z-10"
+      className="w-full bg-white hero__gradient text-secondary h-[calc(100vh-90px)] max-h-[620px] flex justify-center z-10"
 
       //   style={headerStyle}
     >
@@ -42,14 +42,14 @@ const Hero = () => {
 
           {/* Bottom - CTA */}
           {/* RHS */}
-          <div className="group w-fit bg-primary py-3 px-6 rounded-md flex items-center relative cursor-pointer">
+          <div className="group w-fit bg-secondary py-3 px-6 rounded-md flex items-center relative cursor-pointer">
             {/* <div className="group w-fit  flex items-center relative cursor-pointer"> */}
-            <div className="text-secondary text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
+            <div className="text-white text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
               Learn more
             </div>
             <div className="w-fit overflow-hidden flex items-center">
               <img
-                src={arrowRight}
+                src={arrowRightWhite}
                 alt="Arrow right"
                 className="hover-slide-in-top transition-all ease-linear"
               />
