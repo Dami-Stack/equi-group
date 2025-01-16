@@ -51,6 +51,7 @@
   transition-timing-function: ease-in-out;
 }
 
+/* Animations */
 @keyframes slide-in-top {
   0% {
     transform: translateX(-100px);
@@ -62,6 +63,26 @@
     opacity: 1;
   }
 }
+
+@keyframes bounceAndTilt {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  40% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.bounce-tilt {
+  animation: bounceAndTilt 3s ease-in-out;
+  animation-iteration-count: 10; /* Runs for 3 iterations */
+}
+
+/* End of Animations */
 
 .hover-slide-in-top {
   animation: none; /* No animation by default */

@@ -31,14 +31,14 @@ const Home = () => {
       {/* Solutions Section */}
       <Solutions />
 
+      {/* Report */}
+      <RiskReport />
+
       {/* Lifestyle */}
       <Lifestyle />
 
       {/* Team */}
       <Team />
-
-      {/* Report */}
-      <RiskReport />
 
       {/* InfoBlock */}
       <InfoBlock />

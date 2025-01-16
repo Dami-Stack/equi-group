@@ -57,7 +57,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="absolute right-10 2xl:right-20">
+          <div className="absolute right-10 2xl:right-20 bounce-tilt">
             <img
               src={heroImg3}
               alt=""
