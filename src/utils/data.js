@@ -20,6 +20,42 @@ export const navbarData = [
   { title: "About Us", url: "/about", id: "aboutUs", type: "navDropdown" },
 ];
 
+export const subsidiaries = [
+  {
+    id: "nigeria",
+    title: "Nigeria",
+    url: null,
+    icon: "twemoji:flag-nigeria",
+    subsections: [
+      {
+        title: "Investment Banking",
+        url: "http://coretrustinvestmentltd.com",
+      },
+      {
+        title: "Corporate Banking",
+        url: "http://cititrustassetmgt.com",
+      },
+      {
+        title: "Capital Banking",
+        url: "http://atlassportfolios.com",
+      },
+    ],
+  },
+  {
+    id: "southAfrica",
+    title: "South Africa",
+    url: "http://equiserveafrica.co.za",
+    icon: "twemoji:flag-south-africa",
+  },
+
+  {
+    id: "unitedKingdom",
+    title: "United Kingdom",
+    url: "http://cititrustcapital.co.uk",
+    icon: "twemoji:flag-united-kingdom",
+  },
+];
+
 export const insights = [
   {
     id: 1,

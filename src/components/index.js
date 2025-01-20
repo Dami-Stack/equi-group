@@ -15,9 +15,11 @@ import Values from "./Values";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import RiskReport from "./RiskReport";
+import FAQCard from "./FAQCard";
 
 export {
   MobileMenu,
+  FAQCard,
   RiskReport,
   Footer,
   Contact,

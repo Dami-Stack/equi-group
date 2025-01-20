@@ -15,7 +15,7 @@ import {
 
 const Home = () => {
   return (
-    <div className="z-10 relative bg-white">
+    <div className="z-10 relative bg-white overflow-x-hidden">
       {/* Hero section */}
       <Hero />
 

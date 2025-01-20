@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full bg-white hero__gradient text-secondary h-[calc(100vh-90px)] max-h-[620px] flex justify-center z-10"
+      className="w-full overflow-x-hidden bg-white hero__gradient text-secondary h-[calc(100vh-90px)] max-h-[620px] flex justify-center z-10"
 
       //   style={headerStyle}
     >

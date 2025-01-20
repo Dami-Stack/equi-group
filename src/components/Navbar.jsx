@@ -1,12 +1,25 @@
 import React, { useEffect, useState } from "react";
-import { navbarData } from "../utils/data";
+import { navbarData, subsidiaries } from "../utils/data";
 import { Link, NavLink } from "react-router-dom";
 import { equiserveLogo } from "../assets/images";
+import { AnimatePresence, motion } from "framer-motion";
 import MobileMenu from "./MobileMenu";
 import { Icon } from "@iconify/react";
+import { searchNormal } from "../assets/icons";
+import FAQCard from "./FAQCard";
+import { h1 } from "framer-motion/client";
 
 const Navbar = ({ nav }) => {
   const isActive = false;
+
+  // Selected Subsidiary
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  // Subsidiary list
+  const [subsidiariesList, setSubsidiariesList] = useState(subsidiaries);
+
+  // Search menu visibility state
+  const [isSearchMenuOpen, setIsSearchMenuOpen] = useState(false);
 
   //   Handles mobile screen nav visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,9 +31,36 @@ const Navbar = ({ nav }) => {
     if (window.innerWidth >= toggleWidth) setIsMobileMenuOpen(false);
   };
 
+  // Function to handle the expansion and contraction of a section
+  const handleToggleSection = (item) => {
+    if (item?.id === selectedItem?.id) {
+      setSelectedItem(null);
+    } else {
+      setSelectedItem(item);
+    }
+  };
+  // End of unction to handle the expansion and contraction of a section
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  // Function to toggle search menu
+  const handleSearchMenuClick = () => {
+    // Set profile visibility state to true
+    setIsSearchMenuOpen(true);
+  };
+  // End of function to toggle search menu
+
+  // Close search menu menu
+  const closeSearchMenu = (e) => {
+    // Prevent event bubbling
+    e.stopPropagation();
+
+    // Set search menu visibility state to true
+    setIsSearchMenuOpen(false);
+  };
+  // End of function to close search menu
 
   //   Useffect to exit mobile screen mode
   useEffect(() => {
@@ -37,7 +77,7 @@ const Navbar = ({ nav }) => {
   return (
     <>
       <div
-        className={`sticky  top-0 z-[100] h-[90px] ${
+        className={`sticky  top-0 z-[100] h-[90px]   ${
           nav === "transparent" ? "bg-transparent" : "bg-white"
         }  w-full flex items-center justify-center border-b border-secondary`}
       >
@@ -98,10 +138,63 @@ const Navbar = ({ nav }) => {
                 className={`h-[2px] bg-primary-110 text-primary-110 w-[0px] group-hover:w-full rounded-[100px] absolute left-0 -bottom-[10px] transition-all duration-300 ease-linear`}
               ></div>
             </div>
-            <Icon
-              icon={"lets-icons:world-2-light"}
-              className="cursor-pointer text-secondary hover:text-primary-110 transition-all ease-in-out duration-300 w-7 h-7"
-            />
+            <div className="relative">
+              <Icon
+                onClick={handleSearchMenuClick}
+                icon={"lets-icons:world-2-light"}
+                className="cursor-pointer text-secondary hover:text-primary-110 transition-all ease-in-out duration-300 w-7 h-7"
+              />
+
+              <SearchMenu
+                closeSearchMenu={(e) => closeSearchMenu(e)}
+                isSearchMenuOpen={isSearchMenuOpen}
+              >
+                <div className="flex items-center justify-center w-full h-[370px]  flex-col gap-[1px] ">
+                  {/* Top - */}
+                  <div className="w-full px-[14px] pt-4 pb-5 bg-white">
+                    <div className="text-sm font-semibold !text-primary-110 leading-6">
+                      Current Subsidiary
+                    </div>
+                    <div className="font-medium text-md  text-secondary flex mt-0">
+                      <div className="flex gap-2 items-center">
+                        <Icon icon="twemoji:flag-nigeria" className="w-5 h-5" />{" "}
+                        <span>Nigeria - </span>
+                      </div>
+                      <div className="">&nbsp;Equiserve</div>
+                    </div>
+                  </div>
+
+                  {/* Bottom */}
+                  <div className="w-full flex flex-col bg-white flex-1  h-full px-[14px] pt-4 pb-5 overflow-auto">
+                    {/* Search Input */}
+                    <div className="mb-6 h-[44px] flex items-center justify-center px-4 gap-[10px] w-full focus-within:ring-primary ring-transparent ring-2 ring-offset-2   border border-neutral-20 rounded-[8px]">
+                      <img src={searchNormal} alt="lens" className="w-5 h-5" />
+                      <input
+                        type="text"
+                        placeholder={"Find Subsidiary"}
+                        className="h-full flex-1 text-sm text-gray-400 outline-none border-none bg-transparent"
+                      />
+                    </div>
+                    <div className="overflow-auto h-[calc(100%-68px)]">
+                      {/* Subsidiaries */}
+                      {subsidiariesList?.map((subsidiary) => {
+                        return (
+                          <FAQCard
+                            key={subsidiary?.id}
+                            icon={subsidiary?.icon}
+                            subsidiary={subsidiary}
+                            title={subsidiary?.title}
+                            selectedItem={selectedItem}
+                            handleToggleSection={handleToggleSection}
+                            hasSubSections={subsidiary?.subsections}
+                          />
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              </SearchMenu>
+            </div>
           </div>
 
           {/* HAMBURGER MENU */}
@@ -138,5 +231,32 @@ const NavbarLinkItem = ({ title, url, isActive }) => {
         className={`!h-[2px] bg-primary-110 text-primary-110 w-[0px] group-hover:w-full rounded-[100px] absolute left-0 -bottom-[10px] z-10 transition-all duration-300 ease-linear`}
       ></div>
     </div>
+  );
+};
+
+const SearchMenu = ({ isSearchMenuOpen, closeSearchMenu, children }) => {
+  return (
+    <AnimatePresence>
+      {isSearchMenuOpen && (
+        <>
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 bg-black bg-opacity-20 z-[1000]"
+            onClick={closeSearchMenu}
+          ></div>
+
+          {/* Sliding Modal */}
+          <motion.div
+            className="z-[1000] absolute top-[60px] right-[0px] h-[370px] w-[292px] bg-transparent"
+            initial={{ x: "100%" }}
+            animate={{ x: "0%" }}
+            exit={{ x: "100%" }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            <div className="h-full w-full">{children}</div>
+          </motion.div>
+        </>
+      )}
+    </AnimatePresence>
   );
 };
