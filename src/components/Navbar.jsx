@@ -52,6 +52,16 @@ const Navbar = ({ nav }) => {
   };
   // End of function to toggle search menu
 
+  // Function to handle input change
+  const handleInputChange = (e) => {
+    const filteredSub = subsidiaries?.filter((subsidiary) =>
+      subsidiary?.title.toLowerCase()?.includes(e?.target?.value?.toLowerCase())
+    );
+
+    setSubsidiariesList(filteredSub);
+  };
+  // End of function to handle input change
+
   // Close search menu menu
   const closeSearchMenu = (e) => {
     // Prevent event bubbling
@@ -172,13 +182,13 @@ const Navbar = ({ nav }) => {
                       <input
                         type="text"
                         placeholder={"Find Subsidiary"}
+                        onChange={(e) => handleInputChange(e)}
                         className="h-full flex-1 text-sm text-gray-400 outline-none border-none bg-transparent"
                       />
                     </div>
                     <div className="overflow-auto h-[calc(100%-68px)]">
-                      {/* Subsidiaries */}
-                      {subsidiariesList?.map((subsidiary) => {
-                        return (
+                      {subsidiariesList?.length > 0 ? (
+                        subsidiariesList.map((subsidiary) => (
                           <FAQCard
                             key={subsidiary?.id}
                             icon={subsidiary?.icon}
@@ -187,9 +197,19 @@ const Navbar = ({ nav }) => {
                             selectedItem={selectedItem}
                             handleToggleSection={handleToggleSection}
                             hasSubSections={subsidiary?.subsections}
+                            subsections={subsidiary?.subsections}
                           />
-                        );
-                      })}
+                        ))
+                      ) : (
+                        <div className="flex flex-col items-center justify-center h-full text-center p-4">
+                          <p className="text-gray-700 text-lg">
+                            No matching items found
+                          </p>
+                          <p className="text-gray-400 text-sm">
+                            Try adjusting your search term
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

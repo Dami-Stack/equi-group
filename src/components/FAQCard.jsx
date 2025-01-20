@@ -1,20 +1,22 @@
 import React from "react";
 import { addCircle } from "../assets/icons";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 const FAQCard = ({
   selectedItem,
   id,
   handleToggleSection,
-  answer,
   hasSubSections,
   subsidiary,
   icon,
+  subsections,
   title,
 }) => {
+  console.log(subsidiary);
   return (
     <div
-      className={`cursor-pointer  border-b-[1px] border-neutral-20  w-full h-[60px]  flex flex-col justify-center`}
+      className={`cursor-pointer  border-b-[1px] border-neutral-20 min-h-[60px]  w-full  flex flex-col justify-center`}
     >
       <div
         className={`${
@@ -41,11 +43,24 @@ const FAQCard = ({
         )}
       </div>
       <div
-        className={`${
+        className={` text-secondary b_18_14-25-400  ease-in-out ${
           selectedItem?.id === id ? "h-auto opacity-100" : "h-0 opacity-0"
-        } text-textColor-85 b_18_14-25-400  ease-in-out  duration-300 transition-all overflow-hidden `}
+        }  duration-300 transition-all overflow-hidden `}
       >
-        {answer}
+        {subsections?.map((subsection) => {
+          return (
+            <Link
+              to={subsection?.url}
+              target="_blank"
+              className={`text-[#515861] hover:bg-[#e7e19d] h-[40px] flex items-center pl-8  `}
+            >
+              {subsection?.title}{" "}
+              <span>
+                <Icon icon={"lets-icons:external"} className="ml-2" />{" "}
+              </span>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );
