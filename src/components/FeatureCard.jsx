@@ -13,7 +13,7 @@ const FeatureCard = ({
   titleStyle,
 }) => {
   return (
-    <div class="min-w-[32%] max-w-[370px] h-fit flex flex-col bg-white  overflow-hidden">
+    <div class="min-w-[45%] max-w-[650px] md:flex-1 xl:min-w-[32%] xl:max-w-[370px] h-fit flex flex-col bg-white  overflow-hidden">
       {/* <!-- Card Image --> */}
       <div className="h-[250px] w-full overflow-hidden bg-black">
         <img
@@ -36,7 +36,7 @@ const FeatureCard = ({
         </h3>
 
         {/* <!-- Description --> */}
-        <p class="text-sm h-[72px] text-secondary leading-6 line-clamp-4 mb-12">
+        <p class="text-sm h-[72px] text-secondary leading-6 line-clamp-4 md:mb-3 lg:mb-12">
           {content}
         </p>
 

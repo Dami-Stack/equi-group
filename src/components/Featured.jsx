@@ -6,12 +6,12 @@ const Featured = () => {
   return (
     <section className="flex justify-center">
       {/* Main container */}
-      <section id="hero" className="w-full app__container  px-[48px]">
+      <section id="hero" className="w-full app__container px-5  lg:px-[48px]">
         {/* Title */}
         <div className="font-bold text-[20px] mb-10">Featured Insights</div>
 
         {/* Feature items container */}
-        <div className="w-full flex gap-5 gap-y-10 flex-wrap">
+        <div className="w-full flex gap-5 gap-y-10 flex-wrap justify-center">
           {insights?.map((insight) => {
             const { content, date, id, imgUrl, link, title } = insight;
             return (
