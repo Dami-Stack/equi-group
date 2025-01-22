@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Contact,
+  Disclaimer,
   Divider,
   Featured,
   Hero,
@@ -48,6 +49,9 @@ const Home = () => {
 
       {/* Contact */}
       <Contact />
+
+      {/* Disclaimer */}
+      <Disclaimer />
     </div>
   );
 };

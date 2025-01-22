@@ -16,9 +16,11 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import RiskReport from "./RiskReport";
 import FAQCard from "./FAQCard";
+import Disclaimer from "./Disclaimer";
 
 export {
   MobileMenu,
+  Disclaimer,
   FAQCard,
   RiskReport,
   Footer,
