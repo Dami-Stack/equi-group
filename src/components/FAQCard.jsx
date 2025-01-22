@@ -12,11 +12,11 @@ const FAQCard = ({
   icon,
   subsections,
   title,
+  containerStyle,
 }) => {
-  console.log(subsidiary);
   return (
     <div
-      className={`cursor-pointer  border-b-[1px] border-neutral-20 min-h-[60px]  w-full  flex flex-col justify-center`}
+      className={`cursor-pointer border-b-[1px] ${containerStyle} border-neutral-20 min-h-[60px]  w-full  flex flex-col justify-center`}
     >
       <div
         className={`${

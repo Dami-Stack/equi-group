@@ -5,7 +5,7 @@ import { equiserveLogo } from "../assets/images";
 import { AnimatePresence, motion } from "framer-motion";
 import MobileMenu from "./MobileMenu";
 import { Icon } from "@iconify/react";
-import { searchNormal } from "../assets/icons";
+import { analytics, searchNormal } from "../assets/icons";
 import FAQCard from "./FAQCard";
 import { h1 } from "framer-motion/client";
 
@@ -91,7 +91,7 @@ const Navbar = ({ nav }) => {
           nav === "transparent" ? "bg-transparent" : "bg-white"
         }  w-full flex items-center justify-center border-b border-secondary`}
       >
-        <div className="h-full app__container w-full bg-transparent px-[48px] flex items-center justify-between ">
+        <div className="h-full app__container w-full bg-transparent px-5 lg:px-[48px] flex items-center justify-between ">
           {/* LHS (LOGO) */}
           <div className="flex  items-center gap-10">
             {/* LHS (LOGO) */}
@@ -99,7 +99,7 @@ const Navbar = ({ nav }) => {
               <img
                 src={equiserveLogo}
                 alt="Logo"
-                className="w-[88px] xl:w-[140px]"
+                className="w-[120px] xl:w-[140px]"
               />
             </Link>
 
@@ -134,7 +134,7 @@ const Navbar = ({ nav }) => {
           </div>
 
           {/* RHS */}
-          <div className="flex gap-5">
+          <div className="hidden lg:flex gap-5">
             <div
               className={`${
                 isActive
@@ -198,6 +198,7 @@ const Navbar = ({ nav }) => {
                             handleToggleSection={handleToggleSection}
                             hasSubSections={subsidiary?.subsections}
                             subsections={subsidiary?.subsections}
+                            id={subsidiary?.id}
                           />
                         ))
                       ) : (
@@ -219,9 +220,9 @@ const Navbar = ({ nav }) => {
 
           {/* HAMBURGER MENU */}
           <img
-            src={equiserveLogo}
+            src={analytics}
             alt="menu"
-            className="xl:hidden cursor-pointer"
+            className="lg:hidden cursor-pointer rotate-90 h-[30px]"
             onClick={toggleMobileMenu}
           />
         </div>
@@ -229,6 +230,8 @@ const Navbar = ({ nav }) => {
 
       <MobileMenu
         isOpen={isMobileMenuOpen}
+        handleInputChange={handleInputChange}
+        subsidiariesList={subsidiariesList}
         toggleMenu={toggleMobileMenu}
         navbarData={navbarData}
       />

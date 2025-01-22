@@ -14,10 +14,126 @@ export const navbarData = [
     url: "/solutions",
     id: "solutions",
     type: "navDropdown",
+    subsections: [
+      {
+        title: "Investment Banking",
+        url: "http://coretrustinvestmentltd.com",
+      },
+      {
+        title: "Corporate Banking",
+        url: "http://cititrustassetmgt.com",
+      },
+      {
+        title: "Capital Banking",
+        url: "http://atlassportfolios.com",
+      },
+    ],
   },
-  { title: "Insights", url: "/insights", id: "insights", type: "navDropdown" },
+  {
+    title: "Insights",
+    url: "/insights",
+    id: "insights",
+    type: "navDropdown",
+    subsections: [
+      {
+        title: "Investment Banking",
+        url: "http://coretrustinvestmentltd.com",
+      },
+      {
+        title: "Corporate Banking",
+        url: "http://cititrustassetmgt.com",
+      },
+      {
+        title: "Capital Banking",
+        url: "http://atlassportfolios.com",
+      },
+    ],
+  },
   { title: "Careers", url: "/careers", id: "careers", type: "link" },
-  { title: "About Us", url: "/about", id: "aboutUs", type: "navDropdown" },
+  {
+    title: "About Us",
+    url: "/about",
+    id: "aboutUs",
+    type: "navDropdown",
+    subsections: [
+      {
+        title: "Investment Banking",
+        url: "http://coretrustinvestmentltd.com",
+      },
+      {
+        title: "Corporate Banking",
+        url: "http://cititrustassetmgt.com",
+      },
+      {
+        title: "Capital Banking",
+        url: "http://atlassportfolios.com",
+      },
+    ],
+  },
+];
+
+export const miniNavbarData = [
+  {
+    title: "Solutions",
+    url: "/solutions",
+    id: "solutions",
+    type: "navDropdown",
+    subsections: [
+      {
+        title: "Investment Banking",
+        url: "http://coretrustinvestmentltd.com",
+      },
+      {
+        title: "Corporate Banking",
+        url: "http://cititrustassetmgt.com",
+      },
+      {
+        title: "Capital Banking",
+        url: "http://atlassportfolios.com",
+      },
+    ],
+  },
+  {
+    title: "Insights",
+    url: "/insights",
+    id: "insights",
+    type: "navDropdown",
+    subsections: [
+      {
+        title: "Investment Banking",
+        url: "http://coretrustinvestmentltd.com",
+      },
+      {
+        title: "Corporate Banking",
+        url: "http://cititrustassetmgt.com",
+      },
+      {
+        title: "Capital Banking",
+        url: "http://atlassportfolios.com",
+      },
+    ],
+  },
+  { title: "Careers", url: "/careers", id: "careers", type: "link" },
+  {
+    title: "About Us",
+    url: "/about",
+    id: "aboutUs",
+    type: "navDropdown",
+    subsections: [
+      {
+        title: "Investment Banking",
+        url: "http://coretrustinvestmentltd.com",
+      },
+      {
+        title: "Corporate Banking",
+        url: "http://cititrustassetmgt.com",
+      },
+      {
+        title: "Capital Banking",
+        url: "http://atlassportfolios.com",
+      },
+    ],
+  },
 ];
 
 export const subsidiaries = [
