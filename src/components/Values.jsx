@@ -6,12 +6,12 @@ const Values = () => {
   return (
     <section className="flex justify-center mt-[32px]">
       {/* Main container */}
-      <section id="hero" className="w-full app__container  px-[48px]">
+      <section id="hero" className="w-full app__container px-5 lg:px-[48px]">
         {/* Title */}
         <div className="font-bold text-[20px] mb-3">Our values</div>
 
         {/* Info */}
-        <div className="font-normal text-[16px] mb-10 w-[60%]">
+        <div className="font-normal text-[16px] mb-10 w-full lg:w-[60%]">
           Our values reflect who we are and support our mission of building
           brighter futures by finding new and better ways to help our clients,
           colleagues and communities thrive.

@@ -17,24 +17,24 @@ const Contact = () => {
 
   return (
     <section
-      className="w-full bg-[#00bee0] hero__gradient text-white h-[calc(100vh-90px)] max-h-[620px] flex justify-center z-10 overflow-hidden"
+      className="w-full bg-[#00bee0] hero__gradient text-white h-auto lg:h-[calc(100vh-90px)] lg:max-h-[620px] flex justify-center z-10 overflow-hidden"
 
       //   style={headerStyle}
     >
       {/* Main container */}
       <section
         id="hero"
-        className="w-full text-secondary flex items-center h-full app__container px-[48px] py-10"
+        className="w-full text-secondary flex items-center h-full app__container px-5 lg:px-[48px] py-10"
       >
         {/* Hero left */}
         <div className="relative flex flex-col gap-10 w-full  justify-center">
           {/* top - (Title and Sub title) */}
           <div className="flex flex-col justify-center items-start">
-            <div className=" font-bold  text-[50px] leading-[56px] text-left">
+            <div className=" font-bold  text-[36px] sm:text-[42px] xl:text-[50px] leading-[40px] sm:leading-[48px] lg:leading-[56px] text-left">
               Let's talk
             </div>
 
-            <div className="my-5 font-bold text-[20px]  md:text-left text-left w-full ">
+            <div className="my-5 text-[16px] sm:text-[20px] font-bold md:text-left text-left w-full ">
               Tell us your needs and our consultants will guide <br /> providing
               you down the right path.
             </div>
@@ -57,7 +57,7 @@ const Contact = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="absolute -top-[50px] -right-20 rounded-xl overflow-hidden">
+          <div className="flex justify-center lg:absolute -top-[50px] -right-20 rounded-xl overflow-hidden">
             <img src={contact} alt="" className="" />
           </div>
         </div>
