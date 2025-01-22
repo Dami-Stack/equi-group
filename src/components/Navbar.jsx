@@ -87,7 +87,7 @@ const Navbar = ({ nav }) => {
   return (
     <>
       <div
-        className={`sticky  top-0 z-[100] h-[90px]   ${
+        className={`sticky  top-0 z-[100] h-[65px] lg:h-[90px]   ${
           nav === "transparent" ? "bg-transparent" : "bg-white"
         }  w-full flex items-center justify-center border-b border-secondary`}
       >

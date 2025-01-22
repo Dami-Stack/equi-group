@@ -17,14 +17,14 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full overflow-x-hidden bg-white hero__gradient text-secondary h-[calc(100vh-90px)] max-h-[620px] flex justify-center z-10"
+      className="w-full overflow-hidden bg-white hero__gradient text-secondary h-auto lg:h-[100vh] lg:max-h-[620px] flex justify-center z-10"
 
       //   style={headerStyle}
     >
       {/* Main container */}
       <section
         id="hero"
-        className="w-full flex items-center h-full app__container px-[48px] py-10"
+        className="w-full flex items-center h-full app__container px-5 lg:px-[48px] py-10"
       >
         {/* Hero left */}
         <div className="relative flex flex-col gap-10 w-full  justify-center">
@@ -34,7 +34,7 @@ const Hero = () => {
               Invest in Africa's future.
             </div>
 
-            <div className=" font-bold  text-[50px] leading-[56px] text-left">
+            <div className=" font-bold  text-[36px] sm:text-[42px] xl:text-[50px] leading-[40px] sm:leading-[48px] lg:leading-[56px] text-left">
               Partner with EQUISERVE <br /> for sustainable finance <br />{" "}
               solutions.
             </div>
@@ -57,11 +57,11 @@ const Hero = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="absolute right-10 2xl:right-20 bounce-tilt">
+          <div className="flex sm:justify-center lg:absolute lg:right-[-20px] xl:right-10 2xl:right-20 bounce-tilt">
             <img
               src={heroImg3}
               alt=""
-              className="h-[400px] 2xl:h-[500px] w-auto"
+              className="h-[300px] sm:h-[400px] 2xl:h-[500px] w-auto"
             />
           </div>
         </div>
