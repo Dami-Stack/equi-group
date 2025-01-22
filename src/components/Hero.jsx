@@ -34,7 +34,7 @@ const Hero = () => {
               Invest in Africa's future.
             </div>
 
-            <div className=" font-bold  text-[36px] sm:text-[42px] xl:text-[50px] leading-[40px] sm:leading-[48px] lg:leading-[56px] text-left">
+            <div className=" font-bold  text-[36px] sm:text-[42px] xl:text-[50px] leading-[46px] sm:leading-[48px] lg:leading-[56px] text-left">
               Partner with EQUISERVE <br /> for sustainable finance <br />{" "}
               solutions.
             </div>

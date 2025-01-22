@@ -17,24 +17,24 @@ const Lifestyle = () => {
 
   return (
     <section
-      className="w-full bg-[#00bee0] hero__gradient text-secondary h-[calc(100vh-90px)] max-h-[620px] flex justify-center z-10"
+      className="w-full bg-[#00bee0] hero__gradient text-secondary h-auto md:h-[calc(100vh-90px)] md:max-h-[620px] flex justify-center z-10"
 
       //   style={headerStyle}
     >
       {/* Main container */}
       <section
         id="hero"
-        className="w-full flex items-center h-full app__container px-[48px] py-10"
+        className="w-full flex items-center h-full app__container px-5 lg:px-[48px] py-10"
       >
         {/* Hero left */}
-        <div className="relative flex flex-col gap-10 w-full  justify-center">
+        <div className="relative flex flex-col gap-4 md:gap-10 w-full  justify-center">
           {/* top - (Title and Sub title) */}
           <div className="flex flex-col justify-center items-start">
-            <div className=" font-bold  text-[50px] leading-[56px] text-left">
+            <div className=" font-bold  text-[36px] sm:text-[42px] xl:text-[50px] leading-[40px] sm:leading-[48px] lg:leading-[56px] text-left">
               Life at Equiserve
             </div>
 
-            <div className="my-5 font-bold text-[20px]  md:text-left text-left w-full ">
+            <div className="md:w-[60%] lg:w-full my-5 font-bold text-[16px] sm:text-[20px]  md:text-left text-left w-full ">
               We believe in building brighter futures — <br /> providing trusted
               advice and solutions, and building healthier <br /> and more
               sustainable outcomes for our clients, <br /> colleagues and
@@ -59,7 +59,7 @@ const Lifestyle = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="absolute right-20 rounded-xl overflow-hidden">
+          <div className="flex justify-center md:absolute right-0 lg:right-0 xl:right-20 rounded-xl overflow-hidden">
             <img src={lifestyle} alt="" className="h-[450px] w-auto" />
           </div>
         </div>
