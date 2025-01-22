@@ -20,11 +20,11 @@ export const navbarData = [
         url: "http://coretrustinvestmentltd.com",
       },
       {
-        title: "Corporate Banking",
+        title: "Investment Management",
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Capital Banking",
+        title: "Security Tradings",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -40,11 +40,11 @@ export const navbarData = [
         url: "http://coretrustinvestmentltd.com",
       },
       {
-        title: "Corporate Banking",
+        title: "Investment Management",
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Capital Banking",
+        title: "Security Tradings",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -61,11 +61,11 @@ export const navbarData = [
         url: "http://coretrustinvestmentltd.com",
       },
       {
-        title: "Corporate Banking",
+        title: "Investment Management",
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Capital Banking",
+        title: "Security Tradings",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -85,11 +85,11 @@ export const miniNavbarData = [
         url: "http://coretrustinvestmentltd.com",
       },
       {
-        title: "Corporate Banking",
+        title: "Investment Management",
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Capital Banking",
+        title: "Security Tradings",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -106,11 +106,11 @@ export const miniNavbarData = [
         url: "http://coretrustinvestmentltd.com",
       },
       {
-        title: "Corporate Banking",
+        title: "Investment Management",
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Capital Banking",
+        title: "Security Tradings",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -128,11 +128,11 @@ export const miniNavbarData = [
         url: "http://coretrustinvestmentltd.com",
       },
       {
-        title: "Corporate Banking",
+        title: "Investment Management",
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Capital Banking",
+        title: "Security Tradings",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -151,11 +151,11 @@ export const subsidiaries = [
         url: "http://coretrustinvestmentltd.com",
       },
       {
-        title: "Corporate Banking",
+        title: "Investment Management",
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Capital Banking",
+        title: "Security Tradings",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -297,7 +297,7 @@ export const productsAndServicesArray = [
     id: 2,
     imgUrl:
       "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Corporate Banking",
+    title: "Investment Management",
     link: "#corporateBanking",
     header:
       "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
@@ -308,7 +308,7 @@ export const productsAndServicesArray = [
     id: 3,
     imgUrl:
       "https://images.pexels.com/photos/887845/pexels-photo-887845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Capital Banking",
+    title: "Security Tradings",
     header:
       "Empowering your business with strategic capital solutions for sustainable growth.",
     link: "#capitalBanking",
@@ -319,7 +319,7 @@ export const productsAndServicesArray = [
     id: 2,
     imgUrl:
       "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Corporate Banking",
+    title: "Investment Management",
     link: "#corporateBanking",
     header:
       "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
@@ -330,7 +330,7 @@ export const productsAndServicesArray = [
     id: 3,
     imgUrl:
       "https://images.pexels.com/photos/887845/pexels-photo-887845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Capital Banking",
+    title: "Security Tradings",
     header:
       "Empowering your business with strategic capital solutions for sustainable growth.",
     link: "#capitalBanking",

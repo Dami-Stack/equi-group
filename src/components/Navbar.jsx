@@ -270,7 +270,7 @@ const SearchMenu = ({ isSearchMenuOpen, closeSearchMenu, children }) => {
 
           {/* Sliding Modal */}
           <motion.div
-            className="z-[1000] absolute top-[60px] right-[0px] h-[370px] w-[292px] bg-transparent"
+            className="z-[1000] absolute top-[60px] right-[0px] h-[370px] w-[320px] bg-transparent"
             initial={{ x: "100%" }}
             animate={{ x: "0%" }}
             exit={{ x: "100%" }}
