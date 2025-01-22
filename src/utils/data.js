@@ -77,7 +77,8 @@ export const miniNavbarData = [
     title: "Solutions",
     url: "/solutions",
     id: "solutions",
-    type: "navDropdown",
+    // type: "navDropdown",
+    type: "link",
     subsections: [
       {
         title: "Investment Banking",
@@ -97,7 +98,8 @@ export const miniNavbarData = [
     title: "Insights",
     url: "/insights",
     id: "insights",
-    type: "navDropdown",
+    // type: "navDropdown",
+    type: "link",
     subsections: [
       {
         title: "Investment Banking",
@@ -118,7 +120,8 @@ export const miniNavbarData = [
     title: "About Us",
     url: "/about",
     id: "aboutUs",
-    type: "navDropdown",
+    // type: "navDropdown",
+    type: "link",
     subsections: [
       {
         title: "Investment Banking",

@@ -16,6 +16,9 @@ const MobileMenu = ({
   // Selected Subsidiary
   const [selectedItem, setSelectedItem] = useState(null);
 
+  // Selected Sub-Subsidiary
+  const [selectedSubItem, setSelectedSubItem] = useState(null);
+
   // Function to handle the expansion and contraction of a section
   const handleToggleSection = (item) => {
     if (item?.id === selectedItem?.id) {
@@ -25,6 +28,16 @@ const MobileMenu = ({
     }
   };
   // End of unction to handle the expansion and contraction of a section
+
+  // Function to handle the expansion and contraction of a sub section
+  const handleToggleSubSection = (item) => {
+    if (item?.id === selectedSubItem?.id) {
+      setSelectedSubItem(null);
+    } else {
+      setSelectedSubItem(item);
+    }
+  };
+  // End of unction to handle the expansion and contraction of a sub  section
 
   return (
     <div
@@ -80,7 +93,7 @@ const MobileMenu = ({
           )
         )}
         <div
-          className={`cursor-pointer border-b-[1px]  border-b-[#000] min-h-[60px]  w-full  flex flex-col justify-center`}
+          className={`cursor-pointer border-b-[1px]   border-b-[#000] min-h-[60px]  w-full  flex flex-col justify-center`}
         >
           <div
             className={`${
@@ -112,10 +125,10 @@ const MobileMenu = ({
                 : "h-0 opacity-0"
             }  duration-300 transition-all overflow-hidden `}
           >
-            <div className="flex items-center justify-center w-full h-[370px]  flex-col gap-[1px] ">
+            <div className="flex items-center justify-center w-full   flex-col gap-[1px] ">
               {/* Top - */}
-              <div className="w-full px-[14px] pt-4 pb-5 bg-white">
-                <div className="text-sm font-semibold !text-primary-110 leading-6">
+              <div className="w-full px-[14px] pt-4 pb-5 bg-primary">
+                <div className="text-sm font-semibold text-white leading-6">
                   Current Subsidiary
                 </div>
                 <div className="font-medium text-md  text-secondary flex mt-0">
@@ -147,8 +160,8 @@ const MobileMenu = ({
                         icon={subsidiary?.icon}
                         subsidiary={subsidiary}
                         title={subsidiary?.title}
-                        selectedItem={selectedItem}
-                        handleToggleSection={handleToggleSection}
+                        selectedItem={selectedSubItem}
+                        handleToggleSection={handleToggleSubSection}
                         hasSubSections={subsidiary?.subsections}
                         subsections={subsidiary?.subsections}
                         id={subsidiary?.id}
@@ -170,21 +183,6 @@ const MobileMenu = ({
           </div>
         </div>
       </ul>
-
-      {/* BOTTOM (AUTH ACTIONS) */}
-      {/* <div className="flex flex-col gap-[10px] items-center w-full  px-5 mt-12">
-        <Button variant="outlined" size="medium" width="w-full" href="/login">
-          Sign In
-        </Button>
-        <Button
-          variant="contained"
-          size="medium"
-          width="w-full"
-          href="/register"
-        >
-          Register
-        </Button>
-      </div> */}
     </div>
   );
 };
