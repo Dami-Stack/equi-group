@@ -14,9 +14,9 @@ const SolutionsCard = ({
   hideArrow,
 }) => {
   return (
-    <div class="min-w-[32%] max-w-[370px] h-fit flex flex-col bg-white  overflow-hidden">
+    <div class="min-w-[250px] lg:min-w-[32%] max-w-[370px] h-fit flex flex-col bg-white  overflow-hidden">
       {/* <!-- Card Image --> */}
-      <div className="mx-auto h-[300px] w-[300px] overflow-hidden bg-black rounded-full">
+      <div className="mx-auto h-[250px] lg:h-[300px] w-[250px] lg:w-[300px] overflow-hidden bg-black rounded-full">
         <img
           src={imgUrl}
           alt="Card Image"

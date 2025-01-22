@@ -36,7 +36,7 @@ const FeatureCard = ({
         </h3>
 
         {/* <!-- Description --> */}
-        <p class="text-sm h-[72px] text-secondary leading-6 line-clamp-4 md:mb-3 lg:mb-12">
+        <p class="text-sm h-[72px] text-secondary leading-6 line-clamp-4 mb-3 lg:mb-12">
           {content}
         </p>
 

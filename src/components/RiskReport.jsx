@@ -13,9 +13,9 @@ const RiskReport = () => {
       {/* Main container */}
       <section
         id="hero"
-        className="w-full py-10   flex items-center h-auto app__container px-[48px] gap-[60px]"
+        className="w-full py-10   flex items-center h-auto app__container px-5 lg:px-[48px] gap-[30px] lg:gap-[60px]"
       >
-        <div className="rounded-md h-[272px] ml-[120px] min-w-[204px] overflow-hidden shadow-2xl">
+        <div className="hidden md:block rounded-md h-[272px] lg:ml-[120px] min-w-[204px] overflow-hidden shadow-2xl">
           <img
             src={report}
             alt="Report"
@@ -28,7 +28,7 @@ const RiskReport = () => {
             <div className="text-3xl font-semibold text-primary-110 my-3">
               People risk report
             </div>
-            <div className="font-medium text-lg">
+            <div className="font-medium text-lg mb-3 lg:mb-0">
               Get insights on the biggest people risks facing organisations{" "}
               <br /> today and how to mitigate these to create a more
               sustainable <br />

@@ -7,7 +7,7 @@ const Solutions = () => {
   return (
     <section className="flex justify-center">
       {/* Main container */}
-      <section id="hero" className="w-full app__container  px-[48px]">
+      <section id="hero" className="w-full app__container  px-5 lg:px-[48px]">
         {/* Title */}
         <div className="font-bold text-[20px] mb-10">Explore our solutions</div>
 
