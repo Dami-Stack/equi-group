@@ -16,7 +16,7 @@ const Disclaimer = () => {
         }}
       >
         <p className="text-sm">
-          Disclaimer: Equiserve Group serves as Asset holder for its distinct
+          Disclaimer: Equiserve Group serves as an asset holder for its distinct
           subsidiaries and do not produce any service on its own.
         </p>
         <button

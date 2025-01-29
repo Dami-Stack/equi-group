@@ -24,7 +24,7 @@ export const navbarData = [
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Security Tradings",
+        title: "Securities Trading",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -44,12 +44,12 @@ export const navbarData = [
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Security Tradings",
+        title: "Securities Trading",
         url: "http://atlassportfolios.com",
       },
     ],
   },
-  { title: "Careers", url: "/careers", id: "careers", type: "link" },
+  { title: "Careers", url: "/careers", id: "careers", type: "navDropdown" },
   {
     title: "About Us",
     url: "/about",
@@ -65,7 +65,7 @@ export const navbarData = [
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Security Tradings",
+        title: "Securities Trading",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -89,7 +89,7 @@ export const miniNavbarData = [
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Security Tradings",
+        title: "Securities Trading",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -110,7 +110,7 @@ export const miniNavbarData = [
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Security Tradings",
+        title: "Securities Trading",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -132,7 +132,7 @@ export const miniNavbarData = [
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Security Tradings",
+        title: "Securities Trading",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -155,7 +155,7 @@ export const subsidiaries = [
         url: "http://cititrustassetmgt.com",
       },
       {
-        title: "Security Tradings",
+        title: "Securities Trading",
         url: "http://atlassportfolios.com",
       },
     ],
@@ -179,65 +179,63 @@ export const insights = [
   {
     id: 1,
     imgUrl:
-      "https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title:
-      "Ethiopia’s biggest bank says it hashas recouped nearly 80% has recouped nearly 80%  recouped nearly 80% ...",
-    link: "https://www.africanews.com/2024/03/27/ethiopias-biggest-bank-says-it-has-recouped-most-of-the-cash-lost-during-a-system-glitch/",
+      "https://images.pexels.com/photos/186464/pexels-photo-186464.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Essentials to understanding stock market fundamentals",
+    link: "https://punchng.com/essentials-to-understanding-stock-market-fundamentals/",
     content:
-      "Nearly 15,000 people have voluntarily returned funds eitheir fully or partly “taken illegally,” the bank said in a statement.",
-    date: "28th of March, 2024",
+      "According to a report by Money Africa, the stock market is a collection of places and mediums through which investors can buy and sell...",
+    date: "22nd of January, 2025",
   },
   {
     id: 2,
     imgUrl:
       "https://images.pexels.com/photos/6262966/pexels-photo-6262966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Central bank of Nigeria raises interest",
-    link: "https://www.africanews.com/2024/03/27/central-bank-of-nigeria-raises-interest-rates-to-combat-soaring-inflation/",
+    title: "Should see IPOs returning to the market in the second half of 2025",
+    link: "https://www.cnbc.com/video/2025/01/09/should-see-successful-tech-ipos-in-the-second-half-of-2025-b-capital.html",
     content:
-      "Nigeria’s central bank implemented a significant increase in its monetary policy rate, raising it by 200 basis points to ...",
-    date: "27th of March, 2024",
+      "Raj Ganguly, Co-founder of B Capital explains why he’s bullish about the tech IPO outlook for 2025 and his optimism on three key Asian markets.",
+    date: "9th of January, 2025",
   },
   {
     id: 3,
     imgUrl:
-      "https://images.pexels.com/photos/14744117/pexels-photo-14744117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    // "https://images.pexels.com/photos/17855049/pexels-photo-17855049/free-photo-of-newspaper-in-hand-in-london-subway.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "FIFA Series: First-ever edition ends",
+      "https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title:
+      "Trump Media surges after expansion into financial services including crypto and ETFs",
     link: "https://www.africanews.com/2024/03/27/fifa-series-first-ever-edition-ends/",
     content:
-      "The FIFA Series which ended on March 26th consists of international friendly matches that are contested by national teams from all six ...",
-    date: "27th of March, 2024",
+      "Trump Media is expanding into financial services, including investment vehicles, the firm announced Wednesday.Shares of the Truth Social parent company, which trade under the ticker DJT, jumped ...",
+    date: "29th of January, 2025",
   },
-  {
-    id: 4,
-    imgUrl:
-      "https://images.pexels.com/photos/7841502/pexels-photo-7841502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "President Ruto signs Affordable Housing Bill into law",
-    link: "https://www.africanews.com/2024/03/19/president-ruto-signs-affordable-housing-bill-into-law/",
-    content:
-      "Kenya’s President William Ruto has signed into law a controversial bill, paving the way for the government to ...",
-    date: "19th of March, 2024",
-  },
+
   {
     id: 6,
     imgUrl:
       "https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title:
-      "Ethiopia’s biggest bank says it hashas recouped nearly 80% has recouped nearly 80%  recouped nearly 80% ...",
-    link: "https://www.africanews.com/2024/03/27/ethiopias-biggest-bank-says-it-has-recouped-most-of-the-cash-lost-during-a-system-glitch/",
+    title: "Stock market posts N167bn gain",
+    link: "https://punchng.com/stock-market-posts-n167bn-gain/",
     content:
-      "Nearly 15,000 people have voluntarily returned funds eitheir fully or partly “taken illegally,” the bank said in a statement.",
-    date: "28th of March, 2024",
+      "The day’s trading saw an increase in activity, with a total of 370,517,716 shares traded across 10,026 deals, reflecting an 11 per cent improvement in ...",
+    date: "21st of November, 2024",
   },
   {
     id: 5,
     imgUrl:
-      "https://images.pexels.com/photos/6262966/pexels-photo-6262966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Central bank of Nigeria raises interest",
-    link: "https://www.africanews.com/2024/03/27/central-bank-of-nigeria-raises-interest-rates-to-combat-soaring-inflation/",
+      "https://images.pexels.com/photos/5671470/pexels-photo-5671470.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Equity market gains N77bn, nears N60tn capitalisation",
+    link: "https://punchng.com/equity-market-gains-n77bn-nears-n60tn-capitalisation/",
     content:
-      "Nigeria’s central bank implemented a significant increase in its monetary policy rate, raising it by 200 basis points to ...",
-    date: "27th of March, 2024",
+      "The Nigerian equity market recorded a gain of N77bn in the past week, bringing the total market capitalisation closer to the anticipated ...",
+    date: "25th of November, 2024",
+  },
+  {
+    id: 4,
+    imgUrl:
+      "https://images.pexels.com/photos/14744117/pexels-photo-14744117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Why 'another level' Van Dijk 'surprised' Reds boss Slot",
+    link: "https://www.bbc.com/sport/football/articles/c70k1dn1dgxo",
+    content: "Why 'another level' Van Dijk 'surprised' Reds boss Slot",
+    date: "29th of January, 2025",
   },
 ];
 
@@ -308,29 +306,7 @@ export const productsAndServicesArray = [
     id: 3,
     imgUrl:
       "https://images.pexels.com/photos/887845/pexels-photo-887845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Security Tradings",
-    header:
-      "Empowering your business with strategic capital solutions for sustainable growth.",
-    link: "#capitalBanking",
-    content:
-      "Equiserve provides robust capital banking services, helping businesses secure the funding they need to thrive. Our expertise in capital markets and financing ensures that your enterprise has the resources necessary to capitalize on opportunities and achieve long-term success.",
-  },
-  {
-    id: 2,
-    imgUrl:
-      "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Investment Management",
-    link: "#corporateBanking",
-    header:
-      "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
-    content:
-      "At Equiserve, we offer customized corporate banking services designed to address the unique needs of your business. From working capital management to corporate financing, our solutions are tailored to enhance your operational efficiency and financial health.",
-  },
-  {
-    id: 3,
-    imgUrl:
-      "https://images.pexels.com/photos/887845/pexels-photo-887845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Security Tradings",
+    title: "Securities Trading",
     header:
       "Empowering your business with strategic capital solutions for sustainable growth.",
     link: "#capitalBanking",
@@ -371,10 +347,12 @@ export const footerLinks = [
   {
     title: "Navigations",
     links: [
-      { name: "Home", link: "/" },
-      { name: "About us", link: "/about" },
-      { name: "Investor relations", link: "/investorRelations" },
-      { name: "Careers", link: "#careers" },
+      { name: "Home", link: "#" },
+      // { name: "Home", link: "#" },
+      { name: "Solutions" },
+      { name: "Insights" },
+      { name: "About us" },
+      { name: "Careers" },
     ],
   },
 ];

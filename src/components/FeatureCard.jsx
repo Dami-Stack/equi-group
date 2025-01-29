@@ -29,11 +29,13 @@ const FeatureCard = ({
         {date && <p class="text-sm text-secondary leading-6 ">{date}</p>}
 
         {/* <!-- Title --> */}
-        <h3
+        <Link
+          to={link}
+          target="_blank"
           class={`text-lg cursor-pointer transition-all ease-in-out duration-200 hover:text-[#EB8317]  h-[56px] font-bold text-secondary mb-2 line-clamp-2 ${titleStyle}`}
         >
           {title}
-        </h3>
+        </Link>
 
         {/* <!-- Description --> */}
         <p class="text-sm h-[72px] text-secondary leading-6 line-clamp-4 mb-3 lg:mb-12">
@@ -42,7 +44,12 @@ const FeatureCard = ({
 
         {/* <!-- Footer with Button --> */}
         {!hideButton && (
-          <Button endIcon={arrowRight} size={"medium"}>
+          <Button
+            endIcon={arrowRight}
+            size={"medium"}
+            openInSamePage={false}
+            href={link}
+          >
             <div className="text-secondary text-sm font-semibold mr-4 group-hover:underline hover:underline-offset-2">
               Read more
             </div>
