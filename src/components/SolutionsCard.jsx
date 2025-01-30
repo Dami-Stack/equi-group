@@ -39,7 +39,7 @@ const SolutionsCard = ({
         </h3>
 
         {/* <!-- Description --> */}
-        <p class="text-sm h-[72px] text-secondary leading-6 line-clamp-4 mb-8">
+        <p class="text-sm h-[180px] lg:h-[120px] xl:h-[92px] text-secondary leading-6 xl:line-clamp-4 mb-8">
           {content}
         </p>
 
@@ -50,6 +50,7 @@ const SolutionsCard = ({
             width="!px-0"
             variant="text"
             size={"medium"}
+            href={"#"}
           ></Button>
         )}
       </div>

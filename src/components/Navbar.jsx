@@ -108,7 +108,7 @@ const Navbar = ({ nav }) => {
               {navbarData?.map(({ id, title, url, type }) => {
                 if (type === "link") {
                   return (
-                    <NavLink to={url}>
+                    <NavLink to={"/"}>
                       {({ isActive }) => (
                         <NavbarLinkItem
                           title={title}

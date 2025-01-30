@@ -13,7 +13,7 @@ export const navbarData = [
     title: "Solutions",
     url: "/solutions",
     id: "solutions",
-    type: "navDropdown",
+    type: "link",
     subsections: [
       {
         title: "Investment Banking",
@@ -33,7 +33,7 @@ export const navbarData = [
     title: "Insights",
     url: "/insights",
     id: "insights",
-    type: "navDropdown",
+    type: "link",
     subsections: [
       {
         title: "Investment Banking",
@@ -49,12 +49,13 @@ export const navbarData = [
       },
     ],
   },
-  { title: "Careers", url: "/careers", id: "careers", type: "navDropdown" },
+  { title: "Careers", url: "/careers", id: "careers", type: "link" },
+  // { title: "Careers", url: "/careers", id: "careers", type: "navDropdown" },
   {
     title: "About Us",
     url: "/about",
     id: "aboutUs",
-    type: "navDropdown",
+    type: "link",
     subsections: [
       {
         title: "Investment Banking",
@@ -144,33 +145,32 @@ export const subsidiaries = [
     title: "Nigeria",
     url: null,
     icon: "twemoji:flag-nigeria",
-    subsections: [
-      {
-        title: "Investment Banking",
-        url: "http://coretrustinvestmentltd.com",
-      },
-      {
-        title: "Investment Management",
-        url: "http://cititrustassetmgt.com",
-      },
-      {
-        title: "Securities Trading",
-        url: "http://atlassportfolios.com",
-      },
-    ],
   },
+  // {
+  //   id: "nigeria",
+  //   title: "Nigeria",
+  //   url: null,
+  //   icon: "twemoji:flag-nigeria",
+  //   subsections: [
+  //     {
+  //       title: "Investment Banking",
+  //       url: "http://coretrustinvestmentltd.com",
+  //     },
+  //     {
+  //       title: "Investment Management",
+  //       url: "http://cititrustassetmgt.com",
+  //     },
+  //     {
+  //       title: "Securities Trading",
+  //       url: "http://atlassportfolios.com",
+  //     },
+  //   ],
+  // },
   {
     id: "southAfrica",
     title: "South Africa",
     url: "http://equiserveafrica.co.za",
     icon: "twemoji:flag-south-africa",
-  },
-
-  {
-    id: "unitedKingdom",
-    title: "United Kingdom",
-    url: "http://cititrustcapital.co.uk",
-    icon: "twemoji:flag-united-kingdom",
   },
 ];
 
@@ -258,7 +258,7 @@ export const execs = [
     header: "Director",
     direction: "left",
     content:
-      "Yemi is an Investment Banker and has previously served as Group Chief Executive of CITITRUST Holdings Plc.",
+      "Yemi is an Investment Banker with a wide range of experience in Global Banking and Markets, Research, and Mergers and Acquisitions across Africa.",
     details2:
       "Yemi has over 23 years of commercial and investment banking experience and has been involved in listing and raising capital across Africa. He is a board member of various Investment firms and a bank in the UK, US, South Africa, and Nigeria.",
     details3:
@@ -270,7 +270,7 @@ export const execs = [
     header: "Director",
     imgUrl: leticia,
     content:
-      "Leticia is a Chartered Accountant and Tax Practitioner and is currently a senior consultant at Makosi LLP where she manages clients across Southern Africa and Pacific Asia dealing with more complex cycles of engagement",
+      "Leticia is a Chartered Accountant and Tax Practitioner and a senior consultant  managing clients across Southern Africa and Pacific Asia",
     details2:
       "Before joining Makosi LLP, she was a partner at Bentich Limited where she advised clients on Accounting Services ranging from the compilation of financial statements by IFRS and IFRS for SMEs, Tax related matters.",
     details3:
@@ -288,18 +288,18 @@ export const productsAndServicesArray = [
       "Delivering tailored financial advisory services to meet your strategic objectives.",
     link: "#investmentBanking",
     content:
-      "Equiserve is dedicated to providing expert investment banking solutions. Our team offers a range of services including mergers and acquisitions, capital raising, and strategic advisory, ensuring that your business achieves its financial goals.",
+      "Our investee firm is dedicated to providing expert investment banking solutions and offers a range of services including mergers and acquisitions, capital raising, and strategic advisory.",
   },
   {
     id: 2,
     imgUrl:
       "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Investment Management",
-    link: "#corporateBanking",
+    link: "#",
     header:
       "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
     content:
-      "At Equiserve, we offer customized corporate banking services designed to address the unique needs of your business. From working capital management to corporate financing, our solutions are tailored to enhance your operational efficiency and financial health.",
+      "Our Asset Management in Africa offers customized corporate banking, wealth, and fund management services designed to address the unique needs of both retail and corporate clients.",
   },
   {
     id: 3,
@@ -310,7 +310,7 @@ export const productsAndServicesArray = [
       "Empowering your business with strategic capital solutions for sustainable growth.",
     link: "#capitalBanking",
     content:
-      "Equiserve provides robust capital banking services, helping businesses secure the funding they need to thrive. Our expertise in capital markets and financing ensures that your enterprise has the resources necessary to capitalize on opportunities and achieve long-term success.",
+      "Our Trading subsidiary offers comprehensive capital markets services ranging from share trading (buy/sell), fixed income, and commodities trading. The firm also provides OTC trading and derivatives.",
   },
 ];
 
@@ -348,10 +348,10 @@ export const footerLinks = [
     links: [
       { name: "Home", link: "#" },
       // { name: "Home", link: "#" },
-      { name: "Solutions" },
-      { name: "Insights" },
-      { name: "About us" },
-      { name: "Careers" },
+      { name: "Solutions", link: "#" },
+      { name: "Insights", link: "#" },
+      { name: "About us", link: "#" },
+      { name: "Careers", link: "#" },
     ],
   },
 ];

@@ -35,8 +35,7 @@ const Contact = () => {
             </div>
 
             <div className="my-5 text-[16px] sm:text-[20px] font-bold md:text-left text-left w-full ">
-              Tell us your needs and our consultants will guide <br /> providing
-              you down the right path.
+              Do you want to have a chat on investment opportunities in Africa?
             </div>
           </div>
 
@@ -44,16 +43,18 @@ const Contact = () => {
           {/* RHS */}
           <div className="group w-fit bg-secondary py-3 px-6 rounded-md flex items-center relative cursor-pointer">
             {/* <div className="group w-fit  flex items-center relative cursor-pointer"> */}
-            <div className="text-white text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
-              Get in touch
-            </div>
-            <div className="w-fit overflow-hidden flex items-center">
-              <img
-                src={arrowRightWhite}
-                alt="Arrow right"
-                className="hover-slide-in-top transition-all ease-linear"
-              />
-            </div>
+            <a href={"#"} className="flex">
+              <div className="text-white text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
+                Get in touch
+              </div>
+              <div className="w-fit overflow-hidden flex items-center">
+                <img
+                  src={arrowRightWhite}
+                  alt="Arrow right"
+                  className="hover-slide-in-top transition-all ease-linear"
+                />
+              </div>
+            </a>
           </div>
 
           {/* Hero Image */}

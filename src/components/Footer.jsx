@@ -27,6 +27,10 @@ const Footer = () => {
               <span className="font-extrabold">Address:</span> 24 Old Bond
               Street Mayfair, London W1S 4AP United Kingdom
             </p>
+            <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
+              <span className="font-extrabold">Phone Number: </span> +44 (0) 330
+              13 317 04
+            </p>
             <div className="flex items-center gap-5 mt-8">
               {socialMedia?.map(({ src, link }, index) => {
                 return (

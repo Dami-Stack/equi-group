@@ -46,16 +46,18 @@ const Lifestyle = () => {
           {/* RHS */}
           <div className="group w-fit bg-black py-3 px-6 rounded-md flex items-center relative cursor-pointer">
             {/* <div className="group w-fit  flex items-center relative cursor-pointer"> */}
-            <div className="text-white text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
-              Learn more about us
-            </div>
-            <div className="w-fit overflow-hidden flex items-center">
-              <img
-                src={arrowRightWhite}
-                alt="Arrow right"
-                className="hover-slide-in-top transition-all ease-linear"
-              />
-            </div>
+            <a href={"#"} className="flex">
+              <div className="text-white text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
+                Learn more about us
+              </div>
+              <div className="w-fit overflow-hidden flex items-center">
+                <img
+                  src={arrowRightWhite}
+                  alt="Arrow right"
+                  className="hover-slide-in-top transition-all ease-linear"
+                />
+              </div>
+            </a>
           </div>
 
           {/* Hero Image */}

@@ -62,7 +62,9 @@ const MobileMenu = ({
         </li>
         {miniNavbarData.map((singleNavbarData, index) =>
           singleNavbarData?.type === "link" ? (
-            <div
+            <Link
+              onClick={toggleMenu}
+              to={"/"}
               className={
                 "w-full text-center border-b-[1px] border-b-[#000] h-[56px]"
               }
@@ -74,7 +76,7 @@ const MobileMenu = ({
               >
                 {singleNavbarData.title}
               </li>
-            </div>
+            </Link>
           ) : (
             <FAQCard
               key={singleNavbarData?.id}
