@@ -98,7 +98,6 @@ export const miniNavbarData = [
     title: "Insights",
     url: "/insights",
     id: "insights",
-    // type: "navDropdown",
     type: "link",
     subsections: [
       {
