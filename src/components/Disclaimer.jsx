@@ -16,8 +16,9 @@ const Disclaimer = () => {
         }}
       >
         <p className="text-sm">
-          Disclaimer: Equiserve Group serves as an asset holder for its distinct
-          subsidiaries and do not produce any service on its own.
+          Disclaimer: Equiserve Group Limited is a holding company that invests
+          in Banking, Investment Banking, Real Estate and Technology firms in
+          Africa. Equiserve Group Limited does not provide services on its own.
         </p>
         <button
           onClick={handleClose}

@@ -176,7 +176,39 @@ export const subsidiaries = [
 
 export const insights = [
   {
+    id: 3,
+    imgUrl:
+      "https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "South African central bank governor’s comments on rate decision",
+    link: "https://www.cnbcafrica.com/2025/south-african-central-bank-governors-comments-on-rate-decision-5/",
+    content:
+      "Moving to consumer prices, headline inflation averaged 4.4% last year, near the middle of our target range. Inflation slowed to 3% in December, having started the year above ...",
+    date: "30th of January, 2025",
+  },
+  {
+    id: 5,
+    imgUrl:
+      "https://images.pexels.com/photos/17614476/pexels-photo-17614476/free-photo-of-holding-a-smartphone-with-the-threads-app-with-the-meta-platforms-logo-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title:
+      "Zuckerberg says Meta won’t slow down AI spend despite DeepSeek’s breakthrough",
+    link: "https://www.cnbcafrica.com/2025/zuckerberg-says-meta-wont-slow-down-ai-spend-despite-deepseeks-breakthrough/",
+    content:
+      "Meta CEO Mark Zuckerberg on Wednesday said it’s too early to tell what impact DeepSeek’s breakthrough AI model will have on his company and the broader tech industry ...",
+    date: "30th of January, 2024",
+  },
+  {
     id: 1,
+    imgUrl:
+      "https://images.pexels.com/photos/1556704/pexels-photo-1556704.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title:
+      "Africa Energy Summit, leaders commit to energy transformation with more than $50billion backing from global partners",
+    link: "https://www.afdb.org/en/news-and-events/press-releases/africa-energy-summit-leaders-commit-energy-transformation-more-50billion-backing-global-partners-80515",
+    content:
+      "Thirty African Heads of State and government today committed to concrete reforms and actions to expand access to reliable, affordable, and ...",
+    date: "28th of January, 2025",
+  },
+  {
+    id: 4,
     imgUrl:
       "https://images.pexels.com/photos/186464/pexels-photo-186464.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Essentials to understanding stock market fundamentals",
@@ -186,39 +218,19 @@ export const insights = [
     date: "22nd of January, 2025",
   },
   {
-    id: 2,
+    id: 6,
     imgUrl:
-      "https://images.pexels.com/photos/6262966/pexels-photo-6262966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Should see IPOs returning to the market in the second half of 2025",
-    link: "https://www.cnbc.com/video/2025/01/09/should-see-successful-tech-ipos-in-the-second-half-of-2025-b-capital.html",
-    content:
-      "Raj Ganguly, Co-founder of B Capital explains why he’s bullish about the tech IPO outlook for 2025 and his optimism on three key Asian markets.",
-    date: "9th of January, 2025",
-  },
-  {
-    id: 3,
-    imgUrl:
-      "https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/5980743/pexels-photo-5980743.jpeg?auto=compress&cs=tinysrgb&w=600",
     title:
-      "Trump Media surges after expansion into financial services including crypto and ETFs",
-    link: "https://www.africanews.com/2024/03/27/fifa-series-first-ever-edition-ends/",
+      "Bitcoin soars past $109,000 ahead of possible early action on crypto by Trump",
+    link: "https://abcnews.go.com/amp/US/wireStory/bitcoin-soars-past-109000-ahead-early-action-crypto-117876442?cid=alerts_cryptocurrency",
     content:
-      "Trump Media is expanding into financial services, including investment vehicles, the firm announced Wednesday.Shares of the Truth Social parent company, which trade under the ticker DJT, jumped ...",
-    date: "29th of January, 2025",
+      "The price of bitcoin has surged to over $109,000 just hours ahead of President-elect Donald Trump's inauguration, as a pumped up cryptocurrency ...",
+    date: "20th of January, 2025",
   },
 
   {
-    id: 6,
-    imgUrl:
-      "https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Stock market posts N167bn gain",
-    link: "https://punchng.com/stock-market-posts-n167bn-gain/",
-    content:
-      "The day’s trading saw an increase in activity, with a total of 370,517,716 shares traded across 10,026 deals, reflecting an 11 per cent improvement in ...",
-    date: "21st of November, 2024",
-  },
-  {
-    id: 5,
+    id: 2,
     imgUrl:
       "https://images.pexels.com/photos/5671470/pexels-photo-5671470.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Equity market gains N77bn, nears N60tn capitalisation",
@@ -226,15 +238,6 @@ export const insights = [
     content:
       "The Nigerian equity market recorded a gain of N77bn in the past week, bringing the total market capitalisation closer to the anticipated ...",
     date: "25th of November, 2024",
-  },
-  {
-    id: 4,
-    imgUrl:
-      "https://images.pexels.com/photos/14744117/pexels-photo-14744117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Why 'another level' Van Dijk 'surprised' Reds boss Slot",
-    link: "https://www.bbc.com/sport/football/articles/c70k1dn1dgxo",
-    content: "Why 'another level' Van Dijk 'surprised' Reds boss Slot",
-    date: "29th of January, 2025",
   },
 ];
 
@@ -270,7 +273,7 @@ export const execs = [
     header: "Director",
     imgUrl: leticia,
     content:
-      "Leticia is a Chartered Accountant and Tax Practitioner and a senior consultant  managing clients across Southern Africa and Pacific Asia",
+      "Leticia is a Chartered Accountant and Tax Practitioner and a senior consultant  managing clients across Southern Africa and Pacific Asia.",
     details2:
       "Before joining Makosi LLP, she was a partner at Bentich Limited where she advised clients on Accounting Services ranging from the compilation of financial statements by IFRS and IFRS for SMEs, Tax related matters.",
     details3:
