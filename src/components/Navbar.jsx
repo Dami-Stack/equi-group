@@ -25,6 +25,10 @@ const Navbar = ({ nav }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const toggleWidth = 1024;
 
+  // Navbar visibility state
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
   //    Function that handles mobile screen visibility toggle on windows resize
   const handleResize = () => {
     // Toggle state based on the screen width
@@ -84,12 +88,30 @@ const Navbar = ({ nav }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Handle Scroll
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY) {
+      // Scrolling down - hide navbar
+      setIsNavbarVisible(false);
+    } else {
+      // Scrolling up - show navbar
+      setIsNavbarVisible(true);
+    }
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
     <>
       <div
-        className={`sticky  top-0 z-[100] h-[65px] lg:h-[90px]   ${
-          nav === "transparent" ? "bg-transparent" : "bg-white"
-        }  w-full flex items-center justify-center border-b border-secondary`}
+        className={`fixed top-0 z-[100] h-[65px] lg:h-[90px] w-full flex items-center justify-center border-b border-secondary transition-transform duration-300 ease-in-out ${
+          isNavbarVisible ? "translate-y-0" : "-translate-y-full"
+        } ${nav === "transparent" ? "bg-transparent" : "bg-white"}`}
       >
         <div className="h-full app__container w-full bg-transparent px-5 lg:px-[48px] flex items-center justify-between ">
           {/* LHS (LOGO) */}
