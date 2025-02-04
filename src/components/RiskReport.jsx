@@ -42,7 +42,7 @@ const RiskReport = () => {
             </div>
             <div className="font-medium text-lg mb-3 lg:mb-0">
               2024 Africa's Macroeconomic Performance and Outlook.
-              <br /> A publication of Africa Development Bank.
+              <br /> A publication of African Development Bank.
             </div>
           </div>
           <Button
