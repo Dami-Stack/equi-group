@@ -13,7 +13,7 @@ const FeatureCard = ({
   titleStyle,
 }) => {
   return (
-    <div class="w-full md:w-[48%] xl:w-[32%] h-fit flex flex-col bg-white  overflow-hidden">
+    <div className="w-full md:w-[48%] xl:w-[32%] h-fit flex flex-col bg-white  overflow-hidden">
       {/* <!-- Card Image --> */}
       <div className="h-[250px] w-full overflow-hidden bg-black">
         <img

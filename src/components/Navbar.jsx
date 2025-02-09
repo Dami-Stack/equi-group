@@ -130,7 +130,7 @@ const Navbar = ({ nav }) => {
               {navbarData?.map(({ id, title, url, type }) => {
                 if (type === "link") {
                   return (
-                    <NavLink to={"/"}>
+                    <NavLink to={"/"} key={id}>
                       {({ isActive }) => (
                         <NavbarLinkItem
                           title={title}
@@ -286,7 +286,7 @@ const SearchMenu = ({ isSearchMenuOpen, closeSearchMenu, children }) => {
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black bg-opacity-20 z-[1000]"
+            className="fixed h-[calc(100vh+100px)] inset-0 bg-black bg-opacity-20 z-[1000]"
             onClick={closeSearchMenu}
           ></div>
 
