@@ -17,10 +17,12 @@ import Footer from "./Footer";
 import RiskReport from "./RiskReport";
 import FAQCard from "./FAQCard";
 import Disclaimer from "./Disclaimer";
+import NavDropdown from "./NavDropdown";
 
 export {
   MobileMenu,
   Disclaimer,
+  NavDropdown,
   FAQCard,
   RiskReport,
   Footer,

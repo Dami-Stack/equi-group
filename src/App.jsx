@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home, PageNotFound } from "./pages";
 import GeneralLayout from "./layouts/GeneralLayout";
+import Solution from "./pages/Solution";
 
 const App = () => {
   return (
@@ -11,6 +12,14 @@ const App = () => {
           element={
             <GeneralLayout>
               <Home />
+            </GeneralLayout>
+          }
+        />
+        <Route
+          path="solutions/investmentBanking"
+          element={
+            <GeneralLayout>
+              <Solution />
             </GeneralLayout>
           }
         />

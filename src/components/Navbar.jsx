@@ -8,6 +8,7 @@ import { Icon } from "@iconify/react";
 import { analytics, searchNormal } from "../assets/icons";
 import FAQCard from "./FAQCard";
 import { h1 } from "framer-motion/client";
+import NavDropdown from "./NavDropdown";
 
 const Navbar = ({ nav }) => {
   const isActive = false;
@@ -20,6 +21,12 @@ const Navbar = ({ nav }) => {
 
   // Search menu visibility state
   const [isSearchMenuOpen, setIsSearchMenuOpen] = useState(false);
+
+  // Navdar dropdown visibility state
+  const [isNavDropdownOpen, setIsNavDropdownOpen] = useState(false);
+
+  // Selected navbar dropdown
+  const [selectedNavItem, setSelectedNavItem] = useState(null);
 
   //   Handles mobile screen nav visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -76,6 +83,38 @@ const Navbar = ({ nav }) => {
   };
   // End of function to close search menu
 
+  // Close nav dropdown
+  const closeNavDropdown = (e) => {
+    // Prevent event bubbling
+    e.stopPropagation();
+
+    // Set search menu visibility state to true
+    setIsNavDropdownOpen(false);
+  };
+  // End of function to close nav dropdown
+
+  // Function to handle dropdown Item click
+  const handleDropdownItemClick = (id) => {
+    // Toggle nav dropdown
+    // If the clicked item is the currently active item, close  the
+    // navdropdown, else leave it open
+
+    if (selectedNavItem?.id === id) {
+      setIsNavDropdownOpen((prev) => !prev);
+    } else {
+      if (!isNavDropdownOpen) {
+        setIsNavDropdownOpen(true);
+      }
+    }
+
+    const clickedNavDropdown = navbarData?.find(
+      (navbarDatum) => navbarDatum?.id === id
+    );
+    console.log(clickedNavDropdown);
+    setSelectedNavItem(clickedNavDropdown);
+  };
+  // End of function to handle dropdown Item click
+
   //   Useffect to exit mobile screen mode
   useEffect(() => {
     // Initial check on mount
@@ -127,7 +166,7 @@ const Navbar = ({ nav }) => {
 
             {/* MIDDLE  */}
             <div className="hidden lg:flex gap-[32px] ">
-              {navbarData?.map(({ id, title, url, type }) => {
+              {navbarData?.map(({ id, title, url, type, subsections }) => {
                 if (type === "link") {
                   return (
                     <NavLink to={"/"} key={id}>
@@ -148,6 +187,7 @@ const Navbar = ({ nav }) => {
                       url={url}
                       key={id}
                       isActive={false}
+                      handleClick={() => handleDropdownItemClick(id)}
                     />
                   );
                 }
@@ -240,6 +280,15 @@ const Navbar = ({ nav }) => {
             </div>
           </div>
 
+          {/* Nav Dropdown */}
+          <NavDropdown
+            isNavDropdownOpen={isNavDropdownOpen}
+            closeNavDropdown={closeNavDropdown}
+            style={"h-[280px]"}
+            title={selectedNavItem?.id}
+            subsections={selectedNavItem?.subsections}
+          />
+
           {/* HAMBURGER MENU */}
           <img
             src={analytics}
@@ -264,14 +313,17 @@ const Navbar = ({ nav }) => {
 export default Navbar;
 
 // Navbar link item
-const NavbarLinkItem = ({ title, url, isActive }) => {
+const NavbarLinkItem = ({ title, url, isActive, handleClick }) => {
   return (
     <div
+      onClick={handleClick}
       className={`${
-        isActive ? "b-20-24-600" : "text-secondary text-[16px] font-semibold"
+        isActive
+          ? "text-secondary text-[16px] font-semibold"
+          : "text-secondary text-[16px] font-semibold"
       } hover:text-primary-110 w-fit cursor-pointer flex items-center relative text-left transition-all duration-200 ease-linear group`}
     >
-      <div className={`b-16-21-700`}>{title}</div>
+      <div className={`text-secondary text-[16px] font-normal`}>{title}</div>
       <div
         className={`!h-[2px] bg-primary-110 text-primary-110 w-[0px] group-hover:w-full rounded-[100px] absolute left-0 -bottom-[10px] z-10 transition-all duration-300 ease-linear`}
       ></div>

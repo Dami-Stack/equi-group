@@ -32,7 +32,7 @@ const FeatureCard = ({
         <Link
           to={link}
           target="_blank"
-          class={`text-lg cursor-pointer transition-all ease-in-out duration-200 hover:text-[#EB8317]  h-[56px] font-bold text-secondary mb-2 line-clamp-2 ${titleStyle}`}
+          class={`text-lg cursor-pointer transition-all ease-in-out duration-200 hover:text-primary-110  h-[56px] font-bold text-secondary mb-2 line-clamp-2 ${titleStyle}`}
         >
           {title}
         </Link>

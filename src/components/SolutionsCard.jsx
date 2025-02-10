@@ -34,7 +34,7 @@ const SolutionsCard = ({
         )}
 
         {/* <!-- Title --> */}
-        <h3 class="text-lg cursor-pointer transition-all ease-in-out duration-200 hover:text-[#EB8317]  h-[30px] font-bold text-secondary  line-clamp-2">
+        <h3 class="text-lg cursor-pointer transition-all ease-in-out duration-200 hover:text-primary-110  h-[30px] font-bold text-secondary  line-clamp-2">
           {title}
         </h3>
 

@@ -13,19 +13,28 @@ export const navbarData = [
     title: "Solutions",
     url: "/solutions",
     id: "solutions",
-    type: "link",
+    type: "navDropdown",
     subsections: [
       {
         title: "Investment Banking",
         url: "http://coretrustinvestmentltd.com",
+        dropdownUrl: "/solutions/investmentBanking",
+        content:
+          "Our investee firm is dedicated to providing expert investment banking solutions and offers a range of services including mergers and acquisitions, capital raising, and strategic advisory.",
       },
       {
         title: "Investment Management",
         url: "http://cititrustassetmgt.com",
+        dropdownUrl: "/solutions/investmentManagement",
+        content:
+          "Our Asset Management in Africa offers customized corporate banking, wealth, and fund management services designed to address the unique needs of both retail and corporate clients.",
       },
       {
         title: "Securities Trading",
         url: "http://atlassportfolios.com",
+        dropdownUrl: "/solutions/investmentManagement",
+        content:
+          "Our Trading subsidiary offers comprehensive capital markets services ranging from share trading (buy/sell), fixed income, and commodities trading. The firm also provides OTC trading and derivatives.",
       },
     ],
   },
