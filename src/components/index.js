@@ -18,9 +18,13 @@ import RiskReport from "./RiskReport";
 import FAQCard from "./FAQCard";
 import Disclaimer from "./Disclaimer";
 import NavDropdown from "./NavDropdown";
+import SubpageHero from "./SubpageHero";
+import CustomInfoBlock from "./CustomInfoBlock";
 
 export {
   MobileMenu,
+  CustomInfoBlock,
+  SubpageHero,
   Disclaimer,
   NavDropdown,
   FAQCard,

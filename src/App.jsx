@@ -23,6 +23,22 @@ const App = () => {
             </GeneralLayout>
           }
         />
+        <Route
+          path="solutions/investmentManagement"
+          element={
+            <GeneralLayout>
+              <Solution />
+            </GeneralLayout>
+          }
+        />
+        <Route
+          path="solutions/securitiesTrading"
+          element={
+            <GeneralLayout>
+              <Solution />
+            </GeneralLayout>
+          }
+        />
 
         {/* Undocumented routes */}
         <Route

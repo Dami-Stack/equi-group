@@ -1,19 +1,8 @@
 import React from "react";
-import { dna, heroImg, lifestyle } from "../assets/images";
-import { Icon } from "@iconify/react";
-import { arrowRight } from "../assets/icons";
+import { dna } from "../assets/images";
 
 const InfoBlock = () => {
   // Inline style to set the background image
-
-  const bgImage =
-    "https://images.pexels.com/photos/2660262/pexels-photo-2660262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
-
-  const headerStyle = {
-    backgroundImage: `url(${bgImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
 
   return (
     <section

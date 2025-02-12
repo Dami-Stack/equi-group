@@ -3,9 +3,11 @@ import Button from "./Button";
 import { arrowRight } from "../assets/icons";
 import { report } from "../assets/images";
 
-const RiskReport = () => {
+const RiskReport = ({ fileLink, title, sub1, sub2, img }) => {
   const handleLocalFileDownload = () => {
-    const fileUrl = "/AfricaMacroeconomicPerformanceandOutlook.pdf"; // Change this to the actual file path
+    const fileUrl = `${
+      fileLink || "/AfricaMacroeconomicPerformanceandOutlook.pdf"
+    }`; // Change this to the actual file path
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = fileUrl.split("/").pop(); // Extract filename from the path
@@ -27,7 +29,7 @@ const RiskReport = () => {
       >
         <div className="hidden md:block rounded-md h-[272px] lg:ml-[120px] min-w-[204px] overflow-hidden shadow-2xl">
           <img
-            src={report}
+            src={img || report}
             alt="Report"
             className="h-full w-full object-cover"
           />
@@ -38,11 +40,11 @@ const RiskReport = () => {
               People strategy
             </div>
             <div className="text-3xl font-semibold text-primary-110 my-3">
-              Africa Outlook
+              {title || "Africa Outlook"}
             </div>
             <div className="font-medium text-lg mb-3 lg:mb-0">
-              2024 Africa's Macroeconomic Performance and Outlook.
-              <br /> A publication of African Development Bank.
+              {sub1 || `2024 Africa's Macroeconomic Performance and Outlook.`}
+              <br /> {sub2 || `A publication of African Development Bank.`}
             </div>
           </div>
           <Button

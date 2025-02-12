@@ -8,6 +8,52 @@ import {
   yemiAdefisan,
 } from "../assets/images";
 
+const investmentBankingSubsection = {
+  title: "Investment Banking",
+  id: "investmentBanking",
+  url: "http://coretrustinvestmentltd.com",
+  dropdownUrl: "/solutions/investmentBanking",
+  riskReportTitle: "Equiserve Global Index 2024",
+  riskReportSub1: "This report benchmarks 48 income systems around the world.",
+  solutionsTitle: "Explpre some other solutions",
+  bgImage:
+    "https://images.pexels.com/photos/45917/pexels-photo-45917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  header:
+    "Empowering your business with strategic capital solutions for sustainable growth.",
+  content:
+    "Our investee firm is dedicated to providing expert investment banking solutions and offers a range of services including mergers and acquisitions, capital raising, and strategic advisory.",
+};
+const investmentManagementSubsection = {
+  title: "Investment Management",
+  id: "investmentManagement",
+  url: "http://cititrustassetmgt.com",
+  dropdownUrl: "/solutions/investmentManagement",
+  riskReportTitle: "Equiserve Global Index 2024",
+  riskReportSub1: "This report benchmarks 48 income systems around the world.",
+  solutionsTitle: "Explpre some other solutions",
+  bgImage:
+    "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  header:
+    "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
+  content:
+    "Our Asset Management in Africa offers customized corporate banking, wealth, and fund management services designed to address the unique needs of both retail and corporate clients.",
+};
+const securitiesTradingSubsection = {
+  title: "Securities Trading",
+  id: "securitiesTrading",
+  url: "http://atlassportfolios.com",
+  dropdownUrl: "/solutions/securitiesTrading",
+  riskReportTitle: "Equiserve Global Index 2024",
+  riskReportSub1: "This report benchmarks 48 income systems around the world.",
+  solutionsTitle: "Explpre some other solutions",
+  bgImage:
+    "https://images.pexels.com/photos/887845/pexels-photo-887845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  header:
+    "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
+  content:
+    "Our Trading subsidiary offers comprehensive capital markets services ranging from share trading (buy/sell), fixed income, and commodities trading. The firm also provides OTC trading and derivatives.",
+};
+
 export const navbarData = [
   {
     title: "Solutions",
@@ -15,27 +61,9 @@ export const navbarData = [
     id: "solutions",
     type: "navDropdown",
     subsections: [
-      {
-        title: "Investment Banking",
-        url: "http://coretrustinvestmentltd.com",
-        dropdownUrl: "/solutions/investmentBanking",
-        content:
-          "Our investee firm is dedicated to providing expert investment banking solutions and offers a range of services including mergers and acquisitions, capital raising, and strategic advisory.",
-      },
-      {
-        title: "Investment Management",
-        url: "http://cititrustassetmgt.com",
-        dropdownUrl: "/solutions/investmentManagement",
-        content:
-          "Our Asset Management in Africa offers customized corporate banking, wealth, and fund management services designed to address the unique needs of both retail and corporate clients.",
-      },
-      {
-        title: "Securities Trading",
-        url: "http://atlassportfolios.com",
-        dropdownUrl: "/solutions/investmentManagement",
-        content:
-          "Our Trading subsidiary offers comprehensive capital markets services ranging from share trading (buy/sell), fixed income, and commodities trading. The firm also provides OTC trading and derivatives.",
-      },
+      investmentBankingSubsection,
+      investmentManagementSubsection,
+      securitiesTradingSubsection,
     ],
   },
   {
@@ -293,12 +321,13 @@ export const execs = [
 export const productsAndServicesArray = [
   {
     id: 1,
+    subsections: investmentBankingSubsection,
     imgUrl:
       "https://images.pexels.com/photos/45917/pexels-photo-45917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Investment Banking",
     header:
       "Delivering tailored financial advisory services to meet your strategic objectives.",
-    link: "#investmentBanking",
+    link: "/solutions/investmentBanking",
     content:
       "Our investee firm is dedicated to providing expert investment banking solutions and offers a range of services including mergers and acquisitions, capital raising, and strategic advisory.",
   },
@@ -307,7 +336,7 @@ export const productsAndServicesArray = [
     imgUrl:
       "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Investment Management",
-    link: "#",
+    link: "/solutions/investmentManagement",
     header:
       "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
     content:
@@ -320,7 +349,7 @@ export const productsAndServicesArray = [
     title: "Securities Trading",
     header:
       "Empowering your business with strategic capital solutions for sustainable growth.",
-    link: "#capitalBanking",
+    link: "/solutions/securitiesTrading",
     content:
       "Our Trading subsidiary offers comprehensive capital markets services ranging from share trading (buy/sell), fixed income, and commodities trading. The firm also provides OTC trading and derivatives.",
   },

@@ -16,6 +16,7 @@ const Button = ({
   buttonSize,
   width = "w-fit",
   iconStyles,
+  linkState,
   openInSamePage = true,
   ...props
 }) => {
@@ -49,6 +50,7 @@ const Button = ({
     return (
       <Link
         to={href}
+        state={linkState}
         className={styles}
         target={openInSamePage ? undefined : "_blank"}
         rel="noopener noreferrer"

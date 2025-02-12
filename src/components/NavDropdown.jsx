@@ -8,8 +8,8 @@ const NavDropdown = ({
   title,
   subsections,
   style,
+  setIsNavDropdownOpen,
 }) => {
-  console.log(title);
   return (
     <AnimatePresence>
       {isNavDropdownOpen && (
@@ -42,18 +42,24 @@ const NavDropdown = ({
                   style={"pr-6"}
                   link={subsections[0]?.dropdownUrl}
                   content={subsections[0]?.content}
+                  subsection={subsections[0]}
+                  setIsNavDropdownOpen={setIsNavDropdownOpen}
                 />
                 <SingleColumn
                   title={subsections[1]?.title}
                   style={"px-6 border-x border-x-secondary"}
                   link={subsections[1]?.dropdownUrl}
                   content={subsections[1]?.content}
+                  subsection={subsections[1]}
+                  setIsNavDropdownOpen={setIsNavDropdownOpen}
                 />
                 <SingleColumn
                   title={subsections[2]?.title}
                   style={"px-6"}
                   link={subsections[2]?.dropdownUrl}
                   content={subsections[2]?.content}
+                  subsection={subsections[2]}
+                  setIsNavDropdownOpen={setIsNavDropdownOpen}
                 />
 
                 {/* Extra cloolumn */}
@@ -67,13 +73,22 @@ const NavDropdown = ({
   );
 };
 
-const SingleColumn = ({ title, style, link, content }) => {
+const SingleColumn = ({
+  title,
+  style,
+  link,
+  content,
+  subsection,
+  setIsNavDropdownOpen,
+}) => {
   return (
     <div className={`${style} flex-1 h-full `}>
       <div className="text-secondary text-[16px] font-semibold">{title}</div>
 
       {/* <!-- Title --> */}
       <Link
+        onClick={() => setIsNavDropdownOpen((prev) => !prev)}
+        state={subsection}
         to={link}
         class={`text-lg mt-5 cursor-pointer transition-all ease-in-out duration-200 hover:text-primary-110  h-[56px] font-bold text-secondary mb-2 line-clamp-2`}
       >

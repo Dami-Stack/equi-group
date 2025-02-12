@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { arrowRight, arrowRightYellow } from "../assets/icons";
+import { navbarData } from "../utils/data";
 
 const SolutionsCard = ({
   title,
@@ -12,6 +13,7 @@ const SolutionsCard = ({
   showHeader,
   headerStyle,
   hideArrow,
+  subsections,
 }) => {
   return (
     <div class="min-w-[250px] lg:min-w-[32%] max-w-[370px] h-fit flex flex-col bg-white  overflow-hidden">
@@ -50,7 +52,8 @@ const SolutionsCard = ({
             width="!px-0"
             variant="text"
             size={"medium"}
-            href={"#"}
+            href={link}
+            linkState={subsections}
           ></Button>
         )}
       </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { navbarData, subsidiaries } from "../utils/data";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { equiserveLogo } from "../assets/images";
 import { AnimatePresence, motion } from "framer-motion";
 import MobileMenu from "./MobileMenu";
@@ -12,6 +12,8 @@ import NavDropdown from "./NavDropdown";
 
 const Navbar = ({ nav }) => {
   const isActive = false;
+
+  const location = useLocation();
 
   // Selected Subsidiary
   const [selectedItem, setSelectedItem] = useState(null);
@@ -110,7 +112,6 @@ const Navbar = ({ nav }) => {
     const clickedNavDropdown = navbarData?.find(
       (navbarDatum) => navbarDatum?.id === id
     );
-    console.log(clickedNavDropdown);
     setSelectedNavItem(clickedNavDropdown);
   };
   // End of function to handle dropdown Item click
@@ -287,6 +288,7 @@ const Navbar = ({ nav }) => {
             style={"h-[280px]"}
             title={selectedNavItem?.id}
             subsections={selectedNavItem?.subsections}
+            setIsNavDropdownOpen={setIsNavDropdownOpen}
           />
 
           {/* HAMBURGER MENU */}

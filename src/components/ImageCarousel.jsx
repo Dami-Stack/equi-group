@@ -82,7 +82,8 @@ const ImageCarousel = ({ data, showHeader, headerStyle, hideArrow }) => {
         onScroll={updateScrollButtons} // Update buttons on scroll
       >
         {data?.map((insight) => {
-          const { content, header, id, imgUrl, link, title } = insight;
+          const { content, header, id, imgUrl, link, title, subsections } =
+            insight;
           return (
             <SolutionsCard
               content={content}
@@ -94,6 +95,7 @@ const ImageCarousel = ({ data, showHeader, headerStyle, hideArrow }) => {
               headerStyle={headerStyle}
               showHeader={showHeader}
               hideArrow={hideArrow}
+              subsections={subsections}
             />
           );
         })}
