@@ -12,7 +12,7 @@ const SubpageHero = ({ bgImage, config }) => {
 
   return (
     <section
-      className={`relative w-full overflow-hidden  text-secondary h-auto lg:h-[100vh] lg:max-h-[620px] flex justify-center z-10`}
+      className={`relative w-full overflow-hidden h-[100vh]  text-secondary  lg:h-[100vh] lg:max-h-[620px] flex justify-center z-10`}
       style={headerStyle}
     >
       {/* Backdrop */}

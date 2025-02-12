@@ -18,8 +18,7 @@ const investmentBankingSubsection = {
   solutionsTitle: "Explpre some other solutions",
   bgImage:
     "https://images.pexels.com/photos/45917/pexels-photo-45917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  header:
-    "Empowering your business with strategic capital solutions for sustainable growth.",
+  header: "Strategic Investment Banking Services.",
   content:
     "Our investee firm is dedicated to providing expert investment banking solutions and offers a range of services including mergers and acquisitions, capital raising, and strategic advisory.",
 };
@@ -33,8 +32,7 @@ const investmentManagementSubsection = {
   solutionsTitle: "Explpre some other solutions",
   bgImage:
     "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  header:
-    "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
+  header: "Tailored Asset Management Solutions.",
   content:
     "Our Asset Management in Africa offers customized corporate banking, wealth, and fund management services designed to address the unique needs of both retail and corporate clients.",
 };
@@ -48,8 +46,7 @@ const securitiesTradingSubsection = {
   solutionsTitle: "Explpre some other solutions",
   bgImage:
     "https://images.pexels.com/photos/887845/pexels-photo-887845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  header:
-    "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
+  header: "Capital Markets & Trading Excellence.",
   content:
     "Our Trading subsidiary offers comprehensive capital markets services ranging from share trading (buy/sell), fixed income, and commodities trading. The firm also provides OTC trading and derivatives.",
 };
