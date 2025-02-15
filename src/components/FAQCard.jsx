@@ -49,10 +49,11 @@ const FAQCard = ({
           selectedItem?.id === id ? "h-auto opacity-100" : "h-0 opacity-0"
         }  duration-300 transition-all overflow-hidden `}
       >
-        {subsections?.map((subsection) => {
+        {subsections?.map((subsection, index) => {
           return (
             <Link
               to={subsection?.dropdownUrl}
+              key={index}
               onClick={() => {
                 if (!toggleMenuOnClick) {
                   return;

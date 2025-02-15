@@ -16,11 +16,23 @@ import {
   Values,
 } from "../components";
 import { useLocation } from "react-router-dom";
-import { insights, navbarData, productsAndServicesArray } from "../utils/data";
+import {
+  insights,
+  investmentBankingSubsection,
+  investmentManagementSubsection,
+  navbarData,
+  productsAndServicesArray,
+  securitiesTradingSubsection,
+} from "../utils/data";
 
 const Solution = () => {
   const location = useLocation();
-  const pageConfig = location.state;
+  const [pageConfig, setPageConfig] = useState(null);
+
+  const pageLocation = location?.pathname?.split("/")[2];
+  console.log();
+  // const pageConfig = location.state;
+  console.log(pageConfig);
 
   const solutionsData = productsAndServicesArray?.filter(
     (product) => product?.title !== pageConfig?.title
@@ -29,6 +41,21 @@ const Solution = () => {
   useEffect(() => {
     console.log("Should scroll");
     window.scrollTo({ top: 0, behavior: "smooth" });
+
+    switch (pageLocation) {
+      case "investmentBanking":
+        setPageConfig(investmentBankingSubsection);
+        break;
+      case "securitiesTrading":
+        setPageConfig(securitiesTradingSubsection);
+        break;
+      case "investmentManagement":
+        setPageConfig(investmentManagementSubsection);
+        break;
+
+      default:
+        break;
+    }
   }, [location.state]);
 
   return (

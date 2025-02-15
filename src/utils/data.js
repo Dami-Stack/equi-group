@@ -8,7 +8,7 @@ import {
   yemiAdefisan,
 } from "../assets/images";
 
-const investmentBankingSubsection = {
+export const investmentBankingSubsection = {
   title: "Investment Banking",
   id: "investmentBanking",
   url: "http://coretrustinvestmentltd.com",
@@ -24,7 +24,7 @@ const investmentBankingSubsection = {
   content:
     "Our investee firm is dedicated to providing expert investment banking solutions and offers a range of services including mergers and acquisitions, capital raising, and strategic advisory.",
 };
-const investmentManagementSubsection = {
+export const investmentManagementSubsection = {
   title: "Investment Management",
   id: "investmentManagement",
   url: "http://cititrustassetmgt.com",
@@ -40,7 +40,7 @@ const investmentManagementSubsection = {
   content:
     "Our Asset Management in Africa offers customized corporate banking, wealth, and fund management services designed to address the unique needs of both retail and corporate clients.",
 };
-const securitiesTradingSubsection = {
+export const securitiesTradingSubsection = {
   title: "Securities Trading",
   id: "securitiesTrading",
   url: "http://atlassportfolios.com",

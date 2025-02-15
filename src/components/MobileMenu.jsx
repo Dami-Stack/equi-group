@@ -156,9 +156,9 @@ const MobileMenu = ({
                 </div>
                 <div className="overflow-auto h-[calc(100%-68px)]">
                   {subsidiariesList?.length > 0 ? (
-                    subsidiariesList.map((subsidiary) => (
+                    subsidiariesList.map((subsidiary, index) => (
                       <FAQCard
-                        key={subsidiary?.id}
+                        key={index}
                         icon={subsidiary?.icon}
                         subsidiary={subsidiary}
                         title={subsidiary?.title}
