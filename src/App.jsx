@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home, PageNotFound } from "./pages";
 import GeneralLayout from "./layouts/GeneralLayout";
 import Solution from "./pages/Solution";
+import Insights from "./pages/Insights";
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
             </GeneralLayout>
           }
         />
+
+        {/* Solutions Page */}
         <Route
           path="solutions/investmentBanking"
           element={
@@ -39,6 +42,18 @@ const App = () => {
             </GeneralLayout>
           }
         />
+        {/* End of Solutions Page */}
+
+        {/* Insights page */}
+        <Route
+          path="insights"
+          element={
+            <GeneralLayout>
+              <Insights />
+            </GeneralLayout>
+          }
+        />
+        {/* End of Insights page */}
 
         {/* Undocumented routes */}
         <Route

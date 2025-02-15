@@ -73,7 +73,7 @@ export const navbarData = [
     title: "Insights",
     url: "/insights",
     id: "insights",
-    type: "link",
+    type: "newLink",
     subsections: [
       {
         title: "Investment Banking",

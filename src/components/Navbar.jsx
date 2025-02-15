@@ -191,6 +191,23 @@ const Navbar = ({ nav }) => {
                       handleClick={() => handleDropdownItemClick(id)}
                     />
                   );
+                } else if (type === "newLink") {
+                  return (
+                    <NavLink
+                      to={url}
+                      key={id}
+                      onClick={() => setIsNavDropdownOpen(false)}
+                    >
+                      {({ isActive }) => (
+                        <NavbarLinkItem
+                          title={title}
+                          url={url}
+                          key={id}
+                          isActive={isActive}
+                        />
+                      )}
+                    </NavLink>
+                  );
                 }
               })}
             </div>
@@ -325,7 +342,7 @@ const NavbarLinkItem = ({ title, url, isActive, handleClick }) => {
           : "text-secondary text-[16px] font-semibold"
       } hover:text-primary-110 w-fit cursor-pointer flex items-center relative text-left transition-all duration-200 ease-linear group`}
     >
-      <div className={`${isActive ? "font-semibold" : "font-normal"} `}>
+      <div className={`${isActive ? "font-semibold" : "font-semibold"} `}>
         {title}
       </div>
       <div
