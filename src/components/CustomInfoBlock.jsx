@@ -40,7 +40,7 @@ const CustomInfoBlock = ({ img, title, content, floatingContent }) => {
         </div>
 
         {floatingContent && (
-          <div className="absolute flex items-center gap-5 mt-8 top-5 right-20">
+          <div className="hidden absolute md:flex items-center gap-5 top-10 lg:top-14 right-10 lg:right-20">
             {socialMedia?.map(({ src, link }, index) => {
               return (
                 <Link

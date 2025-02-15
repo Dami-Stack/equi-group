@@ -26,7 +26,10 @@ const Solution = () => {
     (product) => product?.title !== pageConfig?.title
   );
 
-  console.log(pageConfig);
+  useEffect(() => {
+    console.log("Should scroll");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [location.state]);
 
   return (
     <div className="z-10 relative bg-white overflow-x-hidden">

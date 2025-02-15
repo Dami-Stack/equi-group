@@ -13,6 +13,8 @@ const FAQCard = ({
   subsections,
   title,
   containerStyle,
+  toggleMenu,
+  toggleMenuOnClick,
 }) => {
   return (
     <div
@@ -50,14 +52,24 @@ const FAQCard = ({
         {subsections?.map((subsection) => {
           return (
             <Link
-              to={subsection?.url}
-              target="_blank"
+              to={subsection?.dropdownUrl}
+              onClick={() => {
+                if (!toggleMenuOnClick) {
+                  return;
+                } else {
+                  toggleMenu();
+                }
+              }}
+              state={subsection}
+              target={subsection?.sameSiteUrl ? "_self" : "_blank"}
               className={`text-[#515861] hover:bg-[#e7e19d] h-[40px] flex items-center pl-8  `}
             >
               {subsection?.title}{" "}
-              <span>
-                <Icon icon={"lets-icons:external"} className="ml-2" />{" "}
-              </span>
+              {!subsection?.sameSiteUrl && (
+                <span>
+                  <Icon icon={"lets-icons:external"} className="ml-2" />{" "}
+                </span>
+              )}
             </Link>
           );
         })}

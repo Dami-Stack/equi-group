@@ -89,6 +89,8 @@ const MobileMenu = ({
               subsections={singleNavbarData?.subsections}
               id={singleNavbarData?.id}
               containerStyle={"border-b-[#000]"}
+              toggleMenu={toggleMenu}
+              toggleMenuOnClick={true}
             />
           )
         )}

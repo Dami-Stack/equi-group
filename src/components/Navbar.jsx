@@ -187,7 +187,7 @@ const Navbar = ({ nav }) => {
                       title={title}
                       url={url}
                       key={id}
-                      isActive={false}
+                      isActive={true}
                       handleClick={() => handleDropdownItemClick(id)}
                     />
                   );
@@ -325,7 +325,9 @@ const NavbarLinkItem = ({ title, url, isActive, handleClick }) => {
           : "text-secondary text-[16px] font-semibold"
       } hover:text-primary-110 w-fit cursor-pointer flex items-center relative text-left transition-all duration-200 ease-linear group`}
     >
-      <div className={`text-secondary text-[16px] font-normal`}>{title}</div>
+      <div className={`${isActive ? "font-semibold" : "font-normal"} `}>
+        {title}
+      </div>
       <div
         className={`!h-[2px] bg-primary-110 text-primary-110 w-[0px] group-hover:w-full rounded-[100px] absolute left-0 -bottom-[10px] z-10 transition-all duration-300 ease-linear`}
       ></div>

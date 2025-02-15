@@ -28,11 +28,11 @@ const SubpageHero = ({ bgImage, config }) => {
           {/* top - (Title and Sub title) */}
           <div className="flex flex-col justify-center items-start">
             <div className="mb-5 font-bold text-[20px]  md:text-left text-left w-full ">
-              {config.title}
+              {config?.title}
             </div>
 
             <div className="w-[70%] font-bold  text-[36px] sm:text-[42px] xl:text-[50px] leading-[46px] sm:leading-[48px] lg:leading-[56px] text-left">
-              {config.header}
+              {config?.header}
             </div>
           </div>
 
