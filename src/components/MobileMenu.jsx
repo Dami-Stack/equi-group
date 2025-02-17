@@ -60,11 +60,27 @@ const MobileMenu = ({
             Home
           </Link>
         </li>
-        {miniNavbarData.map((singleNavbarData, index) =>
+        {navbarData.map((singleNavbarData, index) =>
           singleNavbarData?.type === "link" ? (
             <Link
               onClick={toggleMenu}
               to={"/"}
+              className={
+                "w-full text-center border-b-[1px] border-b-[#000] h-[56px]"
+              }
+              key={index}
+            >
+              <li
+                key={index}
+                className="relative w-full text-left px-4 py-2 cursor-pointer hover:bg-primary-65 b-22-30-500"
+              >
+                {singleNavbarData.title}
+              </li>
+            </Link>
+          ) : singleNavbarData?.type === "newLink" ? (
+            <Link
+              onClick={toggleMenu}
+              to={singleNavbarData?.url}
               className={
                 "w-full text-center border-b-[1px] border-b-[#000] h-[56px]"
               }
