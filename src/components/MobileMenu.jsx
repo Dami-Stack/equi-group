@@ -110,6 +110,20 @@ const MobileMenu = ({
             />
           )
         )}
+
+        {/* Contact */}
+        <Link
+          onClick={toggleMenu}
+          to={"/contact"}
+          className={
+            "w-full text-center border-b-[1px] border-b-[#000] h-[56px]"
+          }
+        >
+          <li className="relative w-full text-left px-4 py-2 cursor-pointer hover:bg-primary-65 b-22-30-500">
+            Contact
+          </li>
+        </Link>
+
         <div
           className={`cursor-pointer border-b-[1px]   border-b-[#000] min-h-[60px]  w-full  flex flex-col justify-center`}
         >

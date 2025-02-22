@@ -215,7 +215,7 @@ const Navbar = ({ nav }) => {
 
           {/* RHS */}
           <div className="hidden lg:flex gap-5">
-            <div
+            {/* <div
               className={`${
                 isActive
                   ? "b-20-24-600"
@@ -227,7 +227,12 @@ const Navbar = ({ nav }) => {
               <div
                 className={`h-[2px] bg-primary-110 text-primary-110 w-[0px] group-hover:w-full rounded-[100px] absolute left-0 -bottom-[10px] transition-all duration-300 ease-linear`}
               ></div>
-            </div>
+            </div> */}
+            <NavLink to={"/contact"}>
+              {({ isActive }) => (
+                <NavbarLinkItem title={"Contact"} isActive={isActive} />
+              )}
+            </NavLink>{" "}
             <div className="relative">
               <Icon
                 onClick={handleSearchMenuClick}

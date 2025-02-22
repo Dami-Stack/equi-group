@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   CareerBlock,
   Contact,
@@ -22,6 +22,11 @@ const Careers = () => {
       "https://images.pexels.com/photos/3771045/pexels-photo-3771045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     header: "Come Join Us",
   });
+
+  // Smooth scroll to top
+  useEffect(() => {
+    window.scrollTo({ top, behavior: "smooth" });
+  }, []);
 
   return (
     <div className="z-10 relative bg-white overflow-x-hidden">

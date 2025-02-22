@@ -380,12 +380,12 @@ export const footerLinks = [
   {
     title: "Navigations",
     links: [
-      { name: "Home", link: "#" },
+      { name: "Home", link: "/" },
       // { name: "Home", link: "#" },
-      { name: "Solutions", link: "#" },
-      { name: "Insights", link: "#" },
+      { name: "Solutions", link: "/solutions/investmentBanking" },
+      { name: "Insights", link: "/insights" },
       { name: "About us", link: "#" },
-      { name: "Careers", link: "#" },
+      { name: "Careers", link: "/careers" },
     ],
   },
 ];

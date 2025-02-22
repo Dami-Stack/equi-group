@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Careers, Home, PageNotFound } from "./pages";
+import { Careers, ContactPage, Home, PageNotFound } from "./pages";
 import GeneralLayout from "./layouts/GeneralLayout";
 import Solution from "./pages/Solution";
 import Insights from "./pages/Insights";
@@ -61,6 +61,17 @@ const App = () => {
           element={
             <GeneralLayout>
               <Careers />
+            </GeneralLayout>
+          }
+        />
+        {/* End of careers Page */}
+
+        {/* Contact Page */}
+        <Route
+          path="/contact"
+          element={
+            <GeneralLayout>
+              <ContactPage />
             </GeneralLayout>
           }
         />

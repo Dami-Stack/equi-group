@@ -10,13 +10,10 @@ const Footer = () => {
       id="footer"
       className="overflow-y-auto w-full bg-black  sticky z-[1] flex justify-center px-6 md:px-10 lg:px-[80px] bottom-0 left-0 h-fit "
     >
-      <footer
-        className="py-[40px]  w-full  app__container  text-[#c5c4c4]"
-        id="contact-us"
-      >
+      <footer className="py-[40px]  w-full  app__container  text-[#c5c4c4]">
         <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col max-lg:gap-1 ">
           <div className="flex flex-col items-start">
-            <a href="#" className="bg-white px-2 py-4 rounded-lg ">
+            <a href="/" className="bg-white px-2 py-4 rounded-lg ">
               <img src={equiserveLogo} alt="logo" className="h-[15px]" />
             </a>
             <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
