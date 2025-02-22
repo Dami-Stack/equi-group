@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, PageNotFound } from "./pages";
+import { Careers, Home, PageNotFound } from "./pages";
 import GeneralLayout from "./layouts/GeneralLayout";
 import Solution from "./pages/Solution";
 import Insights from "./pages/Insights";
@@ -54,6 +54,17 @@ const App = () => {
           }
         />
         {/* End of Insights page */}
+
+        {/* Careers Page */}
+        <Route
+          path="/careers"
+          element={
+            <GeneralLayout>
+              <Careers />
+            </GeneralLayout>
+          }
+        />
+        {/* End of careers Page */}
 
         {/* Undocumented routes */}
         <Route

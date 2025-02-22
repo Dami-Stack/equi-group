@@ -20,10 +20,12 @@ import Disclaimer from "./Disclaimer";
 import NavDropdown from "./NavDropdown";
 import SubpageHero from "./SubpageHero";
 import CustomInfoBlock from "./CustomInfoBlock";
+import CareerBlock from "./CareerBlock";
 
 export {
   MobileMenu,
   CustomInfoBlock,
+  CareerBlock,
   SubpageHero,
   Disclaimer,
   NavDropdown,

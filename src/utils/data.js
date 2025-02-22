@@ -89,7 +89,7 @@ export const navbarData = [
       },
     ],
   },
-  { title: "Careers", url: "/careers", id: "careers", type: "link" },
+  { title: "Careers", url: "/careers", id: "careers", type: "newLink" },
   // { title: "Careers", url: "/careers", id: "careers", type: "navDropdown" },
   {
     title: "About Us",

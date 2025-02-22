@@ -3,7 +3,7 @@ import { heroImg, heroImg2, heroImg3 } from "../assets/images";
 import { Icon } from "@iconify/react";
 import { arrowRight, arrowRightWhite } from "../assets/icons";
 
-const SubpageHero = ({ bgImage, config }) => {
+const SubpageHero = ({ bgImage, config, hideCta }) => {
   const headerStyle = {
     backgroundImage: `url(${bgImage})`,
     backgroundSize: "cover",
@@ -38,19 +38,21 @@ const SubpageHero = ({ bgImage, config }) => {
 
           {/* Bottom - CTA */}
           {/* RHS */}
-          <div className="group w-fit bg-primary py-3 px-6 rounded-md flex items-center relative cursor-pointer">
-            {/* <div className="group w-fit  flex items-center relative cursor-pointer"> */}
-            <div className="text-black text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
-              Contact us
+          {!hideCta && (
+            <div className="group w-fit bg-primary py-3 px-6 rounded-md flex items-center relative cursor-pointer">
+              {/* <div className="group w-fit  flex items-center relative cursor-pointer"> */}
+              <div className="text-black text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
+                Contact us
+              </div>
+              <div className="w-fit overflow-hidden flex items-center">
+                <img
+                  src={arrowRight}
+                  alt="Arrow right"
+                  className="hover-slide-in-top transition-all ease-linear"
+                />
+              </div>
             </div>
-            <div className="w-fit overflow-hidden flex items-center">
-              <img
-                src={arrowRight}
-                alt="Arrow right"
-                className="hover-slide-in-top transition-all ease-linear"
-              />
-            </div>
-          </div>
+          )}
         </div>
       </section>
     </section>
