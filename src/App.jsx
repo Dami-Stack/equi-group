@@ -1,5 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { About, Careers, ContactPage, Home, PageNotFound } from "./pages";
+import {
+  About,
+  Careers,
+  ContactPage,
+  Home,
+  Leadership,
+  PageNotFound,
+} from "./pages";
 import GeneralLayout from "./layouts/GeneralLayout";
 import Solution from "./pages/Solution";
 import Insights from "./pages/Insights";
@@ -76,7 +83,8 @@ const App = () => {
           }
         />
         {/* End of careers Page */}
-        {/* Contact Page */}
+
+        {/* About Page */}
         <Route
           path="/about"
           element={
@@ -85,7 +93,18 @@ const App = () => {
             </GeneralLayout>
           }
         />
-        {/* End of careers Page */}
+        {/* End of About Page */}
+
+        {/* About Page */}
+        <Route
+          path="/about/leadership"
+          element={
+            <GeneralLayout>
+              <Leadership />
+            </GeneralLayout>
+          }
+        />
+        {/* End of About Page */}
 
         {/* Undocumented routes */}
         <Route
