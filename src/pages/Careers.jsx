@@ -3,16 +3,7 @@ import {
   CareerBlock,
   Contact,
   Disclaimer,
-  Divider,
-  Featured,
-  Hero,
-  ImageCarousel,
-  InfoBlock,
-  Lifestyle,
-  RiskReport,
-  Solutions,
   SubpageHero,
-  Team,
   Values,
 } from "../components";
 

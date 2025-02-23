@@ -1,10 +1,13 @@
 import { header } from "framer-motion/client";
 import {
+  aim,
   inclusion,
   leticia,
+  mission,
   simonBlake,
   socialImpact,
   sustainability,
+  vision,
   yemiAdefisan,
 } from "../assets/images";
 
@@ -57,6 +60,49 @@ export const securitiesTradingSubsection = {
     "Our Trading subsidiary offers comprehensive capital markets services ranging from share trading (buy/sell), fixed income, and commodities trading. The firm also provides OTC trading and derivatives.",
 };
 
+export const aboutUsSubsection = {
+  title: "About Us",
+  id: "aboutUs",
+  url: "",
+  sameSiteDropDownUrl: true,
+  sameSiteUrl: true,
+  dropdownUrl: "/about",
+  solutionsTitle: "Explpre some other solutions",
+  bgImage:
+    "https://images.pexels.com/photos/887845/pexels-photo-887845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  header: "Capital Markets & Trading Excellence.",
+  content:
+    "EQUISERVE is a global company focusing on transforming Africa and contributing to the sustainable development of African economies.",
+};
+export const leadershipSubsection = {
+  title: "Leadership",
+  id: "leadership",
+  url: "",
+  sameSiteDropDownUrl: true,
+  sameSiteUrl: true,
+  dropdownUrl: "/about/leadership",
+  solutionsTitle: "Explpre some other solutions",
+  bgImage:
+    "https://images.pexels.com/photos/887845/pexels-photo-887845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  header: "Capital Markets & Trading Excellence.",
+  content:
+    "The experience and multi-talented team with diverse cultural backgrounds have been a major contribution to the success of Equiserve",
+};
+export const sustainabilitySubsection = {
+  title: "Sustainability",
+  id: "sustainability",
+  url: "",
+  sameSiteDropDownUrl: true,
+  sameSiteUrl: true,
+  dropdownUrl: "/about/sustainability",
+  solutionsTitle: "Explpre some other solutions",
+  bgImage:
+    "https://images.pexels.com/photos/887845/pexels-photo-887845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  header: "Capital Markets & Trading Excellence.",
+  content:
+    "Equiserve goes beyond financial returns, focusing on sustainable wealth for you and the communities we serve.",
+};
+
 export const navbarData = [
   {
     title: "Solutions",
@@ -75,18 +121,9 @@ export const navbarData = [
     id: "insights",
     type: "newLink",
     subsections: [
-      {
-        title: "Investment Banking",
-        url: "http://coretrustinvestmentltd.com",
-      },
-      {
-        title: "Investment Management",
-        url: "http://cititrustassetmgt.com",
-      },
-      {
-        title: "Securities Trading",
-        url: "http://atlassportfolios.com",
-      },
+      aboutUsSubsection,
+      leadershipSubsection,
+      sustainabilitySubsection,
     ],
   },
   { title: "Careers", url: "/careers", id: "careers", type: "newLink" },
@@ -95,20 +132,11 @@ export const navbarData = [
     title: "About Us",
     url: "/about",
     id: "aboutUs",
-    type: "link",
+    type: "navDropdown",
     subsections: [
-      {
-        title: "Investment Banking",
-        url: "http://coretrustinvestmentltd.com",
-      },
-      {
-        title: "Investment Management",
-        url: "http://cititrustassetmgt.com",
-      },
-      {
-        title: "Securities Trading",
-        url: "http://atlassportfolios.com",
-      },
+      aboutUsSubsection,
+      leadershipSubsection,
+      sustainabilitySubsection,
     ],
   },
 ];
@@ -373,6 +401,33 @@ export const values = [
     link: "#",
     content:
       "Through our ESG commitments, we actively contribute to Marsh McLennan’s journey to net zero and carbon neutrality while promoting transparency and fostering an inclusive and equitable culture.",
+  },
+];
+export const aimMissionVision = [
+  {
+    id: 1,
+    imgUrl: aim,
+    title: "Aim",
+    link: "#",
+    content:
+      "To be the preferred financial partner for businesses, providing innovative banking solutions that fuel growth and financial success.",
+  },
+  {
+    id: 2,
+    imgUrl: mission,
+    title: "Mission",
+    link: "#",
+    content:
+      "To deliver comprehensive, customized financial services—ranging from capital banking to investment advisory—that empower businesses to navigate challenges and seize opportunities.",
+  },
+
+  {
+    id: 5,
+    imgUrl: vision,
+    title: "Vision",
+    link: "#",
+    content:
+      "To redefine business banking by fostering long-term financial stability and unlocking new avenues for sustainable growth.",
   },
 ];
 

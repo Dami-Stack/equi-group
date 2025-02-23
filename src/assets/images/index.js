@@ -12,8 +12,14 @@ import inclusion from "./inclusion.jpg";
 import sustainability from "./sustainability.jpg";
 import contact from "./contact.png";
 import report from "./report.jpg";
+import aim from "./aim.jpg";
+import mission from "./mission.jpg";
+import vision from "./vision.jpg";
 
 export {
+  aim,
+  mission,
+  vision,
   dna,
   report,
   contact,

@@ -4,7 +4,13 @@ import { Link } from "react-router-dom";
 import { socialMedia } from "../utils/data";
 import { Icon } from "@iconify/react";
 
-const CustomInfoBlock = ({ img, title, content, floatingContent }) => {
+const CustomInfoBlock = ({
+  img,
+  title,
+  content,
+  floatingContent,
+  content2,
+}) => {
   // Inline style to set the background image
 
   return (
@@ -28,6 +34,9 @@ const CustomInfoBlock = ({ img, title, content, floatingContent }) => {
 
             <div className="my-5 font-bold text-[16px] sm:text-[20px]  md:text-left text-left md:w-[80%] ">
               {content}
+            </div>
+            <div className="font-bold text-[16px] sm:text-[20px]  md:text-left text-left md:w-[80%] ">
+              {content2}
             </div>
           </div>
 

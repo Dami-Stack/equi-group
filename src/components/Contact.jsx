@@ -43,7 +43,7 @@ const Contact = () => {
           {/* RHS */}
           <div className="group w-fit bg-secondary py-3 px-6 rounded-md flex items-center relative cursor-pointer">
             {/* <div className="group w-fit  flex items-center relative cursor-pointer"> */}
-            <a href={"#"} className="flex">
+            <a href={"/contact"} className="flex">
               <div className="text-white text-[16px] font-semibold mr-4 group-hover:underline hover:underline-offset-2">
                 Get in touch
               </div>

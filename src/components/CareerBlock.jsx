@@ -21,7 +21,7 @@ const CareerBlock = ({ color, image, title, subTitle1, inverse, mailTo }) => {
           <div className="relative flex flex-col gap-10 w-full justify-center">
             {/* top - (Title and Sub title) */}
             <div className="flex flex-col justify-center items-start">
-              <div className=" font-bold  text-lg sm:text-md text-left">
+              <div className=" font-bold  text-lg sm:text-md text-left md:w-[80%] lg:w-[65%]">
                 {title}
               </div>
 
@@ -39,7 +39,7 @@ const CareerBlock = ({ color, image, title, subTitle1, inverse, mailTo }) => {
             </div>
 
             {/* Hero Image */}
-            <div className="flex md:absolute -right-[200px] rounded-xl overflow-hidden">
+            <div className="max-h-[367px] flex md:absolute -right-[200px] rounded-xl overflow-hidden">
               <div className="flex flex-col flex-[1] items-center md:flex-row flex-wrap gap-5 md:justify-start">
                 <img
                   src={image}
@@ -53,7 +53,7 @@ const CareerBlock = ({ color, image, title, subTitle1, inverse, mailTo }) => {
         )}
 
         {inverse && (
-          <div className="relative flex  flex-col gap-10 w-full justify-center">
+          <div className="relative flex  flex-col gap-10 w-full justify-center items-end">
             {/* Hero Image */}
             <div className="flex md:absolute -left-[200px] rounded-xl overflow-hidden">
               <div className="flex flex-col flex-[1] items-center md:flex-row flex-wrap gap-5 md:justify-start">
@@ -67,12 +67,12 @@ const CareerBlock = ({ color, image, title, subTitle1, inverse, mailTo }) => {
             </div>
 
             {/* top - (Title and Sub title) */}
-            <div className=" flex flex-col justify-center items-end">
-              <div className=" font-bold  md:w-[80%] lg:w-[70%]  text-lg sm:text-md text-left">
+            <div className="flex flex-col justify-center items-end">
+              <div className=" font-bold  md:w-[80%] lg:w-[80%]  text-lg sm:text-md text-left">
                 {title}
               </div>
 
-              <div className="my-5 text-sm  md:w-[80%] lg:w-[70%]">
+              <div className="my-5 text-sm  md:w-[80%] lg:w-[80%] text-left">
                 {subTitle1}
               </div>
             </div>

@@ -302,7 +302,6 @@ const Navbar = ({ nav }) => {
               </SearchMenu>
             </div>
           </div>
-
           {/* Nav Dropdown */}
           <NavDropdown
             isNavDropdownOpen={isNavDropdownOpen}
