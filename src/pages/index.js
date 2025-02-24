@@ -4,5 +4,14 @@ import Careers from "./Careers";
 import ContactPage from "./ContactPage";
 import About from "./About";
 import Leadership from "./Leadership";
+import Sustainability from "./Sustainability";
 
-export { Leadership, Home, PageNotFound, Careers, ContactPage, About };
+export {
+  Leadership,
+  Sustainability,
+  Home,
+  PageNotFound,
+  Careers,
+  ContactPage,
+  About,
+};

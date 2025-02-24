@@ -15,11 +15,15 @@ import report from "./report.jpg";
 import aim from "./aim.jpg";
 import mission from "./mission.jpg";
 import vision from "./vision.jpg";
+import sustainability1 from "./sustainability1.jpeg";
+import sustainability2 from "./sustainability2.jpg";
 
 export {
   aim,
   mission,
   vision,
+  sustainability1,
+  sustainability2,
   dna,
   report,
   contact,

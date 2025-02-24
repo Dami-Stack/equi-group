@@ -170,7 +170,7 @@ const Navbar = ({ nav }) => {
               {navbarData?.map(({ id, title, url, type, subsections }) => {
                 if (type === "link") {
                   return (
-                    <NavLink to={"/"} key={id}>
+                    <NavLink to={url} key={id}>
                       {({ isActive }) => (
                         <NavbarLinkItem
                           title={title}
@@ -183,13 +183,21 @@ const Navbar = ({ nav }) => {
                   );
                 } else if (type === "navDropdown") {
                   return (
-                    <NavbarLinkItem
-                      title={title}
-                      url={url}
+                    <NavLink
                       key={id}
-                      isActive={true}
-                      handleClick={() => handleDropdownItemClick(id)}
-                    />
+                      to={url}
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      {({ isActive }) => (
+                        <NavbarLinkItem
+                          title={title}
+                          url={url}
+                          key={id}
+                          isActive={isActive}
+                          handleClick={() => handleDropdownItemClick(id)}
+                        />
+                      )}
+                    </NavLink>
                   );
                 } else if (type === "newLink") {
                   return (
@@ -337,12 +345,13 @@ export default Navbar;
 
 // Navbar link item
 const NavbarLinkItem = ({ title, url, isActive, handleClick }) => {
+  console.log(isActive, title);
   return (
     <div
       onClick={handleClick}
       className={`${
         isActive
-          ? "text-secondary text-[16px] font-semibold"
+          ? "text-primary-110 text-[16px] font-semibold"
           : "text-secondary text-[16px] font-semibold"
       } hover:text-primary-110 w-fit cursor-pointer flex items-center relative text-left transition-all duration-200 ease-linear group`}
     >

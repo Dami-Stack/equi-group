@@ -6,6 +6,7 @@ import {
   Home,
   Leadership,
   PageNotFound,
+  Sustainability,
 } from "./pages";
 import GeneralLayout from "./layouts/GeneralLayout";
 import Solution from "./pages/Solution";
@@ -95,7 +96,7 @@ const App = () => {
         />
         {/* End of About Page */}
 
-        {/* About Page */}
+        {/* About Page/leadership*/}
         <Route
           path="/about/leadership"
           element={
@@ -104,7 +105,18 @@ const App = () => {
             </GeneralLayout>
           }
         />
-        {/* End of About Page */}
+        {/* End of About Page/leadership */}
+
+        {/* About Page/sustainability*/}
+        <Route
+          path="/about/sustainability"
+          element={
+            <GeneralLayout>
+              <Sustainability />
+            </GeneralLayout>
+          }
+        />
+        {/* End of About Page/sustainability */}
 
         {/* Undocumented routes */}
         <Route

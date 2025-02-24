@@ -1,5 +1,4 @@
 import React from "react";
-import { dna } from "../assets/images";
 
 const CareerBlock = ({ color, image, title, subTitle1, inverse, mailTo }) => {
   // Inline style to set the background image
@@ -25,7 +24,7 @@ const CareerBlock = ({ color, image, title, subTitle1, inverse, mailTo }) => {
                 {title}
               </div>
 
-              <div className="my-5 text-sm md:text-left text-left md:w-[80%] lg:w-[70%]">
+              <div className="my-5 text-sm md:text-left text-left md:w-[80%] lg:w-[60%]">
                 {subTitle1}
               </div>
               {mailTo && (

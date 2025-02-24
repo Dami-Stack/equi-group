@@ -30,9 +30,6 @@ const Solution = () => {
   const [pageConfig, setPageConfig] = useState(null);
 
   const pageLocation = location?.pathname?.split("/")[2];
-  console.log();
-  // const pageConfig = location.state;
-  console.log(pageConfig);
 
   const solutionsData = productsAndServicesArray?.filter(
     (product) => product?.title !== pageConfig?.title

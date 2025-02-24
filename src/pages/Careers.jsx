@@ -50,7 +50,7 @@ const Careers = () => {
           "Join our team and help us shape the future of sustainable investments."
         }
         subTitle1={
-          "OOPS!! No opening at the moment cirle back later or you can check out our graduate opportunities in the subsequent section."
+          "OOPS!! No opening at the moment circle back later or you can check out our graduate opportunities in the subsequent section."
         }
         inverse={true}
       />

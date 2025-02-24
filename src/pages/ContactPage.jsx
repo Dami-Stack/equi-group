@@ -1,20 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  CareerBlock,
-  Contact,
-  Disclaimer,
-  Divider,
-  Featured,
-  Hero,
-  ImageCarousel,
-  InfoBlock,
-  Lifestyle,
-  RiskReport,
-  Solutions,
-  SubpageHero,
-  Team,
-  Values,
-} from "../components";
+import { Disclaimer, SubpageHero } from "../components";
 
 const ContactPage = () => {
   const [pageConfig, setPageConfig] = useState({
@@ -26,19 +11,19 @@ const ContactPage = () => {
   const contactDetails = [
     {
       title: "Address:",
-      content: "224 Old Bond Street Mayfair, London W1S 4AP United Kingdom",
+      content: "24 Old Bond Street Mayfair, London W1S 4AP United Kingdom",
     },
     {
-      title: "Phone Number:",
-      content: "+44 (0) 330 13 317 04",
+      title: "Phone Numbers:",
+      content: "+44 (0) 330 13 317 04, +234 803 307 2283, +234 812 586 9848",
+    },
+    {
+      title: "Email Addresses:",
+      content: "info@equiserve.com, charles.osuji@equiservegroup.com",
     },
     {
       title: "Hours:",
       content: "Mon-Fri 8:00AM – 5:00PM",
-    },
-    {
-      title: "Email:",
-      content: "info@equiserve.com",
     },
   ];
 
