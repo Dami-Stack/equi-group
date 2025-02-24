@@ -45,7 +45,7 @@ const Leadership = () => {
       />
 
       {/* Execs */}
-      <div className="w-full flex flex-col items-center py-16 gap-28">
+      <div className="w-full flex flex-col items-center py-12 gap-10">
         {" "}
         {execs?.map((insight, index) => {
           const {
@@ -63,8 +63,10 @@ const Leadership = () => {
             <div
               key={index}
               className={`${
-                index % 2 === 0 ? "flex-row-reverse" : "flex-row"
-              } h-fit flex bg-white justify-between overflow-hidden w-full app__container px-5  lg:px-[48px]`}
+                index % 2 === 0
+                  ? "md:flex-row-reverse"
+                  : "md:flex-row gap-8 bg-[#FAF9F4]"
+              } h-fit py-10 flex-col  flex bg-white  overflow-hidden w-full app__container px-5  lg:px-[48px]`}
             >
               {/* <!-- Card Image --> */}
               <div className="mx-auto h-[250px] lg:h-[300px] w-[250px] lg:w-[300px] overflow-hidden bg-black rounded-full">
@@ -76,7 +78,7 @@ const Leadership = () => {
               </div>
 
               {/* <!-- Card Content --> */}
-              <div class="flex flex-col  flex-1 py-4 justify-center ">
+              <div class="flex flex-col  flex-1 py-4 justify-center">
                 {/* <!-- header --> */}
 
                 <p
@@ -98,7 +100,7 @@ const Leadership = () => {
                 <p class="text-sm my-5 leading-6 w-full lg:w-[90%] ">
                   {details2}
                 </p>
-                <p class="text-sm italic font-medium leading-6 w-full lg:w-[90%] ">
+                <p class="text-sm italic leading-6 w-full lg:w-[90%] ">
                   {details3}
                 </p>
               </div>
