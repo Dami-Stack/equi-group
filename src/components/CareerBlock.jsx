@@ -29,7 +29,7 @@ const CareerBlock = ({ color, image, title, subTitle1, inverse, mailTo }) => {
               </div>
               {mailTo && (
                 <a
-                  href="mailto:careers@equiserve.com"
+                  href="mailto:hr@equiservegroup.com"
                   className="underline text-blue-500"
                 >
                   {mailTo}

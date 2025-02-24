@@ -19,7 +19,7 @@ const ContactPage = () => {
     },
     {
       title: "Email Addresses:",
-      content: "info@equiserve.com, charles.osuji@equiservegroup.com",
+      content: "info@equiservegroup.com, charles.osuji@equiservegroup.com",
     },
     {
       title: "Hours:",

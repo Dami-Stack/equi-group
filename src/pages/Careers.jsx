@@ -67,7 +67,7 @@ const Careers = () => {
         subTitle1={
           "We are keen to hear from graduates seeking opportunities in Investment Banking. Applicants can send CVs to"
         }
-        mailTo={"careers@equiserve.com"}
+        mailTo={"hr@equiservegroup.com"}
       />
 
       {/* Values */}
