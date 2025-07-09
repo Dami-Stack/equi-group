@@ -230,6 +230,18 @@ export const subsidiaries = [
     url: "http://equiserveafrica.co.za",
     icon: "twemoji:flag-south-africa",
   },
+  {
+    id: "uk",
+    title: "UK - International",
+    url: "http://equiserveafrica.co.za",
+    icon: "flagpack:gb-ukm",
+  },
+  {
+    id: "africa",
+    title: "Africa",
+    url: "http://equiserveafrica.co.za",
+    icon: "academicons:africarxiv",
+  },
 ];
 
 export const insights = [

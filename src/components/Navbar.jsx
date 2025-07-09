@@ -242,11 +242,23 @@ const Navbar = ({ nav }) => {
               )}
             </NavLink>{" "}
             <div className="relative">
-              <Icon
+              <div
+                className="flex items-center group relative gap-2"
                 onClick={handleSearchMenuClick}
-                icon={"lets-icons:world-2-light"}
-                className="cursor-pointer text-secondary hover:text-primary-110 transition-all ease-in-out duration-300 w-7 h-7"
-              />
+              >
+                <div
+                  className={`text-secondary text-[16px] font-semibold group-hover:text-primary-110 w-fit cursor-pointer flex items-center relative text-left transition-all duration-200 ease-linear group`}
+                >
+                  <div className={`font-semibold`}>Operations</div>
+                </div>
+                <Icon
+                  icon={"lets-icons:world-2-light"}
+                  className="cursor-pointer text-secondary group-hover:text-primary-110 transition-all ease-in-out duration-300 w-6 h-6"
+                />
+                <div
+                  className={`!h-[2px] bg-primary-110 text-primary-110 w-[0px] group-hover:w-full rounded-[100px] absolute left-0 -bottom-[10px] z-10 transition-all duration-300 ease-linear`}
+                ></div>
+              </div>
 
               <SearchMenu
                 closeSearchMenu={(e) => closeSearchMenu(e)}
@@ -345,7 +357,6 @@ export default Navbar;
 
 // Navbar link item
 const NavbarLinkItem = ({ title, url, isActive, handleClick }) => {
-  console.log(isActive, title);
   return (
     <div
       onClick={handleClick}
