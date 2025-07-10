@@ -15,11 +15,11 @@ const ContactPage = () => {
     },
     {
       title: "Phone Numbers:",
-      content: "+44 (0) 330 13 317 04, +234 803 307 2283, +234 812 586 9848",
+      content: "+44 (0) 330 13 317 04",
     },
     {
-      title: "Email Addresses:",
-      content: "info@equiservegroup.com, charles.osuji@equiservegroup.com",
+      title: "Email Address:",
+      content: "info@equiservegroup.com",
     },
     {
       title: "Hours:",

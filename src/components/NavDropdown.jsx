@@ -42,6 +42,10 @@ const NavDropdown = ({
                   style={"pr-6"}
                   link={subsections[0]?.dropdownUrl}
                   content={subsections[0]?.content}
+                  services={subsections[0]?.services}
+                  isReadMore={subsections[0]?.isReadMore}
+                  showIcon={subsections[0]?.showIcon}
+                  icon={subsections[0]?.icon}
                   subsection={subsections[0]}
                   setIsNavDropdownOpen={setIsNavDropdownOpen}
                 />
@@ -50,6 +54,10 @@ const NavDropdown = ({
                   style={"px-6 border-x border-x-secondary"}
                   link={subsections[1]?.dropdownUrl}
                   content={subsections[1]?.content}
+                  services={subsections[1]?.services}
+                  isReadMore={subsections[1]?.isReadMore}
+                  showIcon={subsections[1]?.showIcon}
+                  icon={subsections[1]?.icon}
                   subsection={subsections[1]}
                   setIsNavDropdownOpen={setIsNavDropdownOpen}
                 />
@@ -58,6 +66,10 @@ const NavDropdown = ({
                   style={"px-6"}
                   link={subsections[2]?.dropdownUrl}
                   content={subsections[2]?.content}
+                  services={subsections[2]?.services}
+                  isReadMore={subsections[2]?.isReadMore}
+                  showIcon={subsections[2]?.showIcon}
+                  icon={subsections[2]?.icon}
                   subsection={subsections[2]}
                   setIsNavDropdownOpen={setIsNavDropdownOpen}
                 />
@@ -75,24 +87,44 @@ const NavDropdown = ({
 
 const SingleColumn = ({
   title,
+  services,
   style,
   link,
   content,
   subsection,
   setIsNavDropdownOpen,
+  isReadMore,
+  showIcon,
+  icon,
 }) => {
   return (
     <div className={`${style} flex-1 h-full `}>
-      <div className="text-secondary text-[16px] font-semibold">{title}</div>
+      <div className="text-secondary text-[16px] font-semibold flex items-center ">
+        {title}{" "}
+        <span>{showIcon && <Icon icon={icon} className="w-5 h-5 ml-4" />}</span>
+      </div>
+
+      {/* List */}
+      {services?.map((service) => {
+        return (
+          <div className="" key={service?.title}>
+            {service?.title}
+          </div>
+        );
+      })}
 
       {/* <!-- Title --> */}
       <Link
         onClick={() => setIsNavDropdownOpen((prev) => !prev)}
         state={subsection}
         to={link}
-        class={`text-lg mt-5 cursor-pointer transition-all ease-in-out duration-200 hover:text-primary-110  h-[56px] font-bold text-secondary mb-2 line-clamp-2`}
+        class={`${
+          isReadMore
+            ? "hover:font-bold text-primary-110"
+            : "text-lg hover:text-primary-110 text-secondary"
+        }  w-fit mt-5 cursor-pointer transition-all ease-in-out duration-200   h-[56px] font-bold  mb-2 line-clamp-2`}
       >
-        {content}
+        {isReadMore ? "Read More" : content}
       </Link>
     </div>
   );

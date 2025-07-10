@@ -12,7 +12,25 @@ import {
 } from "../assets/images";
 
 export const investmentBankingSubsection = {
-  title: "Investment Banking",
+  title: "Nigeria",
+  showIcon: true,
+  icon: "twemoji:flag-nigeria",
+  isReadMore: true,
+  services: [
+    {
+      title: "•	Investment Banking",
+    },
+    {
+      title: "•	Investment Management",
+    },
+    {
+      title: "•	Securities Trading",
+    },
+    { title: "•	Digital Banking" },
+    {
+      title: "•	Property Investment",
+    },
+  ],
   id: "investmentBanking",
   url: "http://coretrustinvestmentltd.com",
   sameSiteDropDownUrl: true,
@@ -28,7 +46,18 @@ export const investmentBankingSubsection = {
     "Our investee firm is dedicated to providing expert investment banking solutions and offers a range of services including mergers and acquisitions, capital raising, and strategic advisory.",
 };
 export const investmentManagementSubsection = {
-  title: "Investment Management",
+  title: "South Africa",
+  showIcon: true,
+  icon: "twemoji:flag-south-africa",
+  isReadMore: true,
+  services: [
+    {
+      title: "•	Private Investments",
+    },
+    {
+      title: "•	Property Investment",
+    },
+  ],
   id: "investmentManagement",
   url: "http://cititrustassetmgt.com",
   sameSiteDropDownUrl: true,
@@ -44,7 +73,21 @@ export const investmentManagementSubsection = {
     "Our Asset Management in Africa offers customized corporate banking, wealth, and fund management services designed to address the unique needs of both retail and corporate clients.",
 };
 export const securitiesTradingSubsection = {
-  title: "Securities Trading",
+  title: "UK - International",
+  showIcon: true,
+  icon: "flagpack:gb-ukm",
+  isReadMore: true,
+  services: [
+    {
+      title: "•	Strategic Advisory",
+    },
+    {
+      title: "•	Market Analysis",
+    },
+    {
+      title: "•	Private Investment",
+    },
+  ],
   id: "securitiesTrading",
   url: "http://atlassportfolios.com",
   sameSiteDropDownUrl: true,
@@ -126,7 +169,7 @@ export const navbarData = [
       sustainabilitySubsection,
     ],
   },
-  { title: "Careers", url: "/careers", id: "careers", type: "newLink" },
+  { title: "Investors", url: "/careers", id: "careers", type: "newLink" },
   // { title: "Careers", url: "/careers", id: "careers", type: "navDropdown" },
   {
     title: "About Us",
@@ -173,7 +216,7 @@ export const miniNavbarData = [
       },
     ],
   },
-  { title: "Careers", url: "/careers", id: "careers", type: "link" },
+  { title: "Investors", url: "/careers", id: "careers", type: "link" },
   {
     title: "About Us",
     url: "/about",
@@ -248,66 +291,69 @@ export const insights = [
   {
     id: 3,
     imgUrl:
-      "https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "South African central bank governor’s comments on rate decision",
-    link: "https://www.cnbcafrica.com/2025/south-african-central-bank-governors-comments-on-rate-decision-5/",
+      "https://cms.cnbcafrica.com/wp-content/uploads/2025/07/TL2VQVZRB5J4ZICH5ZCGPM2HBU-1536x1029.jpg",
+    title:
+      "South Africa's Rand and Stocks Slip as Lower Commodity Prices Weigh",
+    link: "https://www.cnbcafrica.com/2025/south-african-rand-flat-investors-eye-commodity-prices-and-trade-talks/",
     content:
-      "Moving to consumer prices, headline inflation averaged 4.4% last year, near the middle of our target range. Inflation slowed to 3% in December, having started the year above ...",
-    date: "30th of January, 2025",
+      "JOHANNESBURG, July 9 (Reuters) – South Africa’s commodity-backed currency and stocks weakened on Wednesday, with investor focus ...",
+    date: "9th of July, 2025",
   },
   {
     id: 5,
     imgUrl:
-      "https://images.pexels.com/photos/17614476/pexels-photo-17614476/free-photo-of-holding-a-smartphone-with-the-threads-app-with-the-meta-platforms-logo-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://www.brookings.edu/wp-content/uploads/2025/07/shutterstock_2283181423.jpg?quality=75&w=1500",
     title:
-      "Zuckerberg says Meta won’t slow down AI spend despite DeepSeek’s breakthrough",
-    link: "https://www.cnbcafrica.com/2025/zuckerberg-says-meta-wont-slow-down-ai-spend-despite-deepseeks-breakthrough/",
+      "Trump Promises West African Leaders a Pivot to Trade as the Region Reels from Sweeping Aid Cuts",
+    link: "https://www.brookings.edu/articles/prosperity-and-power-trumps-selective-us-africa-summit-and-the-race-with-china/#:~:text=essential%20votes%2C%20and%20framed%20the,%2C%20and%20investment%20over%20assistance.%E2%80%9D",
     content:
-      "Meta CEO Mark Zuckerberg on Wednesday said it’s too early to tell what impact DeepSeek’s breakthrough AI model will have on his company and the broader tech industry ...",
-    date: "30th of January, 2024",
+      "In his first major diplomatic move with Africa during his return to the White House, President Trump is set to welcome the leaders of Gabon, Guinea-Bis ...",
+    date: "8th of July, 2025",
   },
   {
     id: 1,
     imgUrl:
-      "https://images.pexels.com/photos/1556704/pexels-photo-1556704.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://static.toiimg.com/thumb/msid-122345797,imgsize-929058,width-400,resizemode-4/122345797.jpg",
     title:
-      "Africa Energy Summit, leaders commit to energy transformation with more than $50billion backing from global partners",
-    link: "https://www.afdb.org/en/news-and-events/press-releases/africa-energy-summit-leaders-commit-energy-transformation-more-50billion-backing-global-partners-80515",
+      "Nvidia Becomes First Public Company to Cross $4 Trillion Market Cap",
+    link: "https://timesofindia.indiatimes.com/business/international-business/nvidia-market-cap-milestone-chipmaker-becomes-first-public-company-to-hit-4-trillion-ai-boom-drives-rally/articleshow/122345799.cms",
     content:
-      "Thirty African Heads of State and government today committed to concrete reforms and actions to expand access to reliable, affordable, and ...",
-    date: "28th of January, 2025",
+      "Nvidia has achieved a historic milestone, becoming the first publicly traded company to exceed a $4 trillion market valuation, driven by the ...",
+    date: "10th of July, 2025",
   },
   {
     id: 4,
     imgUrl:
-      "https://images.pexels.com/photos/186464/pexels-photo-186464.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Essentials to understanding stock market fundamentals",
-    link: "https://punchng.com/essentials-to-understanding-stock-market-fundamentals/",
+      "https://static.toiimg.com/thumb/msid-122323096,imgsize-100818,width-400,resizemode-4/122323096.jpg",
+    title:
+      "US Stock Market: Dow Dips Over 50 Points While Nasdaq Was Up 0.09%; ",
+    link: "https://timesofindia.indiatimes.com/business/international-business/us-stock-market-dow-dips-6-points-while-nasdaq-up-0-1-wall-street-trades-flat-amid-donald-trumps-latest-tariff-threat/articleshow/122323016.cms",
     content:
-      "According to a report by Money Africa, the stock market is a collection of places and mediums through which investors can buy and sell...",
-    date: "22nd of January, 2025",
+      " US markets saw mixed performance as investors reacted to renewed tariff warnings from President Trump, while assessing ...",
+    date: "8th of July, 2025",
   },
   {
     id: 6,
     imgUrl:
-      "https://images.pexels.com/photos/5980743/pexels-photo-5980743.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iO4Iez_XBG9I/v1/1800x1200.webp",
     title:
-      "Bitcoin soars past $109,000 ahead of possible early action on crypto by Trump",
-    link: "https://abcnews.go.com/amp/US/wireStory/bitcoin-soars-past-109000-ahead-early-action-crypto-117876442?cid=alerts_cryptocurrency",
+      "South Africa Finance Head Cautions Against Rushing New Inflation Goal",
+    link: "https://www.bloomberg.com/news/articles/2025-07-08/south-africa-finance-head-cautions-against-rushing-new-inflation-goal",
     content:
-      "The price of bitcoin has surged to over $109,000 just hours ahead of President-elect Donald Trump's inauguration, as a pumped up cryptocurrency ...",
-    date: "20th of January, 2025",
+      "South Africa's finance minister said work on lowering the inflation target is `progressing well` but cautioned against rushing the decision  ...",
+    date: "8th of July, 2025",
   },
 
   {
     id: 2,
     imgUrl:
-      "https://images.pexels.com/photos/5671470/pexels-photo-5671470.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Equity market gains N77bn, nears N60tn capitalisation",
-    link: "https://punchng.com/equity-market-gains-n77bn-nears-n60tn-capitalisation/",
+      "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/Bitchat-app-preview.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=1080",
+    title:
+      "Jack Dorsey unveils Bitchat: an offline, encrypted Bluetooth messaging app",
+    link: "https://www.theverge.com/news/701272/jack-dorsey-bitchat-bluetooth-messaging-app",
     content:
-      "The Nigerian equity market recorded a gain of N77bn in the past week, bringing the total market capitalisation closer to the anticipated ...",
-    date: "25th of November, 2024",
+      "Bitchat allows users to send encrypted messages over Bluetooth without the internet, using a mesh network approach. It supports anonymous ...",
+    date: "8th of July, 2025",
   },
 ];
 
@@ -452,7 +498,7 @@ export const footerLinks = [
       { name: "Solutions", link: "/solutions/investmentBanking" },
       { name: "Insights", link: "/insights" },
       { name: "About us", link: "/about" },
-      { name: "Careers", link: "/careers" },
+      { name: "Investors", link: "/careers" },
     ],
   },
 ];
