@@ -8,14 +8,16 @@ const CustomInfoBlock = ({
   img,
   title,
   content,
+  subsection,
   floatingContent,
   content2,
 }) => {
   // Inline style to set the background image
 
+  console.log(subsection);
   return (
     <section
-      className="w-full overflow-hidden bg-primary hero__gradient text-secondary lg:h-[calc(100vh-90px)] lg:max-h-[500px] flex justify-center z-10"
+      className="w-full overflow-hidden bg-primary hero__gradient text-secondary lg:h-[calc(100vh-90px)] lg:max-h-[500px] lg:min-h-fit flex justify-center z-10"
 
       //   style={headerStyle}
     >
@@ -27,17 +29,26 @@ const CustomInfoBlock = ({
         {/* Hero left */}
         <div className="relative flex flex-col gap-10 w-full  justify-center">
           {/* top - (Title and Sub title) */}
-          <div className="flex flex-col justify-center items-start">
+          <div className="my-48 flex flex-col justify-center items-start">
             <div className=" font-bold  text-[36px] sm:text-[42px] xl:text-[50px] leading-[40px] sm:leading-[48px] lg:leading-[56px] text-left">
               {title}
             </div>
 
-            <div className="my-5 font-bold text-[16px] sm:text-[20px]  md:text-left text-left md:w-[80%] ">
+            <div className="my-5 font-semibold lg:text-[16px] sm:text-[20px]  md:text-left text-left md:w-[80%] ">
               {content}
             </div>
-            <div className="font-bold text-[16px] sm:text-[20px]  md:text-left text-left md:w-[80%] ">
+            <div className="font-semibold lg:text-[16px] sm:text-[20px]  md:text-left text-left md:w-[80%] ">
               {content2}
             </div>
+            {/* List */}
+            <div className="mt-4 font-bold text-xl">Our Services Include:</div>
+            {subsection?.map((service) => {
+              return (
+                <div className="font-semibold ml-5" key={service?.title}>
+                  {service?.title}
+                </div>
+              );
+            })}
           </div>
 
           {/* Hero Image */}

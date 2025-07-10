@@ -31,6 +31,7 @@ export const investmentBankingSubsection = {
       title: "•	Property Investment",
     },
   ],
+  heroIcon: "twemoji:flag-nigeria",
   id: "investmentBanking",
   url: "http://coretrustinvestmentltd.com",
   sameSiteDropDownUrl: true,
@@ -42,8 +43,10 @@ export const investmentBankingSubsection = {
   bgImage:
     "https://images.pexels.com/photos/45917/pexels-photo-45917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   header: "Strategic Investment Banking Services.",
+  content2:
+    "Nigeria is our flagship market, contributing the largest revenue to the group with vast operations and opportunities in Investment Banking, Banking, and Real Estate investment. Our focus in Nigeria is to continue on steady growth and transform into a fully digitalised financial services group, and promote inclusive banking",
   content:
-    "Our investee firm is dedicated to providing expert investment banking solutions and offers a range of services including mergers and acquisitions, capital raising, and strategic advisory.",
+    "The Nigerian financial system is the second largest in sub-Saharan Africa, just below South Africa, and it consists of a diverse banking system, insurance, and non-bank financial institutions",
 };
 export const investmentManagementSubsection = {
   title: "South Africa",
@@ -58,6 +61,7 @@ export const investmentManagementSubsection = {
       title: "•	Property Investment",
     },
   ],
+  heroIcon: "twemoji:flag-south-africa",
   id: "investmentManagement",
   url: "http://cititrustassetmgt.com",
   sameSiteDropDownUrl: true,
@@ -69,8 +73,10 @@ export const investmentManagementSubsection = {
   bgImage:
     "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   header: "Tailored Asset Management Solutions.",
+  content2:
+    "Equiserve's focus in South Africa is to build an enduring and sustainable investment holding company that invests in financial services, fintech, healthcare, and real estate across Africa, to ultimately support businesses with high growth potential and impact the African economy.",
   content:
-    "Our Asset Management in Africa offers customized corporate banking, wealth, and fund management services designed to address the unique needs of both retail and corporate clients.",
+    "By international standards, South Africa's Investment and Financial Markets are well diversified, resilient, and developed. The South African market is the largest and biggest in sub-Saharan Africa, with global exposure and best operating practices.",
 };
 export const securitiesTradingSubsection = {
   title: "UK - International",
@@ -88,6 +94,7 @@ export const securitiesTradingSubsection = {
       title: "•	Private Investment",
     },
   ],
+  heroIcon: "flagpack:gb-ukm",
   id: "securitiesTrading",
   url: "http://atlassportfolios.com",
   sameSiteDropDownUrl: true,
@@ -99,8 +106,10 @@ export const securitiesTradingSubsection = {
   bgImage:
     "https://images.pexels.com/photos/887845/pexels-photo-887845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   header: "Capital Markets & Trading Excellence.",
+  content2:
+    "Our UK operating company acts as our gateway to reach the vast majority of Africa, leaving abroad and providing strategic support to corporate clients wishing to invest and trade, and those wishing to trade in international markets like the UK, Europe, the Middle East, America, and Pacific Asia. Our UK firm invests its funds in African-focused businesses operating in international markets",
   content:
-    "Our Trading subsidiary offers comprehensive capital markets services ranging from share trading (buy/sell), fixed income, and commodities trading. The firm also provides OTC trading and derivatives.",
+    "The UK as a global market provides unparalleled access to global capital with its deep and liquid markets for various asset classes, and the UK attracts a significant presence of global investors.",
 };
 
 export const aboutUsSubsection = {
@@ -408,7 +417,7 @@ export const productsAndServicesArray = [
       "Delivering tailored financial advisory services to meet your strategic objectives.",
     link: "/solutions/investmentBanking",
     content:
-      "Our investee firm is dedicated to providing expert investment banking solutions and offers a range of services including mergers and acquisitions, capital raising, and strategic advisory.",
+      "The Nigerian financial system is the second largest in sub-Saharan Africa, just below South Africa, and it consists of a diverse banking system, insurance, and non-bank financial institutions",
   },
   {
     id: 2,

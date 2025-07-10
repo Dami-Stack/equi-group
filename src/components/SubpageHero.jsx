@@ -27,13 +27,23 @@ const SubpageHero = ({ bgImage, config, hideCta }) => {
         <div className="text-white relative flex flex-col gap-10 w-full  justify-center">
           {/* top - (Title and Sub title) */}
           <div className="flex flex-col justify-center items-start">
-            <div className="mb-5 font-bold text-[20px]  md:text-left text-left w-full ">
+            <div className="mb-1 font-bold text-[20px]  md:text-left text-left w-full ">
               {config?.title}
             </div>
 
-            <div className="w-[70%] font-bold  text-[36px] sm:text-[42px] xl:text-[50px] leading-[46px] sm:leading-[48px] lg:leading-[56px] text-left">
-              {config?.header}
-            </div>
+            {!config?.heroIcon && (
+              <div className="w-[70%] font-bold  text-[36px] sm:text-[42px] xl:text-[50px] leading-[46px] sm:leading-[48px] lg:leading-[56px] text-left">
+                {config?.header}
+              </div>
+            )}
+            {config?.heroIcon && (
+              <div className="h-48">
+                <Icon
+                  icon={config?.heroIcon}
+                  className="w-auto h-full cursor-pointer"
+                />
+              </div>
+            )}
           </div>
 
           {/* Bottom - CTA */}

@@ -66,6 +66,8 @@ const Solution = () => {
       <CustomInfoBlock
         title={pageConfig?.title}
         content={pageConfig?.content}
+        content2={pageConfig?.content2}
+        subsection={pageConfig?.services}
         floatingContent={true}
       />
 
