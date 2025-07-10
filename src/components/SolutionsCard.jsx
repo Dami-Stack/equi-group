@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 import { arrowRight, arrowRightYellow } from "../assets/icons";
 import { navbarData } from "../utils/data";
+import { Icon } from "@iconify/react";
 
 const SolutionsCard = ({
   title,
   link,
   content,
   imgUrl,
+  icon,
   header,
   showHeader,
   headerStyle,
@@ -18,12 +20,16 @@ const SolutionsCard = ({
   return (
     <div class="min-w-[250px] lg:min-w-[32%] max-w-[370px] h-fit flex flex-col bg-white  overflow-hidden">
       {/* <!-- Card Image --> */}
-      <div className="mx-auto h-[250px] lg:h-[300px] w-[250px] lg:w-[300px] overflow-hidden bg-black rounded-full">
-        <img
-          src={imgUrl}
-          alt="Card Image"
-          class="w-full h-[300px] object-cover hover:scale-105 transition-all ease-in-out duration-200 cursor-pointer"
-        />
+      <div className="mx-auto h-[250px] lg:h-[300px] w-[250px] lg:w-[300px] overflow-hidden  rounded-full">
+        {!icon && (
+          <img
+            src={imgUrl}
+            alt="Card Image"
+            class="w-full h-[300px] object-cover hover:scale-105 transition-all ease-in-out duration-200 cursor-pointer"
+          />
+        )}
+
+        <Icon icon={icon} className="w-auto h-full" />
       </div>
 
       {/* <!-- Card Content --> */}

@@ -3,7 +3,7 @@ import heroImg from "./heroImg.png";
 import heroImg2 from "./heroImg2.png";
 import heroImg3 from "./heroImg3.png";
 import lifestyle from "./lifestyle.png";
-import leticia from "./leticia.jpg";
+import leticia from "./leticia2.jpg";
 import simonBlake from "./simonBlake.jpg";
 import yemiAdefisan from "./yemiAdefisan.jpeg";
 import dna from "./dna.png";

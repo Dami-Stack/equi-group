@@ -81,7 +81,7 @@ export const investmentManagementSubsection = {
 export const securitiesTradingSubsection = {
   title: "UK - International",
   showIcon: true,
-  icon: "flagpack:gb-ukm",
+  icon: "twemoji:flag-united-kingdom",
   isReadMore: true,
   services: [
     {
@@ -94,7 +94,7 @@ export const securitiesTradingSubsection = {
       title: "•	Private Investment",
     },
   ],
-  heroIcon: "flagpack:gb-ukm",
+  heroIcon: "twemoji:flag-united-kingdom",
   id: "securitiesTrading",
   url: "http://atlassportfolios.com",
   sameSiteDropDownUrl: true,
@@ -178,7 +178,7 @@ export const navbarData = [
       sustainabilitySubsection,
     ],
   },
-  { title: "Investors", url: "/careers", id: "careers", type: "newLink" },
+  { title: "Careers", url: "/careers", id: "careers", type: "newLink" },
   // { title: "Careers", url: "/careers", id: "careers", type: "navDropdown" },
   {
     title: "About Us",
@@ -225,7 +225,7 @@ export const miniNavbarData = [
       },
     ],
   },
-  { title: "Investors", url: "/careers", id: "careers", type: "link" },
+  { title: "Careers", url: "/careers", id: "careers", type: "link" },
   {
     title: "About Us",
     url: "/about",
@@ -286,7 +286,7 @@ export const subsidiaries = [
     id: "uk",
     title: "UK - International",
     url: "http://equiserveafrica.co.za",
-    icon: "flagpack:gb-ukm",
+    icon: "twemoji:flag-united-kingdom",
   },
   {
     id: "africa",
@@ -412,7 +412,8 @@ export const productsAndServicesArray = [
     subsections: investmentBankingSubsection,
     imgUrl:
       "https://images.pexels.com/photos/45917/pexels-photo-45917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Investment Banking",
+    title: "Nigeria",
+    icon: "twemoji:flag-nigeria",
     header:
       "Delivering tailored financial advisory services to meet your strategic objectives.",
     link: "/solutions/investmentBanking",
@@ -423,23 +424,25 @@ export const productsAndServicesArray = [
     id: 2,
     imgUrl:
       "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Investment Management",
+    title: "South Africa",
+    icon: "twemoji:flag-south-africa",
     link: "/solutions/investmentManagement",
     header:
       "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
     content:
-      "Our Asset Management in Africa offers customized corporate banking, wealth, and fund management services designed to address the unique needs of both retail and corporate clients.",
+      "By international standards, South Africa's Investment and Financial Markets are well diversified, resilient, and developed. The South African market is the largest and biggest in sub-Saharan Africa, with global exposure and best operating practices.",
   },
   {
     id: 3,
     imgUrl:
       "https://images.pexels.com/photos/887845/pexels-photo-887845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    title: "Securities Trading",
+    title: "UK - International",
+    icon: "twemoji:flag-united-kingdom",
     header:
       "Empowering your business with strategic capital solutions for sustainable growth.",
     link: "/solutions/securitiesTrading",
     content:
-      "Our Trading subsidiary offers comprehensive capital markets services ranging from share trading (buy/sell), fixed income, and commodities trading. The firm also provides OTC trading and derivatives.",
+      "The UK as a global market provides unparalleled access to global capital with its deep and liquid markets for various asset classes, and the UK attracts a significant presence of global investors.",
   },
 ];
 
@@ -507,7 +510,7 @@ export const footerLinks = [
       { name: "Solutions", link: "/solutions/investmentBanking" },
       { name: "Insights", link: "/insights" },
       { name: "About us", link: "/about" },
-      { name: "Investors", link: "/careers" },
+      { name: "Careers", link: "/careers" },
     ],
   },
 ];
