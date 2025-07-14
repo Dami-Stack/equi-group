@@ -48,6 +48,23 @@ export const investmentBankingSubsection = {
   content:
     "The Nigerian financial system is the second largest in sub-Saharan Africa, just below South Africa, and it consists of a diverse banking system, insurance, and non-bank financial institutions",
 };
+
+export const investorsSubsection = {
+  title: "Investors",
+  services: [
+    {
+      title: "•	How to Invest",
+    },
+    {
+      title: "•	Reports, Presentations and Announcements",
+    },
+    {
+      title: "•	Corporate Governance",
+    },
+    { title: "•	Advisors" },
+  ],
+};
+
 export const investmentManagementSubsection = {
   title: "South Africa",
   showIcon: true,
@@ -178,8 +195,14 @@ export const navbarData = [
       sustainabilitySubsection,
     ],
   },
-  { title: "Careers", url: "/careers", id: "careers", type: "newLink" },
-  // { title: "Careers", url: "/careers", id: "careers", type: "navDropdown" },
+  // { title: "Investors", url: "/investors", id: "investors", type: "newLink" },
+  {
+    subsections: [investorsSubsection],
+    title: "Investors",
+    url: "/investors",
+    id: "investors",
+    type: "navDropdown",
+  },
   {
     title: "About Us",
     url: "/about",
@@ -225,7 +248,7 @@ export const miniNavbarData = [
       },
     ],
   },
-  { title: "Careers", url: "/careers", id: "careers", type: "link" },
+  { title: "Investors", url: "/investors", id: "investors", type: "link" },
   {
     title: "About Us",
     url: "/about",
@@ -388,7 +411,7 @@ export const execs = [
     content:
       "Yemi is an Investment Banker with a wide range of experience in Global Banking and Markets, Research, and Mergers and Acquisitions across Africa.",
     details2:
-      "Yemi has over 23 years of commercial and investment banking experience and has been involved in listing and raising capital across Africa. He is a board member of various Investment firms and a bank in the UK, US, South Africa, and Nigeria.",
+      "Yemi has over two decades of commercial and investment banking experience and has been involved in several capital markets deals across Africa.",
     details3:
       "Yemi holds a bachelor’s degree in Business Management with Finance and an MSc in Finance and Investment Management from both Edinburgh Napier University and the University of Salford, UK respectively.",
   },
@@ -510,7 +533,7 @@ export const footerLinks = [
       { name: "Solutions", link: "/solutions/investmentBanking" },
       { name: "Insights", link: "/insights" },
       { name: "About us", link: "/about" },
-      { name: "Careers", link: "/careers" },
+      { name: "Investors", link: "/investors" },
     ],
   },
 ];
