@@ -1,6 +1,16 @@
 import React from "react";
 
-const CareerBlock = ({ color, image, title, subTitle1, inverse, mailTo }) => {
+const CareerBlock = ({
+  color,
+  image,
+  title,
+  subTitle1,
+  subTitle2,
+  subTitle3,
+  boldSubTitle,
+  inverse,
+  mailTo,
+}) => {
   // Inline style to set the background image
 
   return (
@@ -27,6 +37,21 @@ const CareerBlock = ({ color, image, title, subTitle1, inverse, mailTo }) => {
               <div className="my-5 text-sm md:text-left text-left md:w-[80%] lg:w-[60%]">
                 {subTitle1}
               </div>
+              {subTitle2 && (
+                <div className="text-sm md:text-left text-left md:w-[80%] lg:w-[60%]">
+                  {subTitle2}
+                </div>
+              )}
+              {subTitle3 && (
+                <div className="my-5 text-sm md:text-left text-left md:w-[80%] lg:w-[60%]">
+                  {subTitle3}
+                </div>
+              )}
+              {boldSubTitle && (
+                <div className="my-5 font-bold text-sm md:text-left text-left md:w-[80%] lg:w-[60%]">
+                  {boldSubTitle}
+                </div>
+              )}
               {mailTo && (
                 <a
                   href="mailto:hr@equiservegroup.com"

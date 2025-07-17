@@ -4,6 +4,7 @@ import {
   Careers,
   ContactPage,
   Home,
+  HowToInvest,
   Leadership,
   PageNotFound,
   Sustainability,
@@ -117,6 +118,17 @@ const App = () => {
           }
         />
         {/* End of About Page/sustainability */}
+
+        {/* Investment Page */}
+        {/* About Page/sustainability*/}
+        <Route
+          path="/investors/howToInvest"
+          element={
+            <GeneralLayout>
+              <HowToInvest />
+            </GeneralLayout>
+          }
+        />
 
         {/* Undocumented routes */}
         <Route

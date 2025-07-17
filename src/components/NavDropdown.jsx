@@ -106,7 +106,15 @@ const SingleColumn = ({
 
       {/* List */}
       {services?.map((service) => {
-        return (
+        return service?.isLink ? (
+          <Link
+            onClick={() => setIsNavDropdownOpen((prev) => !prev)}
+            className="hover:text-primary-110"
+            to={service?.route}
+          >
+            {service?.title}
+          </Link>
+        ) : (
           <div className="" key={service?.title}>
             {service?.title}
           </div>

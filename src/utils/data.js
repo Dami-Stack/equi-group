@@ -54,6 +54,8 @@ export const investorsSubsection = {
   services: [
     {
       title: "•	How to Invest",
+      isLink: true,
+      route: "/investors/howToInvest",
     },
     {
       title: "•	Reports, Presentations and Announcements",
