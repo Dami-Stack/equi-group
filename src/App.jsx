@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {
   About,
+  Advisors,
   Careers,
   ContactPage,
   Home,
@@ -120,12 +121,22 @@ const App = () => {
         {/* End of About Page/sustainability */}
 
         {/* Investment Page */}
-        {/* About Page/sustainability*/}
+        {/* About investors/howToInvest*/}
         <Route
           path="/investors/howToInvest"
           element={
             <GeneralLayout>
               <HowToInvest />
+            </GeneralLayout>
+          }
+        />
+
+        {/* About investors/advisors*/}
+        <Route
+          path="/investors/advisors"
+          element={
+            <GeneralLayout>
+              <Advisors />
             </GeneralLayout>
           }
         />

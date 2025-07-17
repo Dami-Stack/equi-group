@@ -6,9 +6,11 @@ import About from "./About";
 import Leadership from "./Leadership";
 import Sustainability from "./Sustainability";
 import HowToInvest from "./HowToInvest";
+import Advisors from "./Advisors";
 
 export {
   Leadership,
+  Advisors,
   HowToInvest,
   Sustainability,
   Home,
