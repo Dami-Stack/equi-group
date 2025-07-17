@@ -7,9 +7,11 @@ import Leadership from "./Leadership";
 import Sustainability from "./Sustainability";
 import HowToInvest from "./HowToInvest";
 import Advisors from "./Advisors";
+import CorporateGovernance from "./CorporateGovernance";
 
 export {
   Leadership,
+  CorporateGovernance,
   Advisors,
   HowToInvest,
   Sustainability,

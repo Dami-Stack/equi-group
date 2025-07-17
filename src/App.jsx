@@ -4,6 +4,7 @@ import {
   Advisors,
   Careers,
   ContactPage,
+  CorporateGovernance,
   Home,
   HowToInvest,
   Leadership,
@@ -137,6 +138,16 @@ const App = () => {
           element={
             <GeneralLayout>
               <Advisors />
+            </GeneralLayout>
+          }
+        />
+
+        {/* About investors/governance*/}
+        <Route
+          path="/investors/governance"
+          element={
+            <GeneralLayout>
+              <CorporateGovernance />
             </GeneralLayout>
           }
         />

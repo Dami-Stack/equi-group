@@ -62,6 +62,8 @@ export const investorsSubsection = {
     },
     {
       title: "•	Corporate Governance",
+      route: "/investors/governance",
+      isLink: true,
     },
     { title: "•	Advisors", isLink: true, route: "/investors/advisors" },
   ],

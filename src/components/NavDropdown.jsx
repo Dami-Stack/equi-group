@@ -105,21 +105,23 @@ const SingleColumn = ({
       </div>
 
       {/* List */}
-      {services?.map((service) => {
-        return service?.isLink ? (
-          <Link
-            onClick={() => setIsNavDropdownOpen((prev) => !prev)}
-            className="hover:text-primary-110"
-            to={service?.route}
-          >
-            {service?.title}
-          </Link>
-        ) : (
-          <div className="" key={service?.title}>
-            {service?.title}
-          </div>
-        );
-      })}
+      <div className="flex flex-col">
+        {services?.map((service) => {
+          return service?.isLink ? (
+            <Link
+              onClick={() => setIsNavDropdownOpen((prev) => !prev)}
+              className="hover:text-primary-110 underline"
+              to={service?.route}
+            >
+              {service?.title}
+            </Link>
+          ) : (
+            <div className="" key={service?.title}>
+              {service?.title}
+            </div>
+          );
+        })}
+      </div>
 
       {/* <!-- Title --> */}
       <Link
