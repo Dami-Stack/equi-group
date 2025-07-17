@@ -3,6 +3,7 @@ import {
   About,
   Advisors,
   Careers,
+  ComingSoon,
   ContactPage,
   CorporateGovernance,
   Home,
@@ -148,6 +149,21 @@ const App = () => {
           element={
             <GeneralLayout>
               <CorporateGovernance />
+            </GeneralLayout>
+          }
+        />
+
+        {/* About investors/reports*/}
+        <Route
+          path="/investors/reports"
+          element={
+            <GeneralLayout>
+              <ComingSoon
+                text={
+                  "Reports, presentations and the company’s announcements will be published here"
+                }
+                title={"Coming Soon!"}
+              />
             </GeneralLayout>
           }
         />

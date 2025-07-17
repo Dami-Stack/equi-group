@@ -110,7 +110,7 @@ const SingleColumn = ({
           return service?.isLink ? (
             <Link
               onClick={() => setIsNavDropdownOpen((prev) => !prev)}
-              className="hover:text-primary-110 underline"
+              className="text-sm my-1 hover:text-primary-110 underline"
               to={service?.route}
             >
               {service?.title}

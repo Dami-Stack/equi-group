@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import {
   insights,
   investmentBankingSubsection,
-  investmentManagementSubsection,
+  // investmentManagementSubsection,
   navbarData,
   productsAndServicesArray,
   securitiesTradingSubsection,

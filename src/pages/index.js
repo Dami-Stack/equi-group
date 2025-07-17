@@ -8,9 +8,11 @@ import Sustainability from "./Sustainability";
 import HowToInvest from "./HowToInvest";
 import Advisors from "./Advisors";
 import CorporateGovernance from "./CorporateGovernance";
+import ComingSoon from "./ComingSoon";
 
 export {
   Leadership,
+  ComingSoon,
   CorporateGovernance,
   Advisors,
   HowToInvest,
