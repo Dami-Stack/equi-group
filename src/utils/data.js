@@ -26,7 +26,6 @@ export const investmentBankingSubsection = {
     {
       title: "•	Securities Trading",
     },
-    { title: "•	Digital Banking" },
     {
       title: "•	Property Investment",
     },
@@ -279,12 +278,12 @@ export const miniNavbarData = [
 ];
 
 export const subsidiaries = [
-  {
-    id: "nigeria",
-    title: "Nigeria",
-    url: null,
-    icon: "twemoji:flag-nigeria",
-  },
+  // {
+  //   id: "nigeria",
+  //   title: "Nigeria",
+  //   url: null,
+  //   icon: "twemoji:flag-nigeria",
+  // },
   // {
   //   id: "nigeria",
   //   title: "Nigeria",

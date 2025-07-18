@@ -35,7 +35,7 @@ const HowToInvest = () => {
         title={"How To Invest"}
         image={sustainability2}
         subTitle1={
-          "Equiserve Group Limited (EGL: JPJ) has appointed JP Jenkins to facilitate trading (buy/sell) in its Ordinary Shares. This will allow new and existing shareholders to trade their shares through matching bargaining."
+          "Equiserve Group Limited (EQL: JPJ) has appointed JP Jenkins to facilitate trading (buy/sell) in its Ordinary Shares. This will allow new and existing shareholders to trade their shares through matching bargaining."
         }
         subTitle2={
           "JP Jenkins is a trading name of Infinitx Limited, a company incorporated in England & Wales with registered number 11551708 and whose registered office is at 101 Wigmore Street, 5th Floor, London, England, W1U 1QU (JPJ). JPJ (FRN 950991) is an appointed representative of Prosper Capital LLP (FRN 453007) (Prosper), which is authorised and regulated by the Financial Conduct Authority."
