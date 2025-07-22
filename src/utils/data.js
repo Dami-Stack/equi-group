@@ -199,7 +199,8 @@ export const advisorsSubsection = {
   header: "",
   services: [
     {
-      title: "We value our partners ...",
+      title:
+        "We value our partners and work closely with industry-leading professionals to ensure ...",
     },
   ],
   isReadMore: true,
