@@ -409,35 +409,56 @@ export const insights = [
   {
     id: 3,
     imgUrl:
-      "https://cms.cnbcafrica.com/wp-content/uploads/2025/07/TL2VQVZRB5J4ZICH5ZCGPM2HBU-1536x1029.jpg",
+      "https://nairametrics.com/wp-content/uploads/2024/05/gdp-750x375.png",
     title:
-      "South Africa's Rand and Stocks Slip as Lower Commodity Prices Weigh",
-    link: "https://www.cnbcafrica.com/2025/south-african-rand-flat-investors-eye-commodity-prices-and-trade-talks/",
+      "Rebasing shrinks Nigeria’s debt-to-GDP to 39.4% in Q1 2025, below FG limit of 40%",
+    link: "https://nairametrics.com/2025/07/22/rebasing-shrinks-nigerias-debt-to-gdp-to-39-4-in-q1-2025-below-fg-limit-of-40/",
     content:
-      "JOHANNESBURG, July 9 (Reuters) – South Africa’s commodity-backed currency and stocks weakened on Wednesday, with investor focus ...",
-    date: "9th of July, 2025",
+      "Nigeria’s public debt-to-GDP ratio dropped to 39.4% in Q1 2025, following the successful rebasing of the country’s Gross Domestic Product (GDP) ...",
+    date: "22nd of July, 2025",
   },
   {
     id: 5,
     imgUrl:
-      "https://www.brookings.edu/wp-content/uploads/2025/07/shutterstock_2283181423.jpg?quality=75&w=1500",
-    title:
-      "Trump Promises West African Leaders a Pivot to Trade as the Region Reels from Sweeping Aid Cuts",
-    link: "https://www.brookings.edu/articles/prosperity-and-power-trumps-selective-us-africa-summit-and-the-race-with-china/#:~:text=essential%20votes%2C%20and%20framed%20the,%2C%20and%20investment%20over%20assistance.%E2%80%9D",
+      "https://nairametrics.com/wp-content/uploads/2025/05/Cardoso-Olayemi-e1747811168614-1140x570.webp",
+    title: "CBN holds interest rates flat at 27.5% for 7 straight time",
+    link: "https://nairametrics.com/2025/07/22/cbn-holds-interest-rates-flat-at-27-5-for-7-straight-time/",
     content:
-      "In his first major diplomatic move with Africa during his return to the White House, President Trump is set to welcome the leaders of Gabon, Guinea-Bis ...",
-    date: "8th of July, 2025",
+      "The Central Bank of Nigeria (CBN) has announced the retention of the Monetary Policy Rate (MPR) at 27.5%, following the conclusion of its 301st Monetary ...",
+    date: "22nd of July, 2025",
   },
   {
     id: 1,
     imgUrl:
-      "https://static.toiimg.com/thumb/msid-122345797,imgsize-929058,width-400,resizemode-4/122345797.jpg",
+      "https://nairametrics.com/wp-content/uploads/2024/01/Screenshot-2024-01-28-152333-1140x570.png",
     title:
-      "Nvidia Becomes First Public Company to Cross $4 Trillion Market Cap",
-    link: "https://timesofindia.indiatimes.com/business/international-business/nvidia-market-cap-milestone-chipmaker-becomes-first-public-company-to-hit-4-trillion-ai-boom-drives-rally/articleshow/122345799.cms",
+      "Money market investment drives growth as mutual funds attract N1.99 trillion in H1 2025 ",
+    link: "https://nairametrics.com/2025/07/21/money-market-investment-drives-growth-as-mutual-funds-attract-n1-99-trillion-in-h1-2025/",
     content:
-      "Nvidia has achieved a historic milestone, becoming the first publicly traded company to exceed a $4 trillion market valuation, driven by the ...",
-    date: "10th of July, 2025",
+      "The Nigerian mutual fund industry maintained its robust growth trajectory in the first half of 2025, attracting a net inflow of N1.99 trillion  ...",
+    date: "21st of July, 2025",
+  },
+
+  {
+    id: 6,
+    imgUrl:
+      "https://i.guim.co.uk/img/media/af6c7bbf71f448bbe96a1aecd249a6f81008b4a9/185_0_2498_2000/master/2498.jpg?width=620&dpr=2&s=none&crop=none",
+    title: `UK strikes deal with private investors to build £38bn Sizewell C nuclear power plant`,
+    link: "https://www.theguardian.com/business/2025/jul/22/uk-deal-sizewell-c-nuclear-power-plant-investors-edf",
+    content:
+      "The UK government has struck a deal worth more than £38bn with private investors to back Britain’s biggest nuclear  ...",
+    date: "22nd of July, 2025",
+  },
+  {
+    id: 2,
+    imgUrl:
+      "https://i.guim.co.uk/img/media/541e3ceabb45b635c2c60365461bb75933a02cac/490_0_4201_3362/master/4201.jpg?width=460&dpr=2&s=none&crop=5%3A4",
+    title:
+      "UK borrowing rises more than expected, putting pressure on those in charge",
+    link: "https://www.theguardian.com/business/2025/jul/22/uk-borrowing-rachel-reeves-budget-tax-rises",
+    content:
+      "The UK government borrowed more than expected in June amid speculation the chancellor, Rachel Reeves, will need to raise taxes at the autumn  ...",
+    date: "22nd of July, 2025",
   },
   {
     id: 4,
@@ -448,29 +469,6 @@ export const insights = [
     link: "https://timesofindia.indiatimes.com/business/international-business/us-stock-market-dow-dips-6-points-while-nasdaq-up-0-1-wall-street-trades-flat-amid-donald-trumps-latest-tariff-threat/articleshow/122323016.cms",
     content:
       " US markets saw mixed performance as investors reacted to renewed tariff warnings from President Trump, while assessing ...",
-    date: "8th of July, 2025",
-  },
-  {
-    id: 6,
-    imgUrl:
-      "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iO4Iez_XBG9I/v1/1800x1200.webp",
-    title:
-      "South Africa Finance Head Cautions Against Rushing New Inflation Goal",
-    link: "https://www.bloomberg.com/news/articles/2025-07-08/south-africa-finance-head-cautions-against-rushing-new-inflation-goal",
-    content:
-      "South Africa's finance minister said work on lowering the inflation target is `progressing well` but cautioned against rushing the decision  ...",
-    date: "8th of July, 2025",
-  },
-
-  {
-    id: 2,
-    imgUrl:
-      "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/Bitchat-app-preview.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=1080",
-    title:
-      "Jack Dorsey unveils Bitchat: an offline, encrypted Bluetooth messaging app",
-    link: "https://www.theverge.com/news/701272/jack-dorsey-bitchat-bluetooth-messaging-app",
-    content:
-      "Bitchat allows users to send encrypted messages over Bluetooth without the internet, using a mesh network approach. It supports anonymous ...",
     date: "8th of July, 2025",
   },
 ];
