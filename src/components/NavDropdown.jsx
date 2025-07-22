@@ -75,7 +75,22 @@ const NavDropdown = ({
                 />
 
                 {/* Extra cloolumn */}
-                <div className="flex-1 opacity-0"></div>
+
+                {subsections[3]?.title && (
+                  <SingleColumn
+                    title={subsections[3]?.title}
+                    style={"px-6 border-l border-l-secondary"}
+                    link={subsections[3]?.dropdownUrl}
+                    content={subsections[3]?.content}
+                    services={subsections[3]?.services}
+                    isReadMore={subsections[3]?.isReadMore}
+                    showIcon={subsections[3]?.showIcon}
+                    icon={subsections[3]?.icon}
+                    subsection={subsections[3]}
+                    setIsNavDropdownOpen={setIsNavDropdownOpen}
+                  />
+                )}
+                {/* <div className="flex-1 opacity-0"></div> */}
               </div>
             </div>
           </motion.div>

@@ -48,27 +48,27 @@ export const investmentBankingSubsection = {
     "The Nigerian financial system is the second largest in sub-Saharan Africa, just below South Africa, and it consists of a diverse banking system, insurance, and non-bank financial institutions",
 };
 
-export const investorsSubsection = {
-  title: "Investors",
-  services: [
-    {
-      title: "•	How to Invest",
-      isLink: true,
-      route: "/investors/howToInvest",
-    },
-    {
-      title: "•	Reports, Presentations and Announcements",
-      route: "/investors/reports",
-      isLink: true,
-    },
-    {
-      title: "•	Corporate Governance",
-      route: "/investors/governance",
-      isLink: true,
-    },
-    { title: "•	Advisors", isLink: true, route: "/investors/advisors" },
-  ],
-};
+// export const investorsSubsection = {
+//   title: "Investors",
+//   services: [
+//     {
+//       title: "•	How to Invest",
+//       isLink: true,
+//       route: "/investors/howToInvest",
+//     },
+//     {
+//       title: "•	Reports, Presentations and Announcements",
+//       route: "/investors/reports",
+//       isLink: true,
+//     },
+//     {
+//       title: "•	Corporate Governance",
+//       route: "/investors/governance",
+//       isLink: true,
+//     },
+//     { title: "•	Advisors", isLink: true, route: "/investors/advisors" },
+//   ],
+// };
 
 // export const investmentManagementSubsection = {
 //   title: "South Africa",
@@ -148,6 +148,81 @@ export const aboutUsSubsection = {
   content:
     "EQUISERVE is a global company focusing on transforming Africa and contributing to the sustainable development of African economies.",
 };
+
+export const howToInvestSubsection = {
+  title: "How to Invest",
+  id: "howToInvest",
+  url: "",
+  sameSiteDropDownUrl: true,
+  sameSiteUrl: true,
+  dropdownUrl: "/investors/howToInvest",
+  solutionsTitle: "",
+  bgImage: "",
+  header: "",
+  services: [
+    {
+      title:
+        "Equiserve Group Limited (EQL: JPJ) has appointed JP Jenkins to facilitate trading ...",
+    },
+  ],
+  isReadMore: true,
+  content:
+    "Equiserve Group Limited (EQL: JPJ) has appointed JP Jenkins to facilitate trading (buy/sell) in its Ordinary Shares. This will allow new and",
+};
+export const corporateGovernanceSubsection = {
+  title: "Corporate Governance",
+  id: "corporateGovernance",
+  url: "",
+  sameSiteDropDownUrl: true,
+  sameSiteUrl: true,
+  dropdownUrl: "/investors/governance",
+  solutionsTitle: "",
+  bgImage: "",
+  header: "",
+  services: [
+    {
+      title:
+        "Equiserve Group Limited has decided to adopt and uphold the highest standard of  ...",
+    },
+  ],
+  isReadMore: true,
+};
+export const advisorsSubsection = {
+  title: "Advisors",
+  id: "advisors",
+  url: "",
+  sameSiteDropDownUrl: true,
+  sameSiteUrl: true,
+  dropdownUrl: "/investors/advisors",
+  solutionsTitle: "",
+  bgImage: "",
+  header: "",
+  services: [
+    {
+      title: "We value our partners ...",
+    },
+  ],
+  isReadMore: true,
+  content:
+    "Equiserve Group Limited (EQL: JPJ) has appointed JP Jenkins to facilitate trading (buy/sell) in its Ordinary Shares. This will allow new and",
+};
+export const reportsSubsection = {
+  title: `Reports, Presentations & Announcements`,
+  id: "reports",
+  url: "",
+  sameSiteDropDownUrl: true,
+  sameSiteUrl: true,
+  dropdownUrl: "/investors/reports",
+  solutionsTitle: "",
+  bgImage: "",
+  header: "",
+  services: [
+    {
+      title: `Coming Soon! Reports, presentations and the company’s announcements ...`,
+    },
+  ],
+  isReadMore: true,
+};
 export const leadershipSubsection = {
   title: "Leadership",
   id: "leadership",
@@ -202,7 +277,12 @@ export const navbarData = [
   },
   // { title: "Investors", url: "/investors", id: "investors", type: "newLink" },
   {
-    subsections: [investorsSubsection],
+    subsections: [
+      howToInvestSubsection,
+      corporateGovernanceSubsection,
+      advisorsSubsection,
+      reportsSubsection,
+    ],
     title: "Investors",
     url: "/investors",
     id: "investors",
@@ -278,12 +358,12 @@ export const miniNavbarData = [
 ];
 
 export const subsidiaries = [
-  // {
-  //   id: "nigeria",
-  //   title: "Nigeria",
-  //   url: null,
-  //   icon: "twemoji:flag-nigeria",
-  // },
+  {
+    id: "nigeria",
+    title: "Nigeria",
+    url: null,
+    icon: "twemoji:flag-nigeria",
+  },
   // {
   //   id: "nigeria",
   //   title: "Nigeria",
@@ -316,12 +396,12 @@ export const subsidiaries = [
     url: "http://equiserveafrica.co.za",
     icon: "twemoji:flag-united-kingdom",
   },
-  {
-    id: "africa",
-    title: "Africa",
-    url: "http://equiserveafrica.co.za",
-    icon: "academicons:africarxiv",
-  },
+  // {
+  //   id: "africa",
+  //   title: "Africa",
+  //   url: "http://equiserveafrica.co.za",
+  //   icon: "academicons:africarxiv",
+  // },
 ];
 
 export const insights = [
