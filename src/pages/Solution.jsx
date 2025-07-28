@@ -19,7 +19,7 @@ import { useLocation } from "react-router-dom";
 import {
   insights,
   investmentBankingSubsection,
-  // investmentManagementSubsection,
+  investmentManagementSubsection,
   navbarData,
   productsAndServicesArray,
   securitiesTradingSubsection,
@@ -46,9 +46,9 @@ const Solution = () => {
       case "securitiesTrading":
         setPageConfig(securitiesTradingSubsection);
         break;
-      // case "investmentManagement":
-      //   setPageConfig(investmentManagementSubsection);
-      //   break;
+      case "investmentManagement":
+        setPageConfig(investmentManagementSubsection);
+        break;
 
       default:
         break;

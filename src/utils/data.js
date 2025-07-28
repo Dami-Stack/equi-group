@@ -70,36 +70,36 @@ export const investmentBankingSubsection = {
 //   ],
 // };
 
-// export const investmentManagementSubsection = {
-//   title: "South Africa",
-//   showIcon: true,
-//   icon: "twemoji:flag-south-africa",
-//   isReadMore: true,
-//   services: [
-//     {
-//       title: "•	Private Investments",
-//     },
-//     {
-//       title: "•	Property Investment",
-//     },
-//   ],
-//   heroIcon: "twemoji:flag-south-africa",
-//   id: "investmentManagement",
-//   url: "http://cititrustassetmgt.com",
-//   sameSiteDropDownUrl: true,
-//   sameSiteUrl: true,
-//   dropdownUrl: "/solutions/investmentManagement",
-//   riskReportTitle: "Africa Outlook",
-//   riskReportSub1: "2024 Africa's Macroeconomic Performance and Outlook.",
-//   solutionsTitle: "Explpre some other solutions",
-//   bgImage:
-//     "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-//   header: "Tailored Asset Management Solutions.",
-//   content2:
-//     "Equiserve's focus in South Africa is to build an enduring and sustainable investment holding company that invests in financial services, fintech, healthcare, and real estate across Africa, to ultimately support businesses with high growth potential and impact the African economy.",
-//   content:
-//     "By international standards, South Africa's Investment and Financial Markets are well diversified, resilient, and developed. The South African market is the largest and biggest in sub-Saharan Africa, with global exposure and best operating practices.",
-// };
+export const investmentManagementSubsection = {
+  title: "South Africa",
+  showIcon: true,
+  icon: "twemoji:flag-south-africa",
+  isReadMore: true,
+  services: [
+    {
+      title: "•	Private Investments",
+    },
+    {
+      title: "•	Property Investment",
+    },
+  ],
+  heroIcon: "twemoji:flag-south-africa",
+  id: "investmentManagement",
+  url: "http://cititrustassetmgt.com",
+  sameSiteDropDownUrl: true,
+  sameSiteUrl: true,
+  dropdownUrl: "/solutions/investmentManagement",
+  riskReportTitle: "Africa Outlook",
+  riskReportSub1: "2024 Africa's Macroeconomic Performance and Outlook.",
+  solutionsTitle: "Explpre some other solutions",
+  bgImage:
+    "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  header: "Tailored Asset Management Solutions.",
+  content2:
+    "Equiserve's focus in South Africa is to build an enduring and sustainable investment holding company that invests in financial services, fintech, healthcare, and real estate across Africa, to ultimately support businesses with high growth potential and impact the African economy.",
+  content:
+    "By international standards, South Africa's Investment and Financial Markets are well diversified, resilient, and developed. The South African market is the largest and biggest in sub-Saharan Africa, with global exposure and best operating practices.",
+};
 export const securitiesTradingSubsection = {
   title: "UK - International",
   showIcon: true,
@@ -261,7 +261,7 @@ export const navbarData = [
     type: "navDropdown",
     subsections: [
       investmentBankingSubsection,
-      // investmentManagementSubsection,
+      investmentManagementSubsection,
       securitiesTradingSubsection,
     ],
   },
@@ -310,7 +310,7 @@ export const miniNavbarData = [
     type: "navDropdown",
     subsections: [
       investmentBankingSubsection,
-      // investmentManagementSubsection,
+      investmentManagementSubsection,
       securitiesTradingSubsection,
     ],
   },
@@ -385,12 +385,12 @@ export const subsidiaries = [
   //     },
   //   ],
   // },
-  // {
-  //   id: "southAfrica",
-  //   title: "South Africa",
-  //   url: "http://equiserveafrica.co.za",
-  //   icon: "twemoji:flag-south-africa",
-  // },
+  {
+    id: "southAfrica",
+    title: "South Africa",
+    url: "http://equiserveafrica.co.za",
+    icon: "twemoji:flag-south-africa",
+  },
   {
     id: "uk",
     title: "UK - International",
@@ -527,18 +527,18 @@ export const productsAndServicesArray = [
     content:
       "The Nigerian financial system is the second largest in sub-Saharan Africa, just below South Africa, and it consists of a diverse banking system, insurance, and non-bank financial institutions",
   },
-  // {
-  //   id: 2,
-  //   imgUrl:
-  //     "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  //   title: "South Africa",
-  //   icon: "twemoji:flag-south-africa",
-  //   link: "/solutions/investmentManagement",
-  //   header:
-  //     "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
-  //   content:
-  //     "By international standards, South Africa's Investment and Financial Markets are well diversified, resilient, and developed. The South African market is the largest and biggest in sub-Saharan Africa, with global exposure and best operating practices.",
-  // },
+  {
+    id: 2,
+    imgUrl:
+      "https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "South Africa",
+    icon: "twemoji:flag-south-africa",
+    link: "/solutions/investmentManagement",
+    header:
+      "Supporting businesses with comprehensive banking solutions to drive growth and stability.",
+    content:
+      "By international standards, South Africa's Investment and Financial Markets are well diversified, resilient, and developed. The South African market is the largest and biggest in sub-Saharan Africa, with global exposure and best operating practices.",
+  },
   {
     id: 3,
     imgUrl:

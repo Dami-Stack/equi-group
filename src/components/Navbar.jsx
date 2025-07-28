@@ -264,9 +264,9 @@ const Navbar = ({ nav }) => {
                 closeSearchMenu={(e) => closeSearchMenu(e)}
                 isSearchMenuOpen={isSearchMenuOpen}
               >
-                <div className="flex items-center justify-center w-full h-[270px]  flex-col gap-[1px] ">
+                <div className="flex items-center justify-center w-full h-[370px]  flex-col gap-[1px] ">
                   {/* Top - */}
-                  {/* <div className="w-full px-[14px] pt-4 pb-5 bg-white">
+                  <div className="w-full px-[14px] pt-4 pb-5 bg-white">
                     <div className="text-sm font-semibold !text-primary-110 leading-6">
                       Current Subsidiary
                     </div>
@@ -277,7 +277,7 @@ const Navbar = ({ nav }) => {
                       </div>
                       <div className="">&nbsp;Equiserve</div>
                     </div>
-                  </div> */}
+                  </div>
 
                   {/* Bottom */}
                   <div className="w-full flex flex-col bg-white flex-1  h-full px-[14px] pt-4 pb-5 overflow-auto">
