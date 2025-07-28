@@ -18,6 +18,7 @@ import vision from "./vision.jpg";
 import jpj from "./jpjenkins-logo.png";
 import neville from "./neville.png";
 import guild from "./guild.png";
+import flashPointLegal from "./flashPointLegal.png";
 import sustainability1 from "./sustainability1.jpeg";
 import sustainability2 from "./sustainability2.jpg";
 
@@ -35,6 +36,7 @@ export {
   contact,
   sustainability,
   inclusion,
+  flashPointLegal,
   socialImpact,
   equiserveLogo,
   heroImg,

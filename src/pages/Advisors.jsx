@@ -7,6 +7,7 @@ import {
   Values,
 } from "../components";
 import {
+  flashPointLegal,
   guild,
   jpj,
   neville,
@@ -93,6 +94,28 @@ const Advisors = () => {
         },
       ],
     },
+    {
+      title: "Solicitors",
+      logo: flashPointLegal,
+      content: [
+        {
+          title: "Company",
+          content: "The Flashpoint Legal",
+        },
+        {
+          title: "Address",
+          content: "Manor Royal, Crawley RH10 9LU West Sussex",
+        },
+        {
+          title: "Email Address",
+          content: "admin@flashpointlegal.com",
+        },
+        {
+          title: "Phone Number",
+          content: "0203 916 6049",
+        },
+      ],
+    },
   ];
 
   return (
@@ -125,7 +148,8 @@ const Advisors = () => {
             <div
               key={index}
               className={`${
-                index === 1 && "py-8 my-8 border-y border-y-primary-110"
+                (index === 1 || index === 3) &&
+                "py-8 my-8 border-y border-y-primary-110"
               } flex flex-col gap-6 w-full max-w-4xl`}
             >
               {/* Title and Logo Section */}
