@@ -158,7 +158,7 @@ const MobileMenu = ({
             }  duration-300 transition-all overflow-hidden `}
           >
             <div className="flex items-center justify-center w-full   flex-col gap-[1px] ">
-              {/* Top - */}
+              {/* Top -
               <div className="w-full px-[14px] pt-4 pb-5 bg-primary">
                 <div className="text-sm font-semibold text-white leading-6">
                   Current Subsidiary
@@ -170,7 +170,7 @@ const MobileMenu = ({
                   </div>
                   <div className="">&nbsp;Equiserve</div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Bottom */}
               <div className="w-full flex flex-col bg-white flex-1  h-full px-[14px] pt-4 pb-5 overflow-auto">
@@ -197,6 +197,7 @@ const MobileMenu = ({
                         hasSubSections={subsidiary?.subsections}
                         subsections={subsidiary?.subsections}
                         id={subsidiary?.id}
+                        url={subsidiary.url}
                       />
                     ))
                   ) : (

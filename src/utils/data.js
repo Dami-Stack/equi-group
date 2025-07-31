@@ -362,7 +362,7 @@ export const subsidiaries = [
   {
     id: "nigeria",
     title: "Nigeria",
-    url: null,
+    url: "https://coretrustinvestmentltd.com",
     icon: "twemoji:flag-nigeria",
   },
   // {
@@ -388,13 +388,13 @@ export const subsidiaries = [
   {
     id: "southAfrica",
     title: "South Africa",
-    url: "http://equiserveafrica.co.za",
     icon: "twemoji:flag-south-africa",
+    url: null,
   },
   {
     id: "uk",
     title: "UK - International",
-    url: "http://equiserveafrica.co.za",
+    url: "https://eglcapital.co.uk/",
     icon: "twemoji:flag-united-kingdom",
   },
   // {

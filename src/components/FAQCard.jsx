@@ -12,6 +12,7 @@ const FAQCard = ({
   icon,
   subsections,
   title,
+  url,
   containerStyle,
   toggleMenu,
   toggleMenuOnClick,
@@ -20,7 +21,10 @@ const FAQCard = ({
     <div
       className={`cursor-pointer border-b-[1px] ${containerStyle} border-neutral-20 min-h-[60px]  w-full  flex flex-col justify-center`}
     >
-      <div
+      {console.log(url)}
+      <Link
+        to={url}
+        target={url && "_blank"}
         className={`${
           selectedItem?.id === id && "mb-1"
         } flex justify-between gap-1 items-center  transition-all ease-in-out duration-300`}
@@ -28,6 +32,11 @@ const FAQCard = ({
         <div className="font-normal gap-3 items-center text-md  text-secondary flex mt-0">
           <Icon icon={icon} className="w-5 h-5" /> <span>{title}</span>
         </div>
+        {url && (
+          <span>
+            <Icon icon={"lets-icons:external"} className="ml-2" />{" "}
+          </span>
+        )}
 
         {hasSubSections && (
           <div
@@ -43,7 +52,7 @@ const FAQCard = ({
             />
           </div>
         )}
-      </div>
+      </Link>
       <div
         className={` text-secondary b_18_14-25-400  ease-in-out ${
           selectedItem?.id === id ? "h-auto opacity-100" : "h-0 opacity-0"
