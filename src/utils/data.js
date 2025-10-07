@@ -26,9 +26,7 @@ export const investmentBankingSubsection = {
     {
       title: "•	Securities Trading",
     },
-    {
-      title: "•	Property Investment",
-    },
+    
   ],
   heroIcon: "twemoji:flag-nigeria",
   id: "investmentBanking",
@@ -153,21 +151,19 @@ export const howToInvestSubsection = {
   title: "How to Invest",
   id: "howToInvest",
   url: "",
-  sameSiteDropDownUrl: true,
-  sameSiteUrl: true,
-  dropdownUrl: "/investors/howToInvest",
+  sameSiteDropDownUrl: false,
+  sameSiteUrl: false,
+  dropdownUrl: "",
   solutionsTitle: "",
   bgImage: "",
-  header: "",
+  header: "Coming Soon",
   services: [
     {
-      title:
-        "Equiserve Group Limited (EQL: JPJ) has appointed JP Jenkins to facilitate trading ...",
+      title: "This section is coming soon.",
     },
   ],
-  isReadMore: true,
-  content:
-    "Equiserve Group Limited (EQL: JPJ) has appointed JP Jenkins to facilitate trading (buy/sell) in its Ordinary Shares. This will allow new and",
+  isReadMore: false,
+  content: "",
 };
 export const corporateGovernanceSubsection = {
   title: "Corporate Governance",
@@ -261,7 +257,7 @@ export const navbarData = [
     type: "navDropdown",
     subsections: [
       investmentBankingSubsection,
-      investmentManagementSubsection,
+      //investmentManagementSubsection,
       securitiesTradingSubsection,
     ],
   },
@@ -310,7 +306,7 @@ export const miniNavbarData = [
     type: "navDropdown",
     subsections: [
       investmentBankingSubsection,
-      investmentManagementSubsection,
+      //investmentManagementSubsection,
       securitiesTradingSubsection,
     ],
   },
@@ -385,12 +381,12 @@ export const subsidiaries = [
   //     },
   //   ],
   // },
-  {
-    id: "southAfrica",
-    title: "South Africa",
-    icon: "twemoji:flag-south-africa",
-    url: null,
-  },
+  // {
+  //   id: "southAfrica",
+  //   title: "South Africa",
+  //   icon: "twemoji:flag-south-africa",
+  //   url: null,
+  // },
   {
     id: "uk",
     title: "UK - International",
