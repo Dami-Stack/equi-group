@@ -220,6 +220,27 @@ export const reportsSubsection = {
   ],
   isReadMore: true,
 };
+
+export const debtInvestorsSubsection = {
+  title: "Debt Investors",
+  id: "debtInvestors",
+  url: "",
+  sameSiteDropDownUrl: true,
+  sameSiteUrl: true,
+  dropdownUrl: "/investors/debtInvestors",
+  solutionsTitle: "",
+  bgImage: "",
+  header: "",
+  services: [
+    {
+      title:
+        "Equiserve Group Limited periodically issues debt instruments to support its business growth: Information on Ratings, Long and medium-Term Debt Issuance Programmes, Bonds, Commercial Paper Programmes and Contacts.",
+    },
+  ],
+  isReadMore: false,
+};
+
+// After Reports, Presentations & Announcements on the navbbar ui, were to add the debt investors and just show that text underneath
 export const leadershipSubsection = {
   title: "Leadership",
   id: "leadership",
@@ -279,6 +300,7 @@ export const navbarData = [
       corporateGovernanceSubsection,
       advisorsSubsection,
       reportsSubsection,
+      debtInvestorsSubsection,
     ],
     title: "Investors",
     url: "/investors",
